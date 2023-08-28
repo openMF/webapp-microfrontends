@@ -1,0 +1,78 @@
+<div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column" class="container m-b-20">
+
+  <div #buttonEdit class="in-block">
+    <button mat-raised-button color="primary" (click)="editTask(); backupCheckValues();" *mifosxHasPermission="'UPDATE_PERMISSION'">
+      <fa-icon icon="edit" class="m-r-10"></fa-icon>
+      Edit
+    </button>
+  </div>
+</div>
+
+<div class="container">
+
+  <mat-card>
+
+    <ng-container>
+
+      <div fxLayout="row">
+
+        <div #mcTable fxFlex="30" fxLayout="column">
+          <mat-list>
+            <mat-list-item [ngClass]="selectedItem == grouping ? 'active' : 'inactive'" *ngFor="let grouping of groupings" (click)="showPermissions(grouping)">
+              <span class="groupingName">
+                {{ formatName(grouping) }}
+              </span>
+            </mat-list-item>
+          </mat-list>
+        </div>
+
+        <mat-divider [vertical]="true"></mat-divider>
+
+        <div fxFlex="70" fxLayout="column" class="listPermission">
+          <form [formGroup]="formGroup" (submit)="submit()">
+
+            <div *ngFor="let permission of permissions.permissions" class="displayPermissions">
+                <div formArrayName="roster">
+                  <div [formGroupName]="permission.id">
+                    <mat-checkbox name="cp" id="{{ permission.code }}" formControlName="selected">
+                    {{ permissionName(permission.code) }}
+                  </mat-checkbox>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+        </div>
+
+      </div>
+    </ng-container>
+
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="5px" *ngIf="!isDisabled">
+      <mat-card-actions>
+        <button type="button" mat-raised-button (click)="cancel(); restoreCheckboxes();">Cancel</button>
+        <button mat-raised-button color="primary" (click)="submit()" *mifosxHasPermission="'UPDATE_PERMISSION'">Submit</button>
+      </mat-card-actions>
+    </div>
+
+  </mat-card>
+
+</div>
+
+<ng-template #templateButtonEdit let-popover="popover">
+  <h2>Edit</h2>
+  <p class="mw300">To add or remove a task from the Maker-Checker list.</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStep()">Back</button>
+    <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateMcTable,mcTable,'top', true);">Next</button>
+  </div>
+</ng-template>
+
+<ng-template #templateMcTable let-popover="popover">
+  <h4 class="mw300">List of all maker checker tasks. For more details click: <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/67895359/Configure+Maker-Checker+Tasks" target="_blank">Configure Maker-Checker Tasks</a></h4>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateButtonEdit,buttonEdit,'bottom', true);">Back</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStep()">Next</button>
+  </div>
+</ng-template>

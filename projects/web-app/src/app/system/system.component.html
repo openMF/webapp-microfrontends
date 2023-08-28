@@ -1,0 +1,225 @@
+<div class="container">
+
+  <mat-card>
+
+    <div fxLayout="row" fxLayout.lt-md="column">
+
+      <div fxFlex="50%">
+
+        <mat-nav-list>
+
+          <div #datatables>
+            <mat-list-item [routerLink]="['data-tables']">
+              <mat-icon matListIcon>
+                <fa-icon icon="table" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>Manage Data tables</h4>
+              <p matLine>Add new extra fields to any entity in the form of data table</p>
+            </mat-list-item>
+          </div>
+
+          <div #codes>
+            <mat-list-item [routerLink]="['codes']">
+              <mat-icon matListIcon>
+                <fa-icon icon="list-ul" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>Manage Codes</h4>
+              <p matLine>Codes are used to define drop down values</p>
+            </mat-list-item>
+          </div>
+
+          <div #rolesandpermission>
+            <mat-list-item [routerLink]="['roles-and-permissions']">
+              <mat-icon matListIcon>
+                <fa-icon icon="key" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>Manage Roles and Permissions</h4>
+              <p matLine>Define or modify roles and associated permissions</p>
+            </mat-list-item>
+          </div>
+
+          <div #makerCheckerTable>
+            <mat-list-item [routerLink]="['configure-mc-tasks']">
+              <mat-icon matListIcon>
+                <fa-icon icon="sitemap" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>Configure Maker Checker Tasks</h4>
+              <p matLine>Define or modify Maker Checker tasks</p>
+            </mat-list-item>
+          </div>
+
+          <mat-list-item [routerLink]="['hooks']">
+            <mat-icon matListIcon>
+              <fa-icon icon="anchor" size="sm"></fa-icon>
+            </mat-icon>
+            <h4 matLine>Manage Hooks</h4>
+            <p matLine>Define Hooks</p>
+          </mat-list-item>
+
+          <mat-list-item [routerLink]="['entity-to-entity-mapping']">
+            <mat-icon matListIcon>
+              <fa-icon icon="road" size="sm"></fa-icon>
+            </mat-icon>
+            <h4 matLine>Entity to Entity Mapping</h4>
+            <p matLine>Define or modify entity to entity mappings</p>
+          </mat-list-item>
+
+          <mat-list-item [routerLink]="['surveys']">
+            <mat-icon matListIcon>
+              <fa-icon icon="file-alt" size="sm"></fa-icon>
+            </mat-icon>
+            <h4 matLine>Manage Surveys</h4>
+            <p matLine>Manage your Services</p>
+          </mat-list-item>
+
+          <mat-list-item [routerLink]="['external-events']"  *mifosxHasPermission="'READ_EXTERNAL_EVENT_CONFIGURATION'">
+            <mat-icon matListIcon>
+              <fa-icon icon="anchor" size="sm"></fa-icon>
+            </mat-icon>
+            <h4 matLine>Manage External Events</h4>
+            <p matLine>External Events configuration, to enable or disable the event publication</p>
+          </mat-list-item>
+
+        </mat-nav-list>
+
+      </div>
+
+      <div fxFlex="50%">
+
+        <mat-nav-list>
+
+          <mat-list-item [routerLink]="['audit-trails']">
+            <mat-icon matListIcon>
+              <fa-icon icon="money-check" size="sm"></fa-icon>
+            </mat-icon>
+            <h4 matLine>Audit Trails</h4>
+            <p matLine>Audit logs of all the activities, such as create client, disburse loans etc</p>
+          </mat-list-item>
+
+          <mat-list-item [routerLink]="['reports']">
+            <mat-icon matListIcon>
+              <fa-icon icon="file-word" size="sm"></fa-icon>
+            </mat-icon>
+            <h4 matLine>Manage Reports</h4>
+            <p matLine>Add new report and classify reports</p>
+          </mat-list-item>
+
+          <mat-list-item [routerLink]="['manage-jobs']">
+            <mat-icon matListIcon>
+              <fa-icon icon="clock" size="sm"></fa-icon>
+            </mat-icon>
+            <h4 matLine>Manage Jobs</h4>
+            <p matLine>Manage Schedule and Workflow jobs, modify jobs or view history and logs</p>
+          </mat-list-item>
+
+          <mat-list-item [routerLink]="['configurations']">
+            <mat-icon matListIcon>
+              <fa-icon icon="cogs" size="sm"></fa-icon>
+            </mat-icon>
+            <h4 matLine>Configurations</h4>
+            <p matLine>Global configurations, Cache and Business Date settings</p>
+          </mat-list-item>
+
+          <mat-list-item [routerLink]="['account-number-preferences']">
+            <mat-icon matListIcon>
+              <fa-icon icon="key" size="sm"></fa-icon>
+            </mat-icon>
+            <h4 matLine>Account Number Preferences</h4>
+            <p matLine>Preferences for generating account numbers for client, loan and savings accounts</p>
+          </mat-list-item>
+
+          <mat-list-item [routerLink]="['external-services']">
+            <mat-icon matListIcon>
+              <fa-icon icon="cog" size="sm"></fa-icon>
+            </mat-icon>
+            <h4 matLine>External Services</h4>
+            <p matLine>External Services Configuration</p>
+          </mat-list-item>
+
+          <mat-list-item>
+            <mat-icon matListIcon>
+              <fa-icon icon="key" size="sm"></fa-icon>
+            </mat-icon>
+            <h4 matLine>Two-Factor Configuration</h4>
+            <p matLine>Two-factor authentication configuration settings</p>
+          </mat-list-item>
+
+        </mat-nav-list>
+
+      </div>
+
+    </div>
+
+  </mat-card>
+
+</div>
+
+<ng-template #templateDatatables let-popover="popover">
+  <h2>Manage Data Tables</h2>
+  <p class="mw300">Mifos X data-tables allow the user to add custom fields in addition to the built-in fields to a client profile, loan/saving account, group, center or an office.</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepDatatables()">Back</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepDatatables()">Next</button>
+  </div>
+</ng-template>
+
+<ng-template #templateCodes let-popover="popover">
+  <h2>Manage Codes</h2>
+  <p class="mw300">From this selection you can create new drop-downs and edit their values as well as edit the values for system-generated codes and drop-downs.</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepCodes()">Back</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepCodes()">Next</button>
+  </div>
+</ng-template>
+
+<ng-template #templateRolesandPermission let-popover="popover">
+  <h2>Manage Roles and Permissions</h2>
+  <p class="mw300">Roles and Permissions allow the administrator to control access to Mifos based on what roles are assigned to Users and what Permissions are assigned to roles.</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepRolesandPermission()">Back</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepRolesandPermission()">Next</button>
+  </div>
+</ng-template>
+
+<ng-template #templateMakerCheckerTable let-popover="popover">
+  <h2>Configure Maker-Checker Tasks</h2>
+  <p class="mw300">The “Maker-Checker” principle requires every tasks to be completed by two people to reduce the chance of errors and misuse. One person initiates the process and the second completes it.</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepMakerCheckerTable()">Back</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepMakerCheckerTable()">Next</button>
+  </div>
+</ng-template>
+
+<ng-template #templateConfigurations let-popover="popover">
+  <h2>Configuration</h2>
+  <p class="mw300">The Configurations page allows you to further customize the way your organization uses the Mifos system.</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepConfigurations()">Back</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepConfigurations()">Next</button>
+  </div>
+</ng-template>
+
+<ng-template #templateSchedulerJobs let-popover="popover">
+  <h2>Manage Scheduler Jobs</h2>
+  <p class="mw300">By using Scheduler Jobs, you can set batch jobs to be completed at regular intervals. From this page you can schedule, modify or delete jobs.</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepSchedulerJobs()">Back</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepSchedulerJobs()">Next</button>
+  </div>
+</ng-template>
+
+<ng-template #templateManageReports let-popover="popover">
+  <h2>Manage Reports</h2>
+  <p class="mw300">You may add customized reports and edit core reports for your organization.</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepManageReports()">Back</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepManageReports()">Next</button>
+  </div>
+</ng-template>

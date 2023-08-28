@@ -1,0 +1,74 @@
+<div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column" class="container m-b-20">
+  <button mat-raised-button color="primary" [routerLink]="['edit']" *mifosxHasPermission="'UPDATE_ADHOC'">
+    <fa-icon icon="edit" class="m-r-10"></fa-icon>
+    Edit
+  </button>
+  <button mat-raised-button color="warn" (click)="deleteAdhocQuery()" *mifosxHasPermission="'DELETE_ADHOC'">
+    <fa-icon icon="trash" class="m-r-10"></fa-icon>
+    Delete
+  </button>
+</div>
+
+<div class="container">
+
+  <mat-card>
+
+    <mat-card-content>
+
+      <div fxLayout="row wrap" class="content">
+
+        <div fxFlex="50%" class="mat-body-strong">
+          Name
+        </div>
+
+        <div fxFlex="50%">
+          {{ adhocQueryData.name }}
+        </div>
+
+        <div fxFlex="50%" class="mat-body-strong">
+          Query
+        </div>
+
+        <div fxFlex="50%">
+          {{ adhocQueryData.query }}
+        </div>
+
+        <div fxFlex="50%" class="mat-body-strong">
+          Table Affected
+        </div>
+
+        <div fxFlex="50%">
+          {{ adhocQueryData.tableName }}
+        </div>
+
+        <div fxFlex="50%" class="mat-body-strong" *ngIf="adhocQueryData.reportRunFrequency">
+          Report Run Frequency
+        </div>
+
+        <div fxFlex="50%" *ngIf="adhocQueryData.reportRunFrequency">
+          {{ reportRunFrequency }}
+        </div>
+
+        <div fxFlex="50%" class="mat-body-strong">
+          Status
+        </div>
+
+        <div fxFlex="50%">
+          {{ adhocQueryData.isActive === true ? 'Active' : 'Inactive' }}
+        </div>
+
+        <div fxFlex="50%" class="mat-body-strong">
+          Created By
+        </div>
+
+        <div fxFlex="50%">
+          {{ adhocQueryData.createdBy }}
+        </div>
+
+      </div>
+
+    </mat-card-content>
+
+  </mat-card>
+
+</div>

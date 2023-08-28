@@ -1,0 +1,25 @@
+<div fxLayout="row wrap" fxLayout.lt-md="column">
+
+  <a mat-button (click)="showRepaymentInfo()">
+    Repayment Info
+  </a>
+
+  <mifosx-repayment-schedule-tab fxFlex="100%" [repaymentScheduleDetails]="repaymentScheduleDetails"
+    [currencyCode]="currencyCode">
+  </mifosx-repayment-schedule-tab>
+
+</div>
+
+<div fxLayout="row" class="margin-t" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="2%">
+  <button mat-raised-button matStepperPrevious>
+    <fa-icon icon="arrow-left" class="m-r-10"></fa-icon>
+    Previous
+  </button>
+  <button mat-raised-button matStepperNext>
+    Next
+    <fa-icon icon="arrow-right" class="m-l-10"></fa-icon>
+  </button>
+  <button mat-raised-button *ngIf="loanId" [routerLink]="['../', 'general']">
+    Cancel
+  </button>
+</div>

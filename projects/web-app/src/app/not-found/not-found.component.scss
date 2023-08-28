@@ -1,0 +1,18 @@
+@import "assets/styles/helper";
+
+.not-found-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $accent;
+  color: $white;
+}
+
+#title {
+  font-size: 160px;
+  font-weight: bolder;
+}
+
+

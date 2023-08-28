@@ -1,0 +1,59 @@
+<div class="container m-b-20" fxLayout="row" fxLayoutAlign="end" fxLayoutGap="20px">
+
+  <button mat-raised-button color="primary" [routerLink]="['edit']" *mifosxHasPermission="'UPDATE_TEMPLATE'">
+    <fa-icon icon="edit" class="m-r-10"></fa-icon>
+    Edit
+  </button>
+
+  <button mat-raised-button color="warn" (click)="delete()" *mifosxHasPermission="'DELETE_TEMPLATE'">
+    <fa-icon icon="trash" class="m-r-10"></fa-icon>
+    Delete
+  </button>
+
+</div>
+
+<div class="container">
+
+  <mat-card>
+
+    <mat-card-content>
+
+      <div fxLayout="row wrap" class="content">
+
+        <div fxFlex="50%" class="mat-body-strong">
+          Name
+        </div>
+
+        <div fxFlex="50%">
+          {{ templateData.name }}
+        </div>
+
+        <div fxFlex="50%" class="mat-body-strong">
+          Entity
+        </div>
+
+        <div fxFlex="50%">
+          {{ templateData.entity }}
+        </div>
+
+        <div fxFlex="50%" class="mat-body-strong">
+          Type
+        </div>
+
+        <div fxFlex="50%">
+          {{ templateData.type }}
+        </div>
+
+        <div fxFlex="50%" class="mat-body-strong">
+          Text
+        </div>
+
+        <div fxFlex="50%" [innerHTML]="templateData.text"></div>
+
+      </div>
+
+    </mat-card-content>
+
+  </mat-card>
+
+</div>

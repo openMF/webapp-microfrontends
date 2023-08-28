@@ -1,0 +1,136 @@
+<div class="container mat-elevation-z8">
+
+  <mat-card>
+
+    <form [formGroup]="repaymentLoanForm" (ngSubmit)="submit()">
+
+      <mat-card-content>
+
+        <div fxLayout="column">
+
+          <mat-form-field (click)="transactionDatePicker.open()">
+            <mat-label>Transaction Date</mat-label>
+            <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="transactionDatePicker" required
+              formControlName="transactionDate">
+            <mat-datepicker-toggle matSuffix [for]="transactionDatePicker"></mat-datepicker-toggle>
+            <mat-datepicker #transactionDatePicker></mat-datepicker>
+            <mat-error *ngIf="repaymentLoanForm.controls.transactionDate.hasError('required')">
+              Transaction Date <strong>is required</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <div fxLayout="row wrap" class="content">
+            <div fxFlex="50%" class="mat-body-strong">
+              {{ 'Principal' | translate }}
+            </div>
+
+            <div fxFlex="50%" class="r-amount right-label">
+              {{ dataObject.principalPortion | formatNumber }}
+            </div>
+
+            <div fxFlex="50%" class="mat-body-strong">
+              {{ 'Interest' | translate }}
+            </div>
+
+            <div fxFlex="50%" class="r-amount right-label">
+              {{ dataObject.interestPortion | formatNumber }}
+            </div>
+
+            <div fxFlex="50%" class="mat-body-strong">
+              {{ 'Fees' | translate }}
+            </div>
+
+            <div fxFlex="50%" class="r-amount right-label">
+              {{ dataObject.feeChargesPortion | formatNumber }}
+            </div>
+
+            <div fxFlex="50%" class="mat-body-strong">
+              {{ 'Penalties' | translate }}
+            </div>
+
+            <div fxFlex="50%" class="r-amount right-label">
+              {{ dataObject.penaltyChargesPortion | formatNumber }}
+            </div>
+          </div>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Transaction Amount</mat-label>
+            <span matTextSuffix class="m-l-10">{{ dataObject.currency.code }}</span>
+            <span fxFlex="auto"></span>
+            <input type="number" matInput required class="right-input" formControlName="transactionAmount">
+            <mat-error *ngIf="repaymentLoanForm.controls.transactionAmount.hasError('required')">
+              Transaction Amount <strong>is required</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>External Id</mat-label>
+            <input matInput formControlName="externalId">
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Payment Type</mat-label>
+            <mat-select formControlName="paymentTypeId">
+              <mat-option *ngFor="let paymentType of paymentTypes" [value]="paymentType.id">
+                {{ paymentType.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <div fxFlexFill>
+            <span fxFlex="75%" class="expandcollapsebutton m-l-10 m-t-40" (click)="addPaymentDetails()">
+              <mat-slide-toggle>
+                <div [className]="showPaymentDetails ? 'enabled' : 'disabled'">
+                  <span class="m-l-10">Show Payment Details</span>
+                </div>
+              </mat-slide-toggle>
+            </span>
+          </div>
+
+          <ng-container *ngIf="showPaymentDetails">
+            <mat-form-field>
+              <mat-label> Account #</mat-label>
+              <input matInput formControlName="accountNumber">
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Cheque #</mat-label>
+              <input matInput formControlName="checkNumber">
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Routing Code</mat-label>
+              <input matInput formControlName="routingCode">
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Reciept #</mat-label>
+              <input matInput formControlName="receiptNumber">
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Bank #</mat-label>
+              <input matInput formControlName="bankNumber">
+            </mat-form-field>
+          </ng-container>
+
+          <mat-form-field>
+            <mat-label>Note</mat-label>
+            <textarea matInput formControlName="note" cdkTextareaAutosize cdkAutosizeMinRows="2"></textarea>
+          </mat-form-field>
+
+        </div>
+
+        <mat-card-actions fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="5px">
+          <button type="button" mat-raised-button [routerLink]="['../../general']">Cancel</button>
+          <button mat-raised-button color="primary" [disabled]="!repaymentLoanForm.valid"
+            *mifosxHasPermission="'REPAYMENT_LOAN'">Submit</button>
+        </mat-card-actions>
+
+      </mat-card-content>
+
+    </form>
+
+  </mat-card>
+
+</div>

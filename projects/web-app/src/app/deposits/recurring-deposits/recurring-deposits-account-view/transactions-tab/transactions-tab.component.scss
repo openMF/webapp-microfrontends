@@ -1,0 +1,18 @@
+.tab-container {
+  padding: 1%;
+  margin: 1%;
+  h3 {
+    margin:1% auto;
+  }
+  table {
+    width: 100%;
+    .select-row:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.strike {
+  text-decoration: line-through;
+  color: red;
+}

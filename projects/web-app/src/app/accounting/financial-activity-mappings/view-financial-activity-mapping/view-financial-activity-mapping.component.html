@@ -1,0 +1,42 @@
+<div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" class="container m-b-20">
+  <button mat-raised-button color="primary" [routerLink]="['edit']" *mifosxHasPermission="'UPDATE_FINANCIALACTIVITYACCOUNT'">
+    <fa-icon icon="edit" class="m-r-10"></fa-icon>
+    {{"labels.buttons.Edit" |translate}}
+  </button>
+  <button mat-raised-button color="warn" (click)="deleteFinancialActivityAccount()" *mifosxHasPermission="'DELETE_FINANCIALACTIVITYACCOUNT'">
+    <fa-icon icon="trash" class="m-r-10"></fa-icon>
+    {{"labels.buttons.Delete" |translate}}
+  </button>
+</div>
+
+<div class="container">
+
+  <mat-card>
+
+    <mat-card-content>
+
+      <div fxLayout="row wrap" class="content">
+
+        <div fxFlex="50%" class="header">
+          {{"labels.inputs.Financial Activity" |translate}}
+        </div>
+
+        <div fxFlex="50%">
+          {{ financialActivityAccount?.financialActivityData.name }}
+        </div>
+
+        <div fxFlex="50%" class="header">
+          {{"labels.inputs.Account Name" |translate}}
+        </div>
+
+        <div fxFlex="50%">
+          {{ financialActivityAccount?.glAccountData.name }}
+        </div>
+
+      </div>
+
+    </mat-card-content>
+
+  </mat-card>
+
+</div>
