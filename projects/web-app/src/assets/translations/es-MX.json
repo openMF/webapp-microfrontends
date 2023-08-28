@@ -1,0 +1,131 @@
+{
+  "APP_NAME": "Mifos X",
+  "Logged in as": "Sesión activa como",
+  "Remember me": "Recordarme",
+  "not_found_subtitle": "Vaya... Parece que esta página no existe.",
+  "languages": {
+    "en-US": "Inglés",
+    "fr-FR": "Francés",
+    "es-MX": "Español"
+  },
+  "labels": {
+    "breadcrumbs": {
+      "Home": "Inicio"
+    },
+    "buttons": {
+      "Dashboard": "Tableros",
+      "Add": "Agregar",
+      "Back": "Anterior",
+      "Close": "Cerrar",
+      "Next": "Siguiente",
+      "Login": "Inciar Sesión",
+      "Create User": "Crear Usuario"
+    },
+    "commons": {
+      "is required": "es requerido"
+    },
+    "inputs": {
+      "Tenant": "Entidad",
+      "Language": "Lenguaje",
+      "Server": "Servidor",
+      "Url": "Url",
+      "Login": "Inciar Sesión",
+      "Logout": "Salir",
+      "Username": "Nombre de Usuario",
+      "Password": "Contraseña",
+      "Remember me": "Recordarme",
+      "Filter": "Filtrar",
+      "products": {
+        "loan": {
+          "Amortization": "Amortización",
+          "amortizationType": {
+            "Equal installments": "Cuotas Iguales",
+            "Equal principal payments": "Pagos de Capital Iguales"
+          }
+        },
+        "Is Equal Amortization?": "¿Es Amortización Igual?"
+      }
+    },
+    "links": {
+      "Contribute": "Contribuir",
+      "Resources": "Recursos",
+      "Community": "Comunidad",
+      "User Manual": "Manual de Usuario",
+      "Functional Specifications": "Especificación Funcional",
+      "Developer Zone": "Zona de Desarrollo",
+      "User Group": "Grupo de Usuarios",
+      "Developer Group": "Grupo de Desarrollo",
+      "IRC": "IRC",
+      "Key Design Principles": "Principios de Diseño",
+      "Working with Code": "Código",
+      "Donate": "Donar",
+      "Forgot Password?": "Recuperar Contraseña"
+    },
+    "menus": {
+      "Institution": "Institución",
+      "Accounting": "Contabilidad",
+      "Breadcrumbs": "Navegación",
+      "Reports": "Reportes",
+      "Admin": "Administrador",
+      "Self Service": "Auto Servicio",
+      "Configuration Wizard": "Asistente de Configuración",
+      "Clients": "Clientes",
+      "Groups": "Grupos",
+      "Centers": "Centros",
+      "All": "Todo",
+      "Loans": "Créditos",
+      "Savings": "Ahorros",
+      "Funds": "Fondos",
+      "XBRL": "XBRL",
+      "Users": "Usuarios",
+      "Organization": "Organización",
+      "System": "Sistema",
+      "Products": "Productos",
+      "Templates": "Plantillas",
+      "User Management": "Administración de Usuarios",
+      "App Configuration": "Configuración de Aplicación",
+      "Task Management": "Administración de Tareas",
+      "Help": "Ayuda",
+      "Profile": "Perfil",
+      "Settings": "Configuración",
+      "Sign Out": "Cerrar Sesión",
+      "Global Search": "Búsqueda",
+      "Language Selector": "Seleccionador de Idioma",
+      "Theme Picker": "Seleccionador de Tema",
+      "Application Menu": "Menú de Aplicación",
+      "User Panel": "Panel de Usuario",
+      "Frequently Accessed": "Accessos Frecuentes",
+      "Dashboard": "Gráficos",
+      "Navigation": "Navegación",
+      "Frequent Postings": "Asientos Frecuentes",
+      "Create Journal Entry": "Crear Entrada Manual",
+      "Chart of Accounts": "Cuentas Contables",
+      "Notifications": "Notificaciones",
+      "Main Items": "Elementos principales",
+      "Checker Inbox and Tasks": "Panel de Tareas",
+      "Individual Collection Sheet": "Hoja de Cobro Individual",
+      "Keyboard Shortcuts": "Accesos Rapidos"
+    },
+    "placeholders": {
+      "Add new server": "Agregar nuevo servidor",
+      "Search Activity": "Buscar Actividad"
+    },
+    "texts": {
+      "Welcome": "Bienvenido",
+      "Version": "Versión",
+      "by": "por",
+      "Login into Tenant": "Iniciar sesión en"
+    }
+  },
+  "errors": {
+    "inputs": {
+      "Password is required": "La Contraseña es requerida",
+      "Username is required": "Nombre de Usuario es requerida",
+      "Username or password incorrect.": "Nombre de Usuario ó Contraseña son incorrectas"
+    }
+  },
+  "tooltips": {
+    "Settings": "Configuración",
+    "Sign Out": "Cerrar Sesión"
+  }
+}

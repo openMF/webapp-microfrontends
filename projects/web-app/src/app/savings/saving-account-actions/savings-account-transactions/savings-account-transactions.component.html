@@ -1,0 +1,93 @@
+<div class="container mat-elevation-z8">
+
+  <mat-card>
+
+    <h2 mat-title *ngIf="transactionType.withdrawal">Withdraw Money From Saving Account</h2>
+    <h2 mat-title *ngIf="transactionType.deposit">Deposit Money To Saving Account</h2>
+
+    <form [formGroup]="savingAccountTransactionForm" (ngSubmit)="submit()">
+
+      <mat-card-content fxLayout="column">
+
+        <mat-form-field (click)="dueDatePicker.open()">
+          <mat-label>Transaction Date</mat-label>
+          <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="dueDatePicker"
+            formControlName="transactionDate" required>
+          <mat-datepicker-toggle matSuffix [for]="dueDatePicker"></mat-datepicker-toggle>
+          <mat-datepicker #dueDatePicker></mat-datepicker>
+          <mat-error *ngIf="savingAccountTransactionForm.controls.transactionDate.hasError('required')">
+            Transaction Date is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Transaction Amount</mat-label>
+          <span matTextSuffix class="m-l-10">{{ currencyCode }}</span>
+          <span fxFlex="auto"></span>
+          <input type="number" class="right-input" formControlName="transactionAmount" required matInput />
+          <mat-error *ngIf="savingAccountTransactionForm.controls.transactionAmount.hasError('required')">
+            Transaction Amount is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Payment Type</mat-label>
+          <mat-select required formControlName="paymentTypeId">
+            <mat-option *ngFor="let paymentType of paymentTypeOptions" [value]="paymentType.id">
+              {{ paymentType.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div fxFlexFill>
+          <span fxFlex="75%" class="expandcollapsebutton m-l-10 m-t-40" (click)="addPaymentDetails()">
+            <mat-slide-toggle>
+              <div [className]="addPaymentDetailsFlag ? 'enabled' : 'disabled'">
+                <span class="m-l-10">Show Payment Details</span>
+              </div>
+            </mat-slide-toggle>
+          </span>
+        </div>
+
+        <mat-form-field *ngIf="addPaymentDetailsFlag">
+          <mat-label>Account Number</mat-label>
+          <input type="number" formControlName="accountNumber" matInput />
+        </mat-form-field>
+
+        <mat-form-field *ngIf="addPaymentDetailsFlag">
+          <mat-label>Cheque</mat-label>
+          <input type="number" formControlName="checkNumber" matInput />
+        </mat-form-field>
+
+        <mat-form-field *ngIf="addPaymentDetailsFlag">
+          <mat-label>Routing Code</mat-label>
+          <input formControlName="routingCode" matInput />
+        </mat-form-field>
+
+        <mat-form-field *ngIf="addPaymentDetailsFlag">
+          <mat-label>Receipt Number</mat-label>
+          <input formControlName="receiptNumber" matInput />
+        </mat-form-field>
+
+        <mat-form-field *ngIf="addPaymentDetailsFlag">
+          <mat-label>Bank</mat-label>
+          <input formControlName="bankNumber" matInput />
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Notes</mat-label>
+          <textarea formControlName="note" matInput cdkTextareaAutosize cdkAutosizeMinRows="2"></textarea>
+        </mat-form-field>
+
+        <mat-card-actions fxLayoutGap="5px" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+          <button type="button" mat-raised-button [routerLink]="['../../transactions']">Cancel</button>
+          <button mat-raised-button color="primary" [disabled]="!savingAccountTransactionForm.valid">Submit</button>
+        </mat-card-actions>
+
+      </mat-card-content>
+
+    </form>
+
+  </mat-card>
+
+</div>

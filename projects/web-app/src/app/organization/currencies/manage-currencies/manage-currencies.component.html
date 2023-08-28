@@ -1,0 +1,60 @@
+<div class="container">
+
+  <mat-card>
+
+    <div #currencyFormRef>
+
+      <form #formRef="ngForm" [formGroup]="currencyForm" fxLayout="row" fxLayoutAlign="start baseline" fxLayoutGap="20px"
+        fxFlex="48%" (ngSubmit)="addCurrency()">
+
+        <mat-form-field fxFlex="calc(90%-20px)">
+            <mat-label>Currency</mat-label>
+            <mat-select required formControlName="currency">
+              <mat-option *ngFor="let currency of currencyData" [value]="currency">
+                {{ currency.name }}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="currencyForm.controls.currency.hasError('required')">
+              Currency is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button fxFlex color="primary" 
+          [disabled]="!currencyForm.valid" *mifosxHasPermission="'UPDATE_CURRENCY'">
+          <fa-icon icon="plus"></fa-icon>
+        </button>
+
+      </form>
+
+    </div>
+
+    <mat-grid-list cols="2" rowHeight="50px">
+
+      <mat-grid-tile *ngFor="let currency of selectedCurrencies; index as i">
+
+        <input matInput [value]="currency.name">
+
+        <div fxLayout="row" fxLayoutAlign="flex-start">
+          <button mat-button color="warn" (click)="deleteCurrency(currency.code, i)" *mifosxHasPermission="'UPDATE_CURRENCY'">
+            <fa-icon icon="trash"></fa-icon>
+          </button>
+        </div>
+
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+  </mat-card>
+
+</div>
+
+<ng-template #templateCurrencyFormRef let-popover="popover">
+  <h4>Add Currency Form</h4>
+  <p class="mw400">This form will be used to add currency. To add currency click on add currency and fill the form and then click add else click back or next. For more details click: <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/67141734/Currency+Configuration" target="_blank">Currency Configuration</a></p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="primary" (click)="popover.close();">Add Currency</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStep()">Back</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStep()">Next</button>
+  </div>
+</ng-template>
