@@ -1,0 +1,35 @@
+@import "assets/styles/helper";
+
+.tab-container {
+  padding: 1%;
+  margin: 1%;
+  h3 {
+    margin:1% auto;
+  }
+  .action-button {
+      margin-left: auto;
+  }
+  table {
+    width: 100%;
+    color: $black;
+    .account-action-button{
+      min-width: 26px;
+      padding: 0 0 3px 0;
+      margin: 0 2%;
+      line-height: 25px;
+    }
+    .select-row:hover {
+      cursor: pointer;
+    }
+    .strike {
+      text-decoration: line-through;
+      color: $status-active-overdue;
+    }
+    .linked {
+      color: $status-approved;
+    }
+    .accrual {
+      color: $msg-default;
+    }
+  }
+}

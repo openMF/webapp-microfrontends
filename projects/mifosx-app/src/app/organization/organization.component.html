@@ -1,0 +1,288 @@
+<div class="container">
+
+  <mat-card>
+
+    <div fxLayout="row" fxLayout.lt-md="column">
+
+      <div fxFlex="50%">
+
+        <mat-nav-list>
+
+          <div #office>
+            <mat-list-item [routerLink]="['offices']" *mifosxHasPermission="'READ_OFFICE'">
+              <mat-icon matListIcon>
+                <fa-icon icon="building" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Manage Offices' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Add new office or modify or deactivate office' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #holidays>
+            <mat-list-item [routerLink]="['holidays']" *mifosxHasPermission="'READ_HOLIDAY'">
+              <mat-icon matListIcon>
+                <fa-icon icon="calendar-alt" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Manage Holidays' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Define holidays for office' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #employee>
+            <mat-list-item [routerLink]="['employees']" *mifosxHasPermission="'READ_STAFF'">
+              <mat-icon matListIcon>
+                <fa-icon icon="user" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Manage Employees' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Employee represents loan officers' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #standinginstructions>
+            <mat-list-item [routerLink]="['standing-instructions-history']"
+              *mifosxHasPermission="'READ_STANDINGINSTRUCTION'">
+              <mat-icon matListIcon>
+                <fa-icon icon="book" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Standing Instructions History' | translate }}</h4>
+              <p matLine>{{ 'labels.text.View logged history' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #investor>
+            <mat-list-item [routerLink]="['investors']" *mifosxHasPermission="'READ_OFFICE'">
+              <mat-icon matListIcon>
+                <fa-icon icon="user-tie" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.text.Investors' | translate }}</h4>
+              <p matLine>{{ 'labels.text.View the loan account details associated with the investors' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #fundmapping>
+            <mat-list-item [routerLink]="['fund-mapping']" *mifosxHasPermission="'READ_OFFICE'">
+              <mat-icon matListIcon>
+                <fa-icon icon="money-bill-alt" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Fund Mapping' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Bulk entry screen for mapping' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #passwordpreferences>
+            <mat-list-item [routerLink]="['password-preferences']"
+              *mifosxHasPermission="'READ_PASSWORD_VALIDATION_POLICY'">
+              <mat-icon matListIcon>
+                <fa-icon icon="lock" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Password Preferences' | translate }}</h4>
+              <p matLine>{{ 'labels.text.The usage of stronger passwords' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #provisioning>
+            <mat-list-item [routerLink]="['provisioning-criteria']" *mifosxHasPermission="'VIEW_PROVISIONS'">
+              <mat-icon matListIcon>
+                <fa-icon icon="edit" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Loan Provisioning Criteria' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Loan Provisioning Criteria Organization' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #entitydatatable>
+            <mat-list-item [routerLink]="['entity-data-table-checks']"
+              *mifosxHasPermission="'READ_ENTITY_DATATABLE_CHECK'">
+              <mat-icon matListIcon>
+                <fa-icon icon="check" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Entity Data Table Checks' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Entity Data Table Checks Organization' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+        </mat-nav-list>
+
+      </div>
+
+      <div fxFlex="50%">
+
+        <mat-nav-list>
+
+          <div #addEditCurrency>
+            <mat-list-item [routerLink]="['currencies']" *mifosxHasPermission="'READ_CURRENCY'">
+              <mat-icon matListIcon>
+                <fa-icon icon="cogs" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Currency Configuration' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Currencies available across organization' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #manageFunds>
+            <mat-list-item [routerLink]="['manage-funds']" *mifosxHasPermission="'READ_FUND'">
+              <mat-icon matListIcon>
+                <fa-icon icon="money-bill-alt" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Manage Funds' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Funds are associated with loans' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #bulkloan>
+            <mat-list-item [routerLink]="['bulkloan']" *mifosxHasPermission="'BULKREASSIGN_LOAN'">
+              <mat-icon matListIcon>
+                <fa-icon icon="money-bill-alt" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Bulk Loan Reassignment' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Easy way to reassign all the loan' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #tellers>
+            <mat-list-item [routerLink]="['tellers']" *mifosxHasPermission="'READ_TELLER'">
+              <mat-icon matListIcon>
+                <fa-icon icon="money-bill-alt" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Teller / Cashier Management' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Manage Tellers / Cashiers' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #workingDays>
+            <mat-list-item [routerLink]="['working-days']" *mifosxHasPermission="'READ_WORKINGDAYS'">
+              <mat-icon matListIcon>
+                <fa-icon icon="calendar-alt" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Working Days' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Working days and configure behaviour of payments' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #paymenttypes>
+            <mat-list-item [routerLink]="['payment-types']" *mifosxHasPermission="'READ_PAYMENTTYPE'">
+              <mat-icon matListIcon>
+                <fa-icon icon="dollar-sign" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Payment Type' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Manage payment types' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #smscampaigns>
+            <mat-list-item [routerLink]="['sms-campaigns']" *mifosxHasPermission="'VIEW_SMSCAMPAIGNS'">
+              <mat-icon matListIcon>
+                <fa-icon icon="envelope" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.SMS Campaigns' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Define SMS Campaigns for Organization' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #adhocquery>
+            <mat-list-item [routerLink]="['adhoc-query']" *mifosxHasPermission="'VIEW_ADHOC'">
+              <mat-icon matListIcon>
+                <fa-icon icon="chevron-right" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.AdHocQuery' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Define AdHocQuery for Organization' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+          <div #bulkimport>
+            <mat-list-item [routerLink]="['bulk-import']" *mifosxHasPermission="'VIEW_BULKIMPORT'">
+              <mat-icon matListIcon>
+                <fa-icon icon="upload" size="sm"></fa-icon>
+              </mat-icon>
+              <h4 matLine>{{ 'labels.heading.Bulk Import' | translate }}</h4>
+              <p matLine>{{ 'labels.text.Bulk data import using excel spreadsheet templates' | translate }}</p>
+            </mat-list-item>
+          </div>
+
+        </mat-nav-list>
+
+      </div>
+
+    </div>
+
+  </mat-card>
+
+</div>
+
+<ng-template #templateOffice let-popover="popover">
+  <h2>{{ 'labels.heading.Manage Offices' | translate }}</h2>
+  <p class="mw300">{{ 'labels.text.Manage Offices page allows you to create, edit' | translate }}</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{
+      'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepOffice()">{{ 'labels.buttons.Back' |
+      translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepOffice()">{{ 'labels.buttons.Next' |
+      translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #templateAddEditCurrency let-popover="popover">
+  <h2>{{ 'labels.heading.Currency Configuration' | translate }}</h2>
+  <p class="mw300">{{ 'labels.text.Define what currencies interactions within the Mifos X system' | translate }}</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{
+      'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepAddEditCurrency()">{{
+      'labels.buttons.Back' | translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepAddEditCurrency()">{{
+      'labels.buttons.Next' | translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #templateHolidays let-popover="popover">
+  <h2>{{ 'labels.heading.Manage Holidays' | translate }}</h2>
+  <p class="mw300">{{ 'labels.text.Ability to manage holidays for individual offices' | translate }}</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{
+      'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepHolidays()">{{ 'labels.buttons.Back'
+      | translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepHolidays()">{{ 'labels.buttons.Next' |
+      translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #templateEmployee let-popover="popover">
+  <h2>{{ 'labels.heading.Manage Employees' | translate }}</h2>
+  <p class="mw300">{{ 'labels.text.View, edit and/or delete your organization's employees' | translate }}</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{
+      'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepEmployee()">{{ 'labels.buttons.Back'
+      | translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepEmployee()">{{ 'labels.buttons.Next' |
+      translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #templateWorkingDays let-popover="popover">
+  <h2>{{ 'labels.heading.Working Days' | translate }}</h2>
+  <p class="mw300">{{ 'labels.text.Working days page allows you to define which days' | translate }}</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{
+      'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepWorkingDays()">{{
+      'labels.buttons.Back' | translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepWorkingDays()">{{ 'labels.buttons.Next' |
+      translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #templateManageFunds let-popover="popover">
+  <h2>{{ 'labels.heading.Manage Funds' | translate }}</h2>
+  <p class="mw300">{{ 'labels.text.This allows you to manage funds associated with loans.' | translate }}</p>
+  <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
+    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{
+      'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();previousStepManageFunds()">{{
+      'labels.buttons.Back' | translate }}</button>
+    <button mat-raised-button color="primary" (click)="popover.close();nextStepManageFunds()">{{ 'labels.buttons.Next' |
+      translate }}</button>
+  </div>
+</ng-template>

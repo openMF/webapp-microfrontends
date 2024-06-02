@@ -1,0 +1,12 @@
+@use '@angular/material' as mat;
+
+@mixin groups-view-component-theme($theme) {
+  $primary: map-get($theme, primary);
+  mifosx-groups-view {
+    .group-card {
+      .header {
+        background-color: mat.get-color-from-palette($primary, 500);
+      }
+    }
+  }
+}

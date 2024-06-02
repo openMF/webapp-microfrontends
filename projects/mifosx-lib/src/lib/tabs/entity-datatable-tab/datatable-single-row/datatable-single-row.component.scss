@@ -1,0 +1,33 @@
+@import "assets/styles/helper";
+
+.tab-container {
+  padding: 1%;
+  margin: 1%;
+  .delete-button {
+      margin-left: 1%;
+  }
+}
+
+.table-name {
+  padding-left: 2%;
+}
+
+.table-data {
+  margin-top: 3px;
+}
+
+.system-defined {
+  margin-top: 3px;
+  color: $status-approved !important;
+  font-weight: 100;
+}
+
+.long-text {
+  word-break: break-all;
+  white-space: normal;
+}
+
+.small-icon {
+  width: 30px;
+  height: 30px;
+}
