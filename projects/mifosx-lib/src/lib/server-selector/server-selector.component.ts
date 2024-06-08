@@ -4,7 +4,7 @@ import { UntypedFormControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { UntypedFormBuilder, Validators } from '@angular/forms';
 /** Custom Services */
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '../settings/settings.service';
 
 /**
  * Server Selector Component

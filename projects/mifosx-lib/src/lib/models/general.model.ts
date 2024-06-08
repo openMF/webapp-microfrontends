@@ -67,7 +67,7 @@ export interface Charge {
   currency?:                      Currency;
   amount?:                        number;
   chargeTimeType?:                OptionData;
-  chargeappliesTo?:               OptionData;
+  chargeAppliesTo?:               OptionData;
   chargeCalculationType?:         OptionData;
   chargePaymentMode?:             OptionData;
 }

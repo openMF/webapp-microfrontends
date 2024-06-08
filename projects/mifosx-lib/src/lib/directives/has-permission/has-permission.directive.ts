@@ -2,7 +2,7 @@
 import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
 /** Custom Services */
-import { AuthenticationService } from '@app/core/authentication/authentication.service';
+import { AuthenticationService } from '../../core/authentication/authentication.service';
 
 /**
  * Has Permission Directive

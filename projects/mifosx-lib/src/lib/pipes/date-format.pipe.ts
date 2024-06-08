@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '../settings/settings.service';
 import * as moment from 'moment';
 
 @Pipe({

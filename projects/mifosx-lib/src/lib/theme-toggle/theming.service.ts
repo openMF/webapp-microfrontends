@@ -10,7 +10,7 @@ export class ThemingService {
   themes = ['dark-theme', 'light-theme']; // <- list all themes in this array
   theme = new BehaviorSubject('light-theme'); // <- initial theme
 
-  constructor(private ref: applicationRef) {
+  constructor(private ref: ApplicationRef) {
     // Initially check if dark mode is enabled on system
     this.darkModeOn =
       window.matchMedia &&

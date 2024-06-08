@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Clipboard } from '@angular/cdk/clipboard';
-import { AlertService } from '@app/core/alert/alert.service';
+import { AlertService } from '../core/alert/alert.service';
 
 @Component({
   selector: 'mifosx-external-identifier',

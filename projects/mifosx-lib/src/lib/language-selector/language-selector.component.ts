@@ -4,7 +4,7 @@ import { UntypedFormControl } from '@angular/forms';
 
 /** Custom Services */
 import { TranslateService } from '@ngx-translate/core';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '../settings/settings.service';
 
 /**
  * Language selector component.
