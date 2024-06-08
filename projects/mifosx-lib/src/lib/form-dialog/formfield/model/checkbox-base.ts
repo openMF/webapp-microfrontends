@@ -1,7 +1,7 @@
 import { FormfieldBase } from './formfield-base';
 
 export class CheckboxBase extends FormfieldBase {
-    controlType = 'checkbox';
+    override controlType = 'checkbox';
 
     constructor(options: any) {
         super(options);

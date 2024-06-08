@@ -1,4 +1,4 @@
-import { applicationRef, Injectable } from '@angular/core';
+import { ApplicationRef, Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({

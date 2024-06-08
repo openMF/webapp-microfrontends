@@ -13,7 +13,7 @@
             <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="datePicker" required formControlName="date">
             <mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
             <mat-datepicker #datePicker></mat-datepicker>
-            <mat-error *ngIf="provisioningEntryForm.controls.date.hasError('required')">
+            <mat-error *ngIf="provisioningEntryForm.controls['date'].hasError('required')">
               {{"labels.inputs.Date" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>

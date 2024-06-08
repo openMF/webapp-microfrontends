@@ -13,7 +13,7 @@
             {{ allowedParameter.parameterName }}
           </mat-option>
         </mat-select>
-        <mat-error *ngIf="reportParameterForm.controls.parameterName.hasError('required')">
+        <mat-error *ngIf="reportParameterForm.controls['parameterName'].hasError('required')">
           Report Parameter is <strong>required</strong>
         </mat-error>
       </mat-form-field>

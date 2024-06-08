@@ -12,7 +12,7 @@
             formControlName="transactionDate" required>
           <mat-datepicker-toggle matSuffix [for]="dueDatePicker"></mat-datepicker-toggle>
           <mat-datepicker #dueDatePicker></mat-datepicker>
-          <mat-error *ngIf="editTransactionForm.controls.transactionDate.hasError('required')">
+          <mat-error *ngIf="editTransactionForm.controls['transactionDate'].hasError('required')">
             Transaction Date is <strong>required</strong>
           </mat-error>
         </mat-form-field>
@@ -20,7 +20,7 @@
         <mat-form-field>
           <mat-label>Transaction Amount</mat-label>
           <input type="number" formControlName="transactionAmount" required matInput />
-          <mat-error *ngIf="editTransactionForm.controls.transactionAmount.hasError('required')">
+          <mat-error *ngIf="editTransactionForm.controls['transactionAmount'].hasError('required')">
             Transaction Amount is <strong>required</strong>
           </mat-error>
         </mat-form-field>

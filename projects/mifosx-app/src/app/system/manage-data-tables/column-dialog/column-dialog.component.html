@@ -9,7 +9,7 @@
       <mat-form-field>
         <mat-label>Column Name</mat-label>
         <input matInput required formControlName="name">
-        <mat-error *ngIf="columnForm.controls.name.hasError('required')">
+        <mat-error *ngIf="columnForm.controls['name'].hasError('required')">
           Column Name is <strong>required</strong>
         </mat-error>
       </mat-form-field>

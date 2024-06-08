@@ -13,7 +13,7 @@
             <mat-form-field fxFlex="48%">
               <mat-label>Key</mat-label>
               <input matInput maxlength="32" required formControlName="key">
-              <mat-error *ngIf="surveyForm.controls.key.hasError('required')">
+              <mat-error *ngIf="surveyForm.controls['key'].hasError('required')">
                 Key is <strong>required</strong>
               </mat-error>
             </mat-form-field>
@@ -21,7 +21,7 @@
             <mat-form-field fxFlex="48%">
               <mat-label>Name</mat-label>
               <input matInput maxlength="255" required formControlName="name">
-              <mat-error *ngIf="surveyForm.controls.name.hasError('required')">
+              <mat-error *ngIf="surveyForm.controls['name'].hasError('required')">
                 Name is <strong>required</strong>
               </mat-error>
             </mat-form-field>
@@ -29,10 +29,10 @@
             <mat-form-field fxFlex="48%">
               <mat-label>Country Code</mat-label>
               <input matInput maxlength="2" required formControlName="countryCode">
-              <mat-error *ngIf="surveyForm.controls.countryCode.hasError('required')">
+              <mat-error *ngIf="surveyForm.controls['countryCode'].hasError('required')">
                 Country Code is <strong>required</strong>
               </mat-error>
-              <mat-error *ngIf="surveyForm.controls.countryCode.hasError('pattern')">
+              <mat-error *ngIf="surveyForm.controls['countryCode'].hasError('pattern')">
                 Country Code <strong>must consist of 2 alphabetic characters</strong>
               </mat-error>
             </mat-form-field>
@@ -74,7 +74,7 @@
               <mat-form-field fxFlex="48%">
                 <mat-label>Key</mat-label>
                 <input matInput maxlength="32" required formControlName="key">
-                <mat-error *ngIf="question.controls.key.hasError('required')">
+                <mat-error *ngIf="question['key'].hasError('required')">
                   Key is <strong>required</strong>
                 </mat-error>
               </mat-form-field>
@@ -82,7 +82,7 @@
               <mat-form-field fxFlex="48">
                 <mat-label>Text</mat-label>
                 <input matInput maxlength="255" required formControlName="text">
-                <mat-error *ngIf="question.controls.text.hasError('required')">
+                <mat-error *ngIf="question['text'].hasError('required')">
                   Text is <strong>required</strong>
                 </mat-error>
               </mat-form-field>
@@ -111,7 +111,7 @@
                     <mat-form-field fxFlex="43%">
                       <mat-label>Text</mat-label>
                       <input matInput required formControlName="text">
-                      <mat-error *ngIf="response.controls.text.hasError('required')">
+                      <mat-error *ngIf="response['text'].hasError('required')">
                         Text is <strong>required</strong>
                       </mat-error>
                     </mat-form-field>
@@ -119,10 +119,10 @@
                     <mat-form-field fxFlex="43%">
                       <mat-label>Value</mat-label>
                       <input matInput required formControlName="value">
-                      <mat-error *ngIf="response.controls.value.hasError('required')">
+                      <mat-error *ngIf="response['value'].hasError('required')">
                         Value is <strong>required</strong>
                       </mat-error>
-                      <mat-error *ngIf="response.controls.value.hasError('pattern')">
+                      <mat-error *ngIf="response['value'].hasError('pattern')">
                         Value <strong>must be an integer between -9999 and 9999</strong>
                       </mat-error>
                     </mat-form-field>

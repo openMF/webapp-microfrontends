@@ -96,7 +96,7 @@
       <mat-form-field fxFlex="48%">
         <mat-label>{{'labels.inputs.Maximum Tranche count' | translate}}</mat-label>
         <input type="number" matInput matTooltip="The maximum number of disbursements allowed for a loan account." formControlName="maxTrancheCount" required>
-        <mat-error *ngIf="loanProductSettingsForm.controls.maxTrancheCount.hasError('required')">
+        <mat-error *ngIf="loanProductSettingsForm.controls['maxTrancheCount'].hasError('required')">
           {{'labels.inputs.Maximum Tranche count' | translate}} {{'labels.commons.is' | translate}} <strong>{{'labels.commons.required' | translate}}</strong>
         </mat-error>
       </mat-form-field>
@@ -122,7 +122,7 @@
       <mat-form-field fxFlex="48%">
         <mat-label>{{'labels.inputs.Disbursed Amount Percentage Down Payment' | translate}} (%)</mat-label>
         <input type="number" matInput matTooltip="The percentage of disbursements amount for Down Payment" formControlName="disbursedAmountPercentageForDownPayment" required [min]="0" [max]="100">
-        <mat-error *ngIf="loanProductSettingsForm.controls.disbursedAmountPercentageForDownPayment.hasError('required')">
+        <mat-error *ngIf="loanProductSettingsForm.controls['disbursedAmountPercentageForDownPayment'].hasError('required')">
           {{'labels.inputs.Disbursed Amount Percentage Down Payment' | translate}} {{'labels.commons.is' | translate}} <strong>{{'labels.commons.required' | translate}}</strong>
         </mat-error>
         <mat-error *ngIf="loanProductSettingsForm.controls.disbursedAmountPercentageForDownPayment.errors?.range">

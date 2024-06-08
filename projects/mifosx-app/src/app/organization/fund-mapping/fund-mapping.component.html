@@ -50,7 +50,7 @@
           required formControlName="loanFromDate" required>
         <mat-datepicker-toggle matSuffix [for]="fromDatePicker"></mat-datepicker-toggle>
         <mat-datepicker #fromDatePicker></mat-datepicker>
-        <mat-error *ngIf="fundMappingForm.controls.loanFromDate.hasError('required')">
+        <mat-error *ngIf="fundMappingForm.controls['loanFromDate'].hasError('required')">
           {{ 'labels.inputs.From Date' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
         </mat-error>
       </mat-form-field>
@@ -61,7 +61,7 @@
           required formControlName="loanToDate" required>
         <mat-datepicker-toggle matSuffix [for]="toDatePicker"></mat-datepicker-toggle>
         <mat-datepicker #toDatePicker></mat-datepicker>
-        <mat-error *ngIf="fundMappingForm.controls.loanToDate.hasError('required')">
+        <mat-error *ngIf="fundMappingForm.controls['loanToDate'].hasError('required')">
           {{ 'labels.inputs.To Date' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
         </mat-error>
       </mat-form-field>
@@ -82,7 +82,7 @@
             <mat-option value=">">></mat-option>
             <mat-option value="=">=</mat-option>
           </mat-select>
-          <mat-error *ngIf="fundMappingForm.controls.outStandingAmountPercentageCondition.hasError('required')">
+          <mat-error *ngIf="fundMappingForm.controls['outStandingAmountPercentageCondition'].hasError('required')">
             {{ 'labels.inputs.Comparison Condition' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
           </mat-error>
         </mat-form-field>
@@ -90,7 +90,7 @@
         <mat-form-field *ngIf="fundMappingForm.contains('minOutStandingAmountPercentage')" fxFlex="31%">
           <mat-label>{{ 'labels.inputs.Minimum Value' | translate }}</mat-label>
           <input type="number" matInput required formControlName="minOutStandingAmountPercentage">
-          <mat-error *ngIf="fundMappingForm.controls.minOutStandingAmountPercentage.hasError('required')">
+          <mat-error *ngIf="fundMappingForm.controls['minOutStandingAmountPercentage'].hasError('required')">
             {{ 'labels.inputs.Minimum Value' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
           </mat-error>
         </mat-form-field>
@@ -98,7 +98,7 @@
         <mat-form-field *ngIf="fundMappingForm.contains('outStandingAmountPercentage')" fxFlex="31%">
           <mat-label>{{ 'labels.inputs.Comparison Value' | translate }}</mat-label>
           <input type="number" matInput required formControlName="outStandingAmountPercentage">
-          <mat-error *ngIf="fundMappingForm.controls.outStandingAmountPercentage.hasError('required')">
+          <mat-error *ngIf="fundMappingForm.controls['outStandingAmountPercentage'].hasError('required')">
             {{ 'labels.inputs.Comparison Value' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
           </mat-error>
         </mat-form-field>
@@ -106,7 +106,7 @@
         <mat-form-field *ngIf="fundMappingForm.contains('maxOutStandingAmountPercentage')" fxFlex="31%">
           <mat-label>{{ 'labels.inputs.Maximum Value' | translate }}</mat-label>
           <input type="number" matInput required formControlName="maxOutStandingAmountPercentage">
-          <mat-error *ngIf="fundMappingForm.controls.maxOutStandingAmountPercentage.hasError('required')">
+          <mat-error *ngIf="fundMappingForm.controls['maxOutStandingAmountPercentage'].hasError('required')">
             {{ 'labels.inputs.Maximum Value' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
           </mat-error>
         </mat-form-field>
@@ -129,7 +129,7 @@
             <mat-option value=">">></mat-option>
             <mat-option value="=">=</mat-option>
           </mat-select>
-          <mat-error *ngIf="fundMappingForm.controls.outstandingAmountCondition.hasError('required')">
+          <mat-error *ngIf="fundMappingForm.controls['outstandingAmountCondition'].hasError('required')">
             {{ 'labels.inputs.Comparison Condition' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
           </mat-error>
         </mat-form-field>
@@ -137,7 +137,7 @@
         <mat-form-field *ngIf="fundMappingForm.contains('minOutstandingAmount')" fxFlex="31%">
           <mat-label>{{ 'labels.inputs.Minimum Value' | translate }}</mat-label>
           <input type="number" matInput required formControlName="minOutstandingAmount">
-          <mat-error *ngIf="fundMappingForm.controls.minOutstandingAmount.hasError('required')">
+          <mat-error *ngIf="fundMappingForm.controls['minOutstandingAmount'].hasError('required')">
             {{ 'labels.inputs.Minimum Value' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
           </mat-error>
         </mat-form-field>
@@ -145,7 +145,7 @@
         <mat-form-field *ngIf="fundMappingForm.contains('outstandingAmount')" fxFlex="31%">
           <mat-label>{{ 'labels.inputs.Comparison Value' | translate }}</mat-label>
           <input type="number" matInput required formControlName="outstandingAmount">
-          <mat-error *ngIf="fundMappingForm.controls.outstandingAmount.hasError('required')">
+          <mat-error *ngIf="fundMappingForm.controls['outstandingAmount'].hasError('required')">
             {{ 'labels.inputs.Comparison Value' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
           </mat-error>
         </mat-form-field>
@@ -153,7 +153,7 @@
         <mat-form-field *ngIf="fundMappingForm.contains('maxOutstandingAmount')" fxFlex="31%">
           <mat-label>{{ 'labels.inputs.Maximum Value' | translate }}</mat-label>
           <input type="number" matInput required formControlName="maxOutstandingAmount">
-          <mat-error *ngIf="fundMappingForm.controls.maxOutstandingAmount.hasError('required')">
+          <mat-error *ngIf="fundMappingForm.controls['maxOutstandingAmount'].hasError('required')">
             {{ 'labels.inputs.Maximum Value' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
           </mat-error>
         </mat-form-field>

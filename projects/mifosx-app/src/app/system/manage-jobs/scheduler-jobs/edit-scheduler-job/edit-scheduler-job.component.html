@@ -11,7 +11,7 @@
           <mat-form-field>
             <mat-label>Job Name</mat-label>
             <input matInput required formControlName="displayName">
-            <mat-error *ngIf="jobForm.controls.displayName.hasError('required')">
+            <mat-error *ngIf="jobForm.controls['displayName'].hasError('required')">
               Job Name is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -19,7 +19,7 @@
           <mat-form-field>
             <mat-label>Cron Expression</mat-label>
             <input matInput required formControlName="cronExpression">
-            <mat-error *ngIf="jobForm.controls.cronExpression.hasError('required')">
+            <mat-error *ngIf="jobForm.controls['cronExpression'].hasError('required')">
               Cron Expression is <strong>required</strong>
             </mat-error>
           </mat-form-field>

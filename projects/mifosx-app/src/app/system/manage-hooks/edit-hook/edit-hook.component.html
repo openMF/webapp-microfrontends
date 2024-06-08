@@ -15,7 +15,7 @@
                 {{ hookTemplate.name }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="hookForm.controls.name.hasError('required')">
+            <mat-error *ngIf="hookForm.controls['name'].hasError('required')">
               Hook Template is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -23,7 +23,7 @@
           <mat-form-field fxFlex="40%">
             <mat-label>Display Name</mat-label>
             <input matInput required formControlName="displayName">
-            <mat-error *ngIf="hookForm.controls.displayName.hasError('required')">
+            <mat-error *ngIf="hookForm.controls['displayName'].hasError('required')">
               Display Name is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -48,7 +48,7 @@
                 form
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="hookForm.controls.contentType.hasError('required')">
+            <mat-error *ngIf="hookForm.controls['contentType'].hasError('required')">
               Content Type is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -57,7 +57,7 @@
             <mat-label>Phone Number</mat-label>
             <input matInput type="tel" #input maxlength="10" required formControlName="phoneNumber">
             <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
-            <mat-error *ngIf="hookForm.controls.phoneNumber.hasError('required')">
+            <mat-error *ngIf="hookForm.controls['phoneNumber'].hasError('required')">
               Payload URL is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -65,7 +65,7 @@
           <mat-form-field fxFlex="48%">
             <mat-label>Payload URL</mat-label>
             <input matInput required formControlName="payloadUrl">
-            <mat-error *ngIf="hookForm.controls.payloadUrl.hasError('required')">
+            <mat-error *ngIf="hookForm.controls['payloadUrl'].hasError('required')">
               Payload URL is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -78,7 +78,7 @@
           <mat-form-field fxFlex="30%">
             <mat-label>SMS Provider</mat-label>
             <input matInput required formControlName="smsProvider">
-            <mat-error *ngIf="hookForm.controls.smsProvider.hasError('required')">
+            <mat-error *ngIf="hookForm.controls['smsProvider'].hasError('required')">
               SMS Provider is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -86,7 +86,7 @@
           <mat-form-field fxFlex="30%">
             <mat-label>SMS Provider Account ID</mat-label>
             <input matInput required formControlName="smsProviderAccountId">
-            <mat-error *ngIf="hookForm.controls.smsProviderAccountId.hasError('required')">
+            <mat-error *ngIf="hookForm.controls['smsProviderAccountId'].hasError('required')">
               SMS Provider Account ID is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -94,7 +94,7 @@
           <mat-form-field fxFlex="30%">
             <mat-label>SMS Provider Token</mat-label>
             <input matInput required formControlName="smsProviderToken">
-            <mat-error *ngIf="hookForm.controls.smsProviderToken.hasError('required')">
+            <mat-error *ngIf="hookForm.controls['smsProviderToken'].hasError('required')">
               SMS Provider Token is <strong>required</strong>
             </mat-error>
           </mat-form-field>

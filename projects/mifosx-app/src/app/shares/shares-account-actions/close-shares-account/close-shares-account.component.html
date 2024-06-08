@@ -13,7 +13,7 @@
             <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="closedDatePicker" required formControlName="closedDate">
             <mat-datepicker-toggle matSuffix [for]="closedDatePicker"></mat-datepicker-toggle>
             <mat-datepicker #closedDatePicker></mat-datepicker>
-            <mat-error *ngIf="closeSharesAccountForm.controls.closedDate.hasError('required')">
+            <mat-error *ngIf="closeSharesAccountForm.controls['closedDate'].hasError('required')">
               {{'labels.inputs.Closed On Date' | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>

@@ -11,7 +11,7 @@
           <mat-form-field>
             <mat-label>Classification</mat-label>
             <input matInput required formControlName="classification">
-            <mat-error *ngIf="delinquencyRangeForm.controls.classification.hasError('required')">
+            <mat-error *ngIf="delinquencyRangeForm.controls['classification'].hasError('required')">
               Classification is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -19,7 +19,7 @@
           <mat-form-field>
             <mat-label>Days From</mat-label>
             <input matInput type="number" required formControlName="minimumAgeDays">
-            <mat-error *ngIf="delinquencyRangeForm.controls.minimumAgeDays.hasError('required')">
+            <mat-error *ngIf="delinquencyRangeForm.controls['minimumAgeDays'].hasError('required')">
               Days From is <strong>required</strong>
             </mat-error>
           </mat-form-field>

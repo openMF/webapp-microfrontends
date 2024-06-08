@@ -16,7 +16,7 @@
             <mat-form-field>
               <mat-label>Role Description</mat-label>
               <input matInput required formControlName="description">
-              <mat-error *ngIf="roleForm.controls.description.hasError('required')">
+              <mat-error *ngIf="roleForm.controls['description'].hasError('required')">
                 Description is <strong>required</strong>
               </mat-error>
             </mat-form-field>

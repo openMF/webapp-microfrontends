@@ -15,7 +15,7 @@
                 {{ office.name }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="editClientForm.controls.officeId.hasError('required')">
+            <mat-error *ngIf="editClientForm.controls['officeId'].hasError('required')">
               {{"labels.inputs.Office" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -42,7 +42,7 @@
           <mat-form-field *ngIf="editClientForm.contains('fullname')" fxFlex="48%">
             <mat-label>{{ 'labels.inputs.' + getDateLabel(legalFormId, ['Name', 'Entity Name']) | translate }}</mat-label>
             <input matInput required formControlName="fullname">
-            <mat-error *ngIf="editClientForm.controls.fullname.hasError('required')">
+            <mat-error *ngIf="editClientForm.controls['fullname'].hasError('required')">
               {{"labels.inputs.Client name" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -50,7 +50,7 @@
           <mat-form-field *ngIf="editClientForm.contains('firstname')" fxFlex="48%">
             <mat-label>{{"labels.inputs.First Name" | translate}}</mat-label>
             <input matInput required formControlName="firstname">
-            <mat-error *ngIf="editClientForm.controls.firstname.hasError('required')">
+            <mat-error *ngIf="editClientForm.controls['firstname'].hasError('required')">
               {{"labels.inputs.Client first name" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -63,7 +63,7 @@
           <mat-form-field *ngIf="editClientForm.contains('lastname')" fxFlex="48%">
             <mat-label>{{"labels.inputs.Last Name" | translate}}</mat-label>
             <input matInput required formControlName="lastname">
-            <mat-error *ngIf="editClientForm.controls.lastname.hasError('required')">
+            <mat-error *ngIf="editClientForm.controls['lastname'].hasError('required')">
               {{"labels.inputs.Client last name" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -174,7 +174,7 @@
             <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="submittedOnDatePicker" formControlName="submittedOnDate" required>
             <mat-datepicker-toggle matSuffix [for]="submittedOnDatePicker"></mat-datepicker-toggle>
             <mat-datepicker #submittedOnDatePicker></mat-datepicker>
-            <mat-error *ngIf="editClientForm.controls.submittedOnDate.hasError('required')">
+            <mat-error *ngIf="editClientForm.controls['submittedOnDate'].hasError('required')">
               {{"labels.inputs.Submitted Date" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>

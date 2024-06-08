@@ -22,7 +22,7 @@
                 {{ option.value }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="centerEditMeetingForm.controls.frequency.hasError('repeatsOnDay')">
+            <mat-error *ngIf="centerEditMeetingForm.controls['frequency'].hasError('repeatsOnDay')">
               {{"labels.inputs.Repetition Frequency" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -34,7 +34,7 @@
                 {{ interval }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="centerEditMeetingForm.controls.interval.hasError('repeatsOnDay')">
+            <mat-error *ngIf="centerEditMeetingForm.controls['interval'].hasError('repeatsOnDay')">
               {{"labels.inputs.Repetition Interval" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -46,7 +46,7 @@
               {{ day.value }}
             </mat-option>
           </mat-select>
-          <mat-error *ngIf="centerEditMeetingForm.controls.repeatsOnDay.hasError('repeatsOnDay')">
+          <mat-error *ngIf="centerEditMeetingForm.controls['repeatsOnDay'].hasError('repeatsOnDay')">
             {{"labels.inputs.At least" | translate}} <strong>{{"labels.inputs.one" | translate}}</strong> {{"labels.inputs.day must be selected" | translate}}
           </mat-error>
         </mat-form-field>
@@ -56,7 +56,7 @@
           <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="startDatePicker" required formControlName="startDate">
           <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
           <mat-datepicker #startDatePicker></mat-datepicker>
-          <mat-error *ngIf="centerEditMeetingForm.controls.startDate.hasError('required')">
+          <mat-error *ngIf="centerEditMeetingForm.controls['startDate'].hasError('required')">
             {{"labels.inputs.Changes Affection Date" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
           </mat-error>
           <mat-hint>

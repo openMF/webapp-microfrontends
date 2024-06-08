@@ -15,7 +15,7 @@
                 {{ client.displayName }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="groupsAddRoleForm.controls.clientId.hasError('required')">
+            <mat-error *ngIf="groupsAddRoleForm.controls['clientId'].hasError('required')">
               {{"labels.inputs.Client Member" | translate }} {{ "labels.commons.is"  |translate}} <strong>{{ "labels.commons.required"  |translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -27,7 +27,7 @@
                 {{ role.name }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="groupsAddRoleForm.controls.role.hasError('required')">
+            <mat-error *ngIf="groupsAddRoleForm.controls['role'].hasError('required')">
               {{"labels.inputs.Role" | translate }} {{ "labels.commons.is"  |translate}} <strong>{{ "labels.commons.required"  |translate}}</strong>
             </mat-error>
           </mat-form-field>

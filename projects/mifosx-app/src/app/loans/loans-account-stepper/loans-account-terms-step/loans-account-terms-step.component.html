@@ -5,7 +5,7 @@
     <mat-form-field fxFlex="48%">
       <mat-label>{{"labels.inputs.Principal" | translate}} {{currencyDisplaySymbol}}</mat-label>
       <input type="number" matInput formControlName="principalAmount">
-      <mat-error *ngIf="loansAccountTermsForm.controls.principalAmount.hasError('required')">
+      <mat-error *ngIf="loansAccountTermsForm.controls['principalAmount'].hasError('required')">
         {{"labels.inputs.Principal" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
       </mat-error>
     </mat-form-field>
@@ -16,7 +16,7 @@
     <mat-form-field fxFlex="23%">
       <mat-label>{{"labels.inputs.Loan Term" | translate}}</mat-label>
       <input type="number" matInput required disabled formControlName="loanTermFrequency">
-      <mat-error *ngIf="loansAccountTermsForm.controls.loanTermFrequency.hasError('required')">
+      <mat-error *ngIf="loansAccountTermsForm.controls['loanTermFrequency'].hasError('required')">
         {{"labels.inputs.Loan Term" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
       </mat-error>
     </mat-form-field>
@@ -28,7 +28,7 @@
           {{ type.value | translateCatalog }}
         </mat-option>
       </mat-select>
-      <mat-error *ngIf="loansAccountTermsForm.controls.loanTermFrequencyType.hasError('required')">
+      <mat-error *ngIf="loansAccountTermsForm.controls['loanTermFrequencyType'].hasError('required')">
         {{"labels.inputs.Frequency" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
       </mat-error>
     </mat-form-field>
@@ -45,7 +45,7 @@
       <mat-label>{{"labels.inputs.Number of repayments" | translate}}</mat-label>
       <input type="number" matInput formControlName="numberOfRepayments" matTooltip="Enter the total count of repayments that loan schedule has excluding the down-payment. Example:
       If the loan account has 4 Installments including down-payment then number of repayments is equal to 3">
-      <mat-error *ngIf="loansAccountTermsForm.controls.numberOfRepayments.hasError('required')">
+      <mat-error *ngIf="loansAccountTermsForm.controls['numberOfRepayments'].hasError('required')">
         {{"labels.inputs.Number of repayments" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
       </mat-error>
     </mat-form-field>
@@ -72,7 +72,7 @@
       <mat-label>{{"labels.inputs.Repaid every" | translate}}</mat-label>
       <input type="number" matInput required formControlName="repaymentEvery"
       matTooltip="These fields are input to calculating the repayment schedule for a loan account and are used to determine when payments are due.">
-      <mat-error *ngIf="loansAccountTermsForm.controls.repaymentEvery.hasError('required')">
+      <mat-error *ngIf="loansAccountTermsForm.controls['repaymentEvery'].hasError('required')">
         {{"labels.inputs.Repaid every" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
       </mat-error>
     </mat-form-field>
@@ -143,7 +143,7 @@
             {{ amortizationType.value | translateCatalog }}
           </mat-option>
         </mat-select>
-        <mat-error *ngIf="loansAccountTermsForm.controls.amortizationType.hasError('required')">
+        <mat-error *ngIf="loansAccountTermsForm.controls['amortizationType'].hasError('required')">
           {{"labels.inputs.Amortization Type" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
         </mat-error>
       </mat-form-field>
@@ -179,7 +179,7 @@
               {{ amortizationType.value | translateCatalog }}
             </mat-option>
           </mat-select>
-          <mat-error *ngIf="loansAccountTermsForm.controls.amortizationType.hasError('required')">
+          <mat-error *ngIf="loansAccountTermsForm.controls['amortizationType'].hasError('required')">
             {{"labels.inputs.Amortization Type" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
           </mat-error>
         </mat-form-field>
@@ -204,7 +204,7 @@
           {{ transactionProcessingStrategy.name | translateCatalog }}
         </mat-option>
       </mat-select>
-      <mat-error *ngIf="loansAccountTermsForm.controls.transactionProcessingStrategyCode.hasError('required')">
+      <mat-error *ngIf="loansAccountTermsForm.controls['transactionProcessingStrategyCode'].hasError('required')">
         {{"labels.inputs.Repayment Strategy" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
       </mat-error>
     </mat-form-field>

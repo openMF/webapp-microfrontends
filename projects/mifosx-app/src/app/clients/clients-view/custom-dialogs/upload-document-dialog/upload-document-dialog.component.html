@@ -5,7 +5,7 @@
     <mat-form-field fxFlex>
       <mat-label>{{"labels.inputs.File Name" | translate}}</mat-label>
       <input formControlName="fileName" required matInput />
-      <mat-error *ngIf="uploadDocumentForm.controls.fileName.hasError('required')">
+      <mat-error *ngIf="uploadDocumentForm.controls['fileName'].hasError('required')">
         {{"labels.inputs.File Name" | translate}} is <strong>required</strong>
       </mat-error>
     </mat-form-field>

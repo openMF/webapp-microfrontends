@@ -14,7 +14,7 @@
                 {{ savingsCharge.name + ' (' + savingsCharge.currency.name + ')' }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="fixedDepositsChargeForm.controls.chargeId.hasError('required')">
+            <mat-error *ngIf="fixedDepositsChargeForm.controls['chargeId'].hasError('required')">
               {{"labels.inputs.Charge" | translate }} {{ "labels.commons.is"  |translate}} <strong>{{ "labels.commons.required"  |translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -24,7 +24,7 @@
             <mat-form-field>
               <mat-label>{{"labels.inputs.Amount" | translate }}</mat-label>
               <input type="number" required matInput formControlName="amount" />
-              <mat-error *ngIf="fixedDepositsChargeForm.controls.amount.hasError('required')">
+              <mat-error *ngIf="fixedDepositsChargeForm.controls['amount'].hasError('required')">
                 {{"labels.inputs.Amount" | translate }} {{ "labels.commons.is"  |translate}} <strong>{{ "labels.commons.required"  |translate}}</strong>
               </mat-error>
             </mat-form-field>
@@ -54,7 +54,7 @@
                 formControlName="dueDate">
               <mat-datepicker-toggle matSuffix [for]="dueDatePicker"></mat-datepicker-toggle>
               <mat-datepicker #dueDatePicker></mat-datepicker>
-              <mat-error *ngIf="fixedDepositsChargeForm.controls.dueDate.hasError('required')">
+              <mat-error *ngIf="fixedDepositsChargeForm.controls['dueDate'].hasError('required')">
                 {{"labels.inputs.Due for collection on" | translate }} {{ "labels.commons.is"  |translate}} <strong>{{ "labels.commons.required"  |translate}}</strong>
               </mat-error>
             </mat-form-field>
@@ -65,7 +65,7 @@
                 formControlName="feeOnMonthDay">
               <mat-datepicker-toggle matSuffix [for]="feeOnMonthDayPicker"></mat-datepicker-toggle>
               <mat-datepicker #feeOnMonthDayPicker></mat-datepicker>
-              <mat-error *ngIf="fixedDepositsChargeForm.controls.feeOnMonthDay.hasError('required')">
+              <mat-error *ngIf="fixedDepositsChargeForm.controls['feeOnMonthDay'].hasError('required')">
                 {{"labels.inputs.Due Date" | translate }} {{ "labels.commons.is"  |translate}} <strong>{{ "labels.commons.required"  |translate}}</strong>
               </mat-error>
             </mat-form-field>

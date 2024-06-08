@@ -11,7 +11,7 @@
             <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="activatedDatePicker" required formControlName="activatedDate">
             <mat-datepicker-toggle matSuffix [for]="activatedDatePicker"></mat-datepicker-toggle>
             <mat-datepicker #activatedDatePicker></mat-datepicker>
-            <mat-error *ngIf="activateSharesAccountForm.controls.activatedDate.hasError('required')">
+            <mat-error *ngIf="activateSharesAccountForm.controls['activatedDate'].hasError('required')">
               {{'labels.inputs.Activated On Date' | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>

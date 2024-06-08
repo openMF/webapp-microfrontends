@@ -7,7 +7,7 @@
           <mat-form-field fxFlex="48%">
             <mat-label>{{"labels.inputs.Name" | translate}}</mat-label>
             <input matInput required autoFocus formControlName="name">
-            <mat-error *ngIf="collateralForm.controls.name.hasError('required')">
+            <mat-error *ngIf="collateralForm.controls['name'].hasError('required')">
               {{"labels.inputs.Name" | translate}} {{"labels.commons.is" | translate}}
               <strong>{{"labels.commons.required" |translate}}</strong>
             </mat-error>
@@ -16,7 +16,7 @@
           <mat-form-field fxFlex="48%">
             <mat-label>{{"labels.inputs.Type/Quality" | translate}}</mat-label>
             <input matInput required autoFocus formControlName="quality">
-            <mat-error *ngIf="collateralForm.controls.quality.hasError('required')">
+            <mat-error *ngIf="collateralForm.controls['quality'].hasError('required')">
               {{"labels.inputs.Type/Quality" | translate}} {{"labels.commons.is" | translate}}
               <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
@@ -25,7 +25,7 @@
           <mat-form-field fxFlex="48%">
             <mat-label>{{"labels.inputs.Unit Type" | translate}}</mat-label>
             <input matInput required autoFocus formControlName="unitType">
-            <mat-error *ngIf="collateralForm.controls.unitType.hasError('required')">
+            <mat-error *ngIf="collateralForm.controls['unitType'].hasError('required')">
               {{"labels.inputs.Unit Type" | translate}} {{"labels.commons.is" | translate}}
               <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
@@ -34,7 +34,7 @@
           <mat-form-field fxFlex="48%">
             <mat-label>{{"labels.inputs.Base Price" | translate}}</mat-label>
             <input matInput required autoFocus formControlName="basePrice">
-            <mat-error *ngIf="collateralForm.controls.basePrice.hasError('required')">
+            <mat-error *ngIf="collateralForm.controls['basePrice'].hasError('required')">
               {{"labels.inputs.Base Price" | translate}} {{"labels.commons.is" | translate}}
               <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
@@ -43,7 +43,7 @@
           <mat-form-field fxFlex="48%">
             <mat-label>{{"labels.inputs.Percentage to Base" | translate}}</mat-label>
             <input matInput required autoFocus formControlName="pctToBase">
-            <mat-error *ngIf="collateralForm.controls.pctToBase.hasError('required')">
+            <mat-error *ngIf="collateralForm.controls['pctToBase'].hasError('required')">
               {{"labels.inputs.Percentage to Base" | translate}} {{"labels.commons.is" | translate}}
               <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
@@ -56,7 +56,7 @@
                 {{ currency.name }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="collateralForm.controls.currency.hasError('required')">
+            <mat-error *ngIf="collateralForm.controls['currency'].hasError('required')">
               {{"labels.heading.Currency" | translate}} {{"labels.commons.is" | translate}}
               <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>

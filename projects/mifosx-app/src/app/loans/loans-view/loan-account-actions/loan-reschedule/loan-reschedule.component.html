@@ -14,7 +14,7 @@
               formControlName="rescheduleFromDate">
             <mat-datepicker-toggle matSuffix [for]="rescheduleDatePicker"></mat-datepicker-toggle>
             <mat-datepicker #rescheduleDatePicker></mat-datepicker>
-            <mat-error *ngIf="rescheduleLoanForm.controls.rescheduleFromDate.hasError('required')">
+            <mat-error *ngIf="rescheduleLoanForm.controls['rescheduleFromDate'].hasError('required')">
               {{"labels.inputs.Reschedule Date" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -26,7 +26,7 @@
                 {{ rescheduleReasonCode.name }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="rescheduleLoanForm.controls.rescheduleReasonId.hasError('required')">
+            <mat-error *ngIf="rescheduleLoanForm.controls['rescheduleReasonId'].hasError('required')">
               {{"labels.inputs.Reason for Rescheduling" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -37,7 +37,7 @@
               formControlName="submittedOnDate">
             <mat-datepicker-toggle matSuffix [for]="submittedDatePicker"></mat-datepicker-toggle>
             <mat-datepicker #submittedDatePicker></mat-datepicker>
-            <mat-error *ngIf="rescheduleLoanForm.controls.submittedOnDate.hasError('required')">
+            <mat-error *ngIf="rescheduleLoanForm.controls['submittedOnDate'].hasError('required')">
               {{"labels.inputs.Submitted On Date" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>

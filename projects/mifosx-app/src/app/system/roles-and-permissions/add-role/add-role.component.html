@@ -11,7 +11,7 @@
           <mat-form-field>
             <mat-label>Name</mat-label>
             <input matInput required formControlName="name">
-            <mat-error *ngIf="roleForm.controls.name.hasError('required')">
+            <mat-error *ngIf="roleForm.controls['name'].hasError('required')">
               Role Name is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -19,7 +19,7 @@
           <mat-form-field>
             <mat-label>Description</mat-label>
             <textarea matInput required formControlName="description"></textarea>
-            <mat-error *ngIf="roleForm.controls.description.hasError('required')">
+            <mat-error *ngIf="roleForm.controls['description'].hasError('required')">
               Role Description is <strong>required</strong>
             </mat-error>
           </mat-form-field>

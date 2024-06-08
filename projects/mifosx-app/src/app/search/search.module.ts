@@ -7,7 +7,7 @@ import { SearchRoutingModule } from './search-routing.module';
 
 /** Custom Components */
 import { SearchPageComponent } from './search-page/search-page.component';
-import { PipesModule } from '@app/pipes/pipes.module';
+import { PipesModule } from '@mifosx-lib/pipes/pipes.module';
 
 /**
  * Search Module

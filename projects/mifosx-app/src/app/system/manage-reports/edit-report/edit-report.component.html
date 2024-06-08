@@ -11,7 +11,7 @@
           <mat-form-field fxFlex="30%">
             <mat-label>Report Name</mat-label>
             <input matInput required formControlName="reportName">
-            <mat-error *ngIf="reportForm.controls.reportName.hasError('required')">
+            <mat-error *ngIf="reportForm.controls['reportName'].hasError('required')">
               Report Name is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -23,7 +23,7 @@
                 {{ allowedReportType }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="reportForm.controls.reportType.hasError('required')">
+            <mat-error *ngIf="reportForm.controls['reportType'].hasError('required')">
               Report Type is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -70,7 +70,7 @@
           <mat-form-field fxFlex="98%">
             <mat-label>SQL</mat-label>
             <textarea matInput required formControlName="reportSql" cdkTextareaAutosize cdkAutosizeMinRows="6"></textarea>
-            <mat-error *ngIf="reportForm.controls.reportSql.hasError('required')">
+            <mat-error *ngIf="reportForm.controls['reportSql'].hasError('required')">
               SQL is <strong>required</strong>
             </mat-error>
           </mat-form-field>

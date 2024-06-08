@@ -11,7 +11,7 @@
           <mat-form-field fxFlex="25%">
             <mat-label>Floating Rate Name</mat-label>
             <input matInput required matTooltip="Unique name for the floating rate scheme." formControlName="name">
-            <mat-error *ngIf="floatingRateForm.controls.name.hasError('required')">
+            <mat-error *ngIf="floatingRateForm.controls['name'].hasError('required')">
               Floating Rate Name is <strong>required</strong>
             </mat-error>
           </mat-form-field>

@@ -11,7 +11,7 @@
           <mat-form-field>
             <mat-label>{{ 'labels.inputs.Office' | translate }}</mat-label>
             <input required matInput formControlName="name">
-            <mat-error *ngIf="officeForm.controls.name.hasError('required')">
+            <mat-error *ngIf="officeForm.controls['name'].hasError('required')">
               {{ 'labels.inputs.Office' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
             </mat-error>
           </mat-form-field>
@@ -23,7 +23,7 @@
                 {{ office.name }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="officeForm.controls.parentId.hasError('required')">
+            <mat-error *ngIf="officeForm.controls['parentId'].hasError('required')">
               {{ 'labels.inputs.Parent Office' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
             </mat-error>
           </mat-form-field>
@@ -33,7 +33,7 @@
             <input matInput [min]="minDate" [max]="maxDate" formControlName="openingDate" required [matDatepicker]="openedOnDatePicker">
             <mat-datepicker-toggle matSuffix [for]="openedOnDatePicker"></mat-datepicker-toggle>
             <mat-datepicker #openedOnDatePicker></mat-datepicker>
-            <mat-error *ngIf="officeForm.controls.openingDate.hasError('required')">
+            <mat-error *ngIf="officeForm.controls['openingDate'].hasError('required')">
               {{ 'labels.inputs.Opening Date' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
             </mat-error>
           </mat-form-field>

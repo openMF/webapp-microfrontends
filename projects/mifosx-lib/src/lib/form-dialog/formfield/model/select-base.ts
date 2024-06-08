@@ -2,7 +2,7 @@ import { FormfieldBase } from './formfield-base';
 
 export class SelectBase extends FormfieldBase {
 
-  controlType = 'select';
+  override controlType = 'select';
   options: {
     label: string,
     value: string,

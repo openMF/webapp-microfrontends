@@ -11,7 +11,7 @@
           <mat-form-field fxFlex="100%">
             <mat-label>Name</mat-label>
             <input matInput required formControlName="name">
-            <mat-error *ngIf="bucketForm.controls.name.hasError('required')">
+            <mat-error *ngIf="bucketForm.controls['name'].hasError('required')">
               Name is <strong>required</strong>
             </mat-error>
           </mat-form-field>

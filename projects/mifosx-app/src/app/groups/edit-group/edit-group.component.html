@@ -11,10 +11,10 @@
           <mat-form-field>
             <mat-label>{{"labels.inputs.name" | translate }}</mat-label>
             <input matInput required formControlName="name">
-            <mat-error *ngIf="editGroupForm.controls.name.hasError('required')">
+            <mat-error *ngIf="editGroupForm.controls['name'].hasError('required')">
               {{"labels.inputs.Group Name" | translate }} {{ "labels.commons.is"  |translate}} <strong>{{ "labels.commons.required"  |translate}}</strong>
             </mat-error>
-            <mat-error *ngIf="editGroupForm.controls.name.hasError('pattern')">
+            <mat-error *ngIf="editGroupForm.controls['name'].hasError('pattern')">
               {{"labels.inputs.Group Name" | translate }} <strong>{{"labels.inputs.cannot" | translate }}</strong> {{ "labels.commons.begin with a special character or number" | translate }}
             </mat-error>
           </mat-form-field>
@@ -33,7 +33,7 @@
             <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="submittedOnDatePicker" required formControlName="submittedOnDate">
             <mat-datepicker-toggle matSuffix [for]="submittedOnDatePicker"></mat-datepicker-toggle>
             <mat-datepicker #submittedOnDatePicker></mat-datepicker>
-            <mat-error *ngIf="editGroupForm.controls.submittedOnDate.hasError('required')">
+            <mat-error *ngIf="editGroupForm.controls['submittedOnDate'].hasError('required')">
               {{"labels.inputs.Submission Date" | translate }} {{ "labels.commons.is"  |translate}} <strong>{{ "labels.commons.required"  |translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -43,7 +43,7 @@
             <input matInput [min]="editGroupForm.value.submittedOnDate" [max]="maxDate" [matDatepicker]="activationDatePicker" required formControlName="activationDate">
             <mat-datepicker-toggle matSuffix [for]="activationDatePicker"></mat-datepicker-toggle>
             <mat-datepicker #activationDatePicker></mat-datepicker>
-            <mat-error *ngIf="editGroupForm.controls.activationDate.hasError('required')">
+            <mat-error *ngIf="editGroupForm.controls['activationDate'].hasError('required')">
               {{"labels.inputs.Activation Date" | translate }} {{ "labels.commons.is"  |translate}} <strong>{{ "labels.commons.required"  |translate}}</strong>
             </mat-error>
           </mat-form-field>

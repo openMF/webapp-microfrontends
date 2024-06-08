@@ -13,7 +13,7 @@
             {{ grouping.name }}
           </mat-option>
         </mat-select>
-        <mat-error *ngIf="eventForm.controls.grouping.hasError('required')">
+        <mat-error *ngIf="eventForm.controls['grouping'].hasError('required')">
           Grouping is <strong>required</strong>
         </mat-error>
       </mat-form-field>
@@ -25,7 +25,7 @@
             {{ entity.name }}
           </mat-option>
         </mat-select>
-        <mat-error *ngIf="eventForm.controls.entity.hasError('required')">
+        <mat-error *ngIf="eventForm.controls['entity'].hasError('required')">
           Entity is <strong>required</strong>
         </mat-error>
       </mat-form-field>
@@ -37,7 +37,7 @@
             {{ action }}
           </mat-option>
         </mat-select>
-        <mat-error *ngIf="eventForm.controls.action.hasError('required')">
+        <mat-error *ngIf="eventForm.controls['action'].hasError('required')">
           Action is <strong>required</strong>
         </mat-error>
       </mat-form-field>

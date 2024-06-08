@@ -15,7 +15,7 @@
                 {{ productOption.name }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="productMixForm.controls.productId.hasError('required')">
+            <mat-error *ngIf="productMixForm.controls['productId'].hasError('required')">
               Product is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -27,7 +27,7 @@
                 {{ product.name }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="productMixForm.controls.restrictedProducts.hasError('required')" >
+            <mat-error *ngIf="productMixForm.controls['restrictedProducts'].hasError('required')" >
               At least one restricted product <strong>must be selected</strong>
             </mat-error>
           </mat-form-field>

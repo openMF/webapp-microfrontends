@@ -11,7 +11,7 @@
         <input required matInput formControlName="fromDate" [min]="minDate" [matDatepicker]="fromDatePicker">
         <mat-datepicker-toggle matSuffix [for]="fromDatePicker"></mat-datepicker-toggle>
         <mat-datepicker #fromDatePicker></mat-datepicker>
-        <mat-error *ngIf="floatingRatePeriodForm.controls.fromDate.hasError('required')">
+        <mat-error *ngIf="floatingRatePeriodForm.controls['fromDate'].hasError('required')">
           From Date is <strong>required</strong>
         </mat-error>
       </mat-form-field>
@@ -19,7 +19,7 @@
       <mat-form-field>
         <mat-label>Interest Rate</mat-label>
         <input matInput type="number" required formControlName="interestRate">
-        <mat-error *ngIf="floatingRatePeriodForm.controls.interestRate.hasError('required')">
+        <mat-error *ngIf="floatingRatePeriodForm.controls['interestRate'].hasError('required')">
           Interest Rate is <strong>required</strong>
         </mat-error>
       </mat-form-field>

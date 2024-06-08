@@ -25,7 +25,7 @@
                 {{ staff.displayName }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="createCashierForm.controls.staffId.hasError('required')">
+            <mat-error *ngIf="createCashierForm.controls['staffId'].hasError('required')">
               {{ 'labels.inputs.Cashier' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
             </mat-error>
           </mat-form-field>
@@ -40,7 +40,7 @@
             <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="fromDatePicker" required formControlName="startDate">
             <mat-datepicker-toggle matSuffix [for]="fromDatePicker"></mat-datepicker-toggle>
             <mat-datepicker #fromDatePicker></mat-datepicker>
-            <mat-error *ngIf="createCashierForm.controls.startDate.hasError('required')">
+            <mat-error *ngIf="createCashierForm.controls['startDate'].hasError('required')">
               {{ 'labels.inputs.From Date' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
             </mat-error>
           </mat-form-field>
@@ -50,7 +50,7 @@
             <input matInput [min]="createCashierForm.value.startDate" [max]="maxDate" [matDatepicker]="toDatePicker" required formControlName="endDate">            
             <mat-datepicker-toggle matSuffix [for]="toDatePicker"></mat-datepicker-toggle>
             <mat-datepicker #toDatePicker></mat-datepicker>
-            <mat-error *ngIf="createCashierForm.controls.endDate.hasError('required')">
+            <mat-error *ngIf="createCashierForm.controls['endDate'].hasError('required')">
               {{ 'labels.inputs.To Date' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
             </mat-error>
           </mat-form-field>

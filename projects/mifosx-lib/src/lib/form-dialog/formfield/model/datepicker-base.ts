@@ -2,7 +2,7 @@ import { FormfieldBase } from './formfield-base';
 
 export class DatepickerBase extends FormfieldBase {
 
-  controlType = 'datepicker';
+  override controlType = 'datepicker';
   minDate: Date;
   maxDate: Date;
 

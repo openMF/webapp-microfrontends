@@ -20,7 +20,7 @@
                 {{ appTable.displayValue }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="dataTableForm.controls.apptableName.hasError('required')">
+            <mat-error *ngIf="dataTableForm.controls['apptableName'].hasError('required')">
               application Table Name is <strong>required</strong>
             </mat-error>
           </mat-form-field>

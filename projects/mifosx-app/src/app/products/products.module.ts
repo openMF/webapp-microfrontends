@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 /** Custom Modules */
 import { MifosxLibModule } from '@mifosx-lib/mifosx-lib.module';
 import { ProductsRoutingModule } from './products-routing.module';
-import { PipesModule } from '@app/pipes/pipes.module';
+import { PipesModule } from '@mifosx-lib/pipes/pipes.module';
 import { DirectivesModule } from '@mifosx-lib/directives/directives.module';
 
 /** Custom Components */

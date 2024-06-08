@@ -15,7 +15,7 @@
               {{ date | dateFormat }}
             </mat-option>
           </mat-select>
-          <mat-error *ngIf="groupEditMeetingScheduleForm.controls.presentMeetingDate.hasError('repeatsOnDay')">
+          <mat-error *ngIf="groupEditMeetingScheduleForm.controls['presentMeetingDate'].hasError('repeatsOnDay')">
             {{"labels.inputs.Existing Meeting Date"  |translate}} {{ "labels.commons.is"  |translate}} <strong>{{ "labels.commons.required"  |translate}}</strong>
           </mat-error>
         </mat-form-field>
@@ -25,7 +25,7 @@
           <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="newMeetingDatePicker" required formControlName="newMeetingDate">
           <mat-datepicker-toggle matSuffix [for]="newMeetingDatePicker"></mat-datepicker-toggle>
           <mat-datepicker #newMeetingDatePicker></mat-datepicker>
-          <mat-error *ngIf="groupEditMeetingScheduleForm.controls.newMeetingDate.hasError('required')">
+          <mat-error *ngIf="groupEditMeetingScheduleForm.controls['newMeetingDate'].hasError('required')">
             {{"labels.inputs.Revised Meeting Date"  |translate}} {{ "labels.commons.is"  |translate}} <strong>{{ "labels.commons.required"  |translate}}</strong>
           </mat-error>
         </mat-form-field>

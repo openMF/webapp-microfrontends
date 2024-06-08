@@ -14,7 +14,7 @@
               formControlName="transactionDate">
             <mat-datepicker-toggle matSuffix [for]="transactionDatePicker"></mat-datepicker-toggle>
             <mat-datepicker #transactionDatePicker></mat-datepicker>
-            <mat-error *ngIf="chargeoffLoanForm.controls.transactionDate.hasError('required')">
+            <mat-error *ngIf="chargeoffLoanForm.controls['transactionDate'].hasError('required')">
               {{"labels.inputs.Transaction Date" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>
@@ -26,7 +26,7 @@
                 {{ chargeOffReason.name }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="chargeoffLoanForm.controls.chargeOffReasonId.hasError('required')">
+            <mat-error *ngIf="chargeoffLoanForm.controls['chargeOffReasonId'].hasError('required')">
               {{"labels.inputs.Reason for Charge-Off" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
             </mat-error>
           </mat-form-field>

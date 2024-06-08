@@ -11,7 +11,7 @@
           <mat-form-field fxFlex="40%">
             <mat-label>Data Table Name</mat-label>
             <input matInput required formControlName="datatableName">
-            <mat-error *ngIf="dataTableForm.controls.datatableName.hasError('required')">
+            <mat-error *ngIf="dataTableForm.controls['datatableName'].hasError('required')">
               Data Table Name is <strong>required</strong>
             </mat-error>
           </mat-form-field>
@@ -23,7 +23,7 @@
                 {{ appTable.displayValue }}
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="dataTableForm.controls.apptableName.hasError('required')">
+            <mat-error *ngIf="dataTableForm.controls['apptableName'].hasError('required')">
               Application Table Name is <strong>required</strong>
             </mat-error>
           </mat-form-field>

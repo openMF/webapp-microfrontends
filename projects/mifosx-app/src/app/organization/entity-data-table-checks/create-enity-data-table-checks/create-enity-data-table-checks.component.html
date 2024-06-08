@@ -15,7 +15,7 @@
                 {{ entity.name }} 
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="createEntityForm.controls.entity.hasError('required')">
+            <mat-error *ngIf="createEntityForm.controls['entity'].hasError('required')">
               {{ 'labels.inputs.Entity' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
             </mat-error>
           </mat-form-field>
@@ -27,7 +27,7 @@
                 {{ status.name }} 
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="createEntityForm.controls.status.hasError('required')">
+            <mat-error *ngIf="createEntityForm.controls['status'].hasError('required')">
               {{ 'labels.inputs.Status' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
             </mat-error>
           </mat-form-field>
@@ -39,7 +39,7 @@
                 {{ dataTable.dataTableName }} 
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="createEntityForm.controls.datatableName.hasError('required')">
+            <mat-error *ngIf="createEntityForm.controls['datatableName'].hasError('required')">
               {{ 'labels.inputs.Data Table' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
             </mat-error>
           </mat-form-field>
@@ -51,7 +51,7 @@
                 {{ loanProducts.name }} 
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="createEntityForm.controls.productId.hasError('required')">
+            <mat-error *ngIf="createEntityForm.controls['productId'].hasError('required')">
               {{ 'labels.inputs.Loan Product' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
             </mat-error>
           </mat-form-field>
@@ -63,7 +63,7 @@
                 {{ savingsProducts.name }} 
               </mat-option>
             </mat-select>
-            <mat-error *ngIf="createEntityForm.controls.productId.hasError('required')">
+            <mat-error *ngIf="createEntityForm.controls['productId'].hasError('required')">
               {{ 'labels.inputs.Loan Product' | translate }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate }}</strong>
             </mat-error>
           </mat-form-field>

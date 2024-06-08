@@ -2,7 +2,7 @@ import { FormfieldBase } from './formfield-base';
 
 export class InputBase extends FormfieldBase {
 
-  controlType = 'input';
+  override controlType = 'input';
   type: string;
 
   constructor(options: {} = {}) {
