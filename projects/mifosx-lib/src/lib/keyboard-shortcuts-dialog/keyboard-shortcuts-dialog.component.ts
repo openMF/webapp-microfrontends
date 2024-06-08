@@ -1,7 +1,7 @@
 /** Angular Imports */
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { KeyboardShortcutsConfiguration } from '@app/keyboards-shortcut-config';
+import { KeyboardShortcutsConfiguration } from '../../keyboards-shortcut-config';
 /**
  * Delete dialog component.
  */

@@ -1,6 +1,6 @@
 import { DecimalPipe } from '@angular/common';
 import { Pipe, PipeTransform } from '@angular/core';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '../settings/settings.service';
 
 @Pipe({
   name: 'formatNumber'
@@ -11,9 +11,9 @@ export class FormatNumberPipe implements PipeTransform {
     private settingsService: SettingsService) {
   }
 
-  transform(value: string | number, defaultValue: any): string {
+  transform(value: string | number, ...args: unknown[]): string {
     if (!value) {
-      return defaultValue ? defaultValue : '';
+     return '';
     }
     const locale = this.settingsService.language.code;
     const decimals = this.settingsService.decimals;

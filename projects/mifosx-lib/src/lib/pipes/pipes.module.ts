@@ -12,54 +12,13 @@ import { ExternalIdentifierPipe } from './external-identifier.pipe';
 import { FormatNumberPipe } from './format-number.pipe';
 import { YesnoPipe } from './yesno.pipe';
 import { PrettyPrintPipe } from './pretty-print.pipe';
-import { TranslateCatalogPipe } from './translate-catalog.pipe';
-import { TruncateTextPipe } from './truncate-text.pipe';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [StatusLookupPipe,
-  AccountsFilterPipe,
-  ChargesFilterPipe,
-  ChargesPenaltyFilterPipe,
-  FindPipe,
-  UrlToStringPipe,
-  DateFormatPipe,
-  DatetimeFormatPipe,
-  ExternalIdentifierPipe,
-  FormatNumberPipe,
-  YesnoPipe,
-  PrettyPrintPipe,
-  TranslateCatalogPipe,
-  TruncateTextPipe],
-  providers: [StatusLookupPipe,
-  AccountsFilterPipe,
-  ChargesFilterPipe,
-  ChargesPenaltyFilterPipe,
-  FindPipe,
-  UrlToStringPipe,
-  DateFormatPipe,
-  DatetimeFormatPipe,
-  ExternalIdentifierPipe,
-  FormatNumberPipe,
-  YesnoPipe,
-  PrettyPrintPipe,
-  TranslateCatalogPipe,
-  TruncateTextPipe],
-  exports: [StatusLookupPipe,
-  AccountsFilterPipe,
-  ChargesFilterPipe,
-  ChargesPenaltyFilterPipe,
-  FindPipe,
-  UrlToStringPipe,
-  DateFormatPipe,
-  DatetimeFormatPipe,
-  ExternalIdentifierPipe,
-  FormatNumberPipe,
-  YesnoPipe,
-  PrettyPrintPipe,
-  TranslateCatalogPipe,
-  TruncateTextPipe]
+  declarations: [StatusLookupPipe, AccountsFilterPipe, ChargesFilterPipe, ChargesPenaltyFilterPipe, FindPipe, UrlToStringPipe, DateFormatPipe, DatetimeFormatPipe, ExternalIdentifierPipe, FormatNumberPipe, YesnoPipe, PrettyPrintPipe ],
+  providers: [StatusLookupPipe, AccountsFilterPipe, ChargesFilterPipe, ChargesPenaltyFilterPipe, FindPipe, UrlToStringPipe, DateFormatPipe, DatetimeFormatPipe, ExternalIdentifierPipe, FormatNumberPipe, YesnoPipe, PrettyPrintPipe ],
+  exports: [StatusLookupPipe, AccountsFilterPipe, ChargesFilterPipe, ChargesPenaltyFilterPipe, FindPipe, UrlToStringPipe, DateFormatPipe, DatetimeFormatPipe, ExternalIdentifierPipe, FormatNumberPipe, YesnoPipe, PrettyPrintPipe ]
 })
 export class PipesModule { }

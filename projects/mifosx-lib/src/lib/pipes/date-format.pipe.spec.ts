@@ -1,5 +1,5 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from 'app/settings/settings.service';
 import { DateFormatPipe } from './date-format.pipe';
 
 describe('DateFormatPipe', () => {
