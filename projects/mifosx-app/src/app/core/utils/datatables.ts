@@ -71,6 +71,8 @@ export class Datatables {
             required: (column.isColumnNullable) ? false : true
           });
         }
+        default:
+          return {};
       }
     });
   }

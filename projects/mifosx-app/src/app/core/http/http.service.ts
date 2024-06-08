@@ -88,23 +88,23 @@ export class HttpService extends HttpClient {
     }
   }
 
-  cache(forceUpdate?: boolean): HttpClient {
+  override cache(forceUpdate?: boolean): HttpClient {
     const cacheInterceptor = this.injector.get(CacheInterceptor).configure({ update: forceUpdate });
     return this.addInterceptor(cacheInterceptor);
   }
 
-  skipErrorHandler(): HttpClient {
+  override skipErrorHandler(): HttpClient {
     return this.removeInterceptor(ErrorHandlerInterceptor);
   }
 
-  disableApiPrefix(): HttpClient {
+  override disableApiPrefix(): HttpClient {
     return this.removeInterceptor(ApiPrefixInterceptor);
   }
 
   /**
    *  Override the original method to wire interceptors when triggering the request.
    */
-  request(method?: any, url?: any, options?: any): any {
+  override request(method?: any, url?: any, options?: any): any {
     const handler = this.interceptors.reduceRight(
       (next, interceptor) => new HttpInterceptorHandler(next, interceptor),
       this.httpHandler

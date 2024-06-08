@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot } from '@angular/router';
 
 /** rxjs Imports */
-import { Observable } from 'rxjs';
+import { EMPTY, Observable } from 'rxjs';
 
 /** Custom Services */
 import { LoansService } from '../loans.service';
@@ -28,6 +28,7 @@ export class LoanDetailsResolver implements Resolve<Object> {
       if (!isNaN(+loanId)) {
         return this.loansService.getLoanAccountAssociationDetails(loanId);
       }
+      return EMPTY;
     }
 
 }

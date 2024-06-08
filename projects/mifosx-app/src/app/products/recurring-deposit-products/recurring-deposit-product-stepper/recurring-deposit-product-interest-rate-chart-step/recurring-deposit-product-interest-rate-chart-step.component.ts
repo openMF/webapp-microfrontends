@@ -313,7 +313,7 @@ export class RecurringDepositProductInterestRateChartStepComponent implements On
     });
   }
 
-  getData(formType: string, values?: any) {
+  getData(formType: string, values?: any): any {
     switch (formType) {
       case 'Slab': return { title: this.translateService.instant('labels.inputs.Slab'), formfields: this.getSlabFormfields(values) };
       case 'Incentive': return { values, chartTemplate: this.recurringDepositProductsTemplate.chartTemplate };

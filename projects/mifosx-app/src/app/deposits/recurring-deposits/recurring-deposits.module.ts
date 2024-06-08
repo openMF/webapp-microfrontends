@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 /** Custom Modules */
 import { RecurringDepositsRoutingModule } from './recurring-deposits-routing.module';
 import { MifosxLibModule } from '@mifosx-lib/mifosx-lib.module';
-import { PipesModule } from '../@mifosx-lib/pipes/pipes.module';
-import { DirectivesModule } from '../../directives/directives.module';
+import { PipesModule } from '@mifosx-lib/pipes/pipes.module';
+import { DirectivesModule } from '@mifosx-lib/directives/directives.module'; 
 
 /** Custom Components */
 import { RecurringDepositsAccountViewComponent } from './recurring-deposits-account-view/recurring-deposits-account-view.component';

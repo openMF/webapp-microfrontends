@@ -21,7 +21,7 @@ import { Dates } from '@app/core/utils/dates';
   templateUrl: './client-approval.component.html',
   styleUrls: ['./client-approval.component.scss']
 })
-export class ClientapprovalComponent {
+export class ClientApprovalComponent {
 
   /** Grouped Clients Data */
   groupedClients: any;
@@ -62,11 +62,12 @@ export class ClientapprovalComponent {
   }
 
   /** Whether the number of selected elements matches the total number of rows. */
-  isAllSelected(dataSource2: any) {
+  isAllSelected(dataSource2: any): boolean {
     if (dataSource2) {
       const numSelected = this.selection.selected;
       return _.difference(dataSource2, numSelected).length === 0;
     }
+    return false;
   }
 
   /** Selects all rows if they are not all selected; otherwise clear selection. */

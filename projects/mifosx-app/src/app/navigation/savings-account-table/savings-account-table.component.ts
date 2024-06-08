@@ -5,7 +5,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
 /** Custom Pipes */
-import { AccountsFilterPipe } from '../@mifosx-lib/pipes/accounts-filter.pipe';
+import { AccountsFilterPipe } from '@mifosx-lib/pipes/accounts-filter.pipe';
 
 @Component({
   selector: 'mifosx-savings-account-table',

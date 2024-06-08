@@ -73,10 +73,11 @@ export class CreateLoanProductComponent implements OnInit {
     return this.loanProductDetailsStep.loanProductDetailsForm;
   }
 
-  get loanProductCurrencyForm() {
+  get loanProductCurrencyForm(): any {
     if (this.loanProductCurrencyStep != null) {
       return this.loanProductCurrencyStep.loanProductCurrencyForm;
     }
+    return {};
   }
 
   get loanProductTermsForm() {

@@ -97,11 +97,12 @@ export class LoanApprovalComponent {
   }
 
   /** Whether the number of selected elements matches the total number of rows. */
-  isAllSelected(dataSource2: any) {
+  isAllSelected(dataSource2: any): boolean {
     if (dataSource2) {
       const numSelected = this.selection.selected;
       return _.difference(dataSource2, numSelected).length === 0;
     }
+    return false;
   }
 
   /** Selects all rows if they are not all selected; otherwise clear selection. */
