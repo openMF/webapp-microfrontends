@@ -1,0 +1,17 @@
+.card {
+  min-width: 18.5rem;
+  padding: 0;
+  .header {
+    #office{
+      margin-bottom: -1.20em;
+    }
+  }
+  #timescale {
+    margin: 2% 35%;
+  }
+  .fallback {
+    overflow-x: auto;
+    max-width: 100%;
+    min-height: 16.5rem;
+  }
+}
