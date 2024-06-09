@@ -136,6 +136,40 @@
           }
         }
       }
+    },
+    "finearct-client": {
+      "projectType": "library",
+      "root": "projects/finearct-client",
+      "sourceRoot": "projects/finearct-client/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/finearct-client/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/finearct-client/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/finearct-client/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/finearct-client/src/test.ts",
+            "tsConfig": "projects/finearct-client/tsconfig.spec.json",
+            "karmaConfig": "projects/finearct-client/karma.conf.js"
+          }
+        }
+      }
     }
+  },
+  "cli": {
+    "analytics": "fb2cd6e7-245c-4b1b-901a-10fd9a7a803d"
   }
 }
