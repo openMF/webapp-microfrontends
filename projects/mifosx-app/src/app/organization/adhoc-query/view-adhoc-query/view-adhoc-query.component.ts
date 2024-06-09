@@ -51,6 +51,7 @@ export class ViewAdhocQueryComponent implements OnInit {
         return reportRunFrequency.value;
       }
     }
+    return '';
   }
 
   /**

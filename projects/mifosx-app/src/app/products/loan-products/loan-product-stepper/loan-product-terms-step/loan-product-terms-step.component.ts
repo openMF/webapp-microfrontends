@@ -253,7 +253,7 @@ export class LoanProductTermsStepComponent implements OnInit, OnChanges {
     });
   }
 
-  getData(formType: string, values?: any) {
+  getData(formType: string, values?: any): any {
     switch (formType) {
       case 'Principal': return {
         title: this.translateService.instant('labels.heading.Principal by loan cycle'), formfields: this.getFormfields(values)

@@ -1,9 +1,9 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { DelinquencyBucket, LoanProduct } from '../../models/loan-product.model';
-import { AccountingMapping, Charge, ChargeToIncomeAccountMapping, GLAccount, PaymentChannelToFundSourceMapping, PaymentType, PaymentTypeOption } from 'mifosx-lib/models/general.model';
+import { AccountingMapping, Charge, ChargeToIncomeAccountMapping, GLAccount, PaymentChannelToFundSourceMapping, PaymentType, PaymentTypeOption } from '@mifosx-lib/models/general.model';
 import { AdvancePaymentAllocationData, CreditAllocation, PaymentAllocation } from '../../loan-product-stepper/loan-product-payment-strategy-step/payment-allocation-model';
 import { LoanProducts } from '../../loan-products';
-import { CodeName, OptionData } from 'mifosx-lib/models/option-data.model';
+import { CodeName, OptionData } from '@mifosx-lib/models/option-data.model';
 import { Accounting } from '@app/core/utils/accounting';
 
 @Component({

@@ -240,7 +240,7 @@ export class SavingProductAccountingStepComponent implements OnInit {
     });
   }
 
-  getData(formType: string, values?: any) {
+  getData(formType: string, values?: any): any {
     switch (formType) {
       case 'PaymentFundSource': return { title: this.translateService.instant('labels.heading.Configure Fund Sources for Payment Channels'),
         formfields: this.getPaymentFundSourceFormfields(values) };

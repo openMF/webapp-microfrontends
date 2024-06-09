@@ -64,6 +64,7 @@ export class LoanProductAccountingStepComponent implements OnInit {
           'receivableFeeAccountId': accountingMappings.receivableFeeAccount.id,
           'receivablePenaltyAccountId': accountingMappings.receivablePenaltyAccount.id,
         });
+        break;
         /* falls through */
       case 2:
         this.loanProductAccountingForm.patchValue({
@@ -97,6 +98,7 @@ export class LoanProductAccountingStepComponent implements OnInit {
         this.loanProductAccountingForm.setControl('penaltyToIncomeAccountMappings',
           this.formBuilder.array((this.loanProductsTemplate.penaltyToIncomeAccountMappings || []).map((penaltyIncome: any) =>
           ({ chargeId: penaltyIncome.charge.id, incomeAccountId: penaltyIncome.incomeAccount.id }))));
+        break;
     }
   }
 
@@ -228,7 +230,7 @@ export class LoanProductAccountingStepComponent implements OnInit {
     });
   }
 
-  getData(formType: string, values?: any) {
+  getData(formType: string, values?: any): any {
     switch (formType) {
       case 'PaymentFundSource': return { title: 'Configure Fund Sources for Payment Channels', formfields: this.getPaymentFundSourceFormfields(values) };
       case 'FeesIncome': return { title: 'Map Fees to Income Accounts', formfields: this.getFeesIncomeFormfields(values) };
