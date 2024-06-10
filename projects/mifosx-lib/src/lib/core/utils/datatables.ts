@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { SettingsService } from 'app/settings/settings.service';
-import { CheckboxBase } from 'app/shared/form-dialog/formfield/model/checkbox-base';
-import { DatepickerBase } from 'app/shared/form-dialog/formfield/model/datepicker-base';
-import { DateTimepickerBase } from 'app/shared/form-dialog/formfield/model/datetimepicker-base';
-import { InputBase } from 'app/shared/form-dialog/formfield/model/input-base';
-import { SelectBase } from 'app/shared/form-dialog/formfield/model/select-base';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { CheckboxBase } from '@mifosx-lib/form-dialog/formfield/model/checkbox-base';
+import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepicker-base';
+import { DateTimepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datetimepicker-base';
+import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
+import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base';
 import { Dates } from './dates';
 
 @Injectable({

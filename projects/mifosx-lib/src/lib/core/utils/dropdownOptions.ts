@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { OptionData } from 'app/shared/models/option-data.model';
+import { OptionData } from '@mifosx-lib/models/option-data.model';
 
 @Injectable({
     providedIn: 'root'

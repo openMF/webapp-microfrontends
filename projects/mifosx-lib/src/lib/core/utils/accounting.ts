@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { AccountingMapping, GLAccount } from 'app/shared/models/general.model';
-import { OptionData } from 'app/shared/models/option-data.model';
+import { AccountingMapping, GLAccount } from '@mifosx-lib/models/general.model';
+import { OptionData } from '@mifosx-lib/models/option-data.model';
 
 
 @Injectable({
