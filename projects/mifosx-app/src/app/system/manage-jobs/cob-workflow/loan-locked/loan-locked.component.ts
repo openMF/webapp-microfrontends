@@ -4,10 +4,10 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, Router } from '@angular/router';
-import { LoansService } from '@app/loans/loans.service';
+import { LoansService } from '@mifosx-app/loans/loans.service';
 import { ErrorDialogComponent } from '@mifosx-lib/error-dialog/error-dialog.component';
-import { SystemService } from '@app/system/system.service';
-import { TasksService } from '@app/tasks/tasks.service';
+import { SystemService } from '@mifosx-app/system/system.service';
+import { TasksService } from '@mifosx-app/tasks/tasks.service';
 
 @Component({
   selector: 'mifosx-loan-locked',

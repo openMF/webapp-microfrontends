@@ -137,23 +137,23 @@
         }
       }
     },
-    "finearct-client": {
+    "fineract-client": {
       "projectType": "library",
-      "root": "projects/finearct-client",
-      "sourceRoot": "projects/finearct-client/src",
+      "root": "projects/fineract-client",
+      "sourceRoot": "projects/fineract-client/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/finearct-client/ng-package.json"
+            "project": "projects/fineract-client/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/finearct-client/tsconfig.lib.prod.json"
+              "tsConfig": "projects/fineract-client/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/finearct-client/tsconfig.lib.json"
+              "tsConfig": "projects/fineract-client/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -161,9 +161,9 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/finearct-client/src/test.ts",
-            "tsConfig": "projects/finearct-client/tsconfig.spec.json",
-            "karmaConfig": "projects/finearct-client/karma.conf.js"
+            "main": "projects/fineract-client/src/test.ts",
+            "tsConfig": "projects/fineract-client/tsconfig.spec.json",
+            "karmaConfig": "projects/fineract-client/karma.conf.js"
           }
         }
       }

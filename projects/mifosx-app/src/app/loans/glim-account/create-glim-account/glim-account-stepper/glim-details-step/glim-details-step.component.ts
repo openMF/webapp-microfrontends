@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
-import { LoansService } from '@app/loans/loans.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { LoansService } from '@mifosx-app/loans/loans.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({
   selector: 'mifosx-glim-details-step',

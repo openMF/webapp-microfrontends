@@ -12,7 +12,7 @@ import { HomeService } from '../../home.service';
 
 /** Charting Imports */
 import Chart from 'chart.js';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Client Trends Bar Chart Component.

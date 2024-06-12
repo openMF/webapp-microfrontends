@@ -3,8 +3,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 
 /** Custom Services */
-import { SavingsService } from '@app/savings/savings.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SavingsService } from '@mifosx-app/savings/savings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Savings Account Details Step

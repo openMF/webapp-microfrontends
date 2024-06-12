@@ -1,11 +1,11 @@
 /** Angular Imports */
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators, UntypedFormControl } from '@angular/forms';
-import { ClientsService } from '@app/clients/clients.service';
-import { Dates } from '@app/core/utils/dates';
+import { ClientsService } from '@mifosx-app/clients/clients.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /** Custom Services */
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Create Client Component

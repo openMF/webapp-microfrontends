@@ -16,8 +16,8 @@ import { TaskManagementComponent } from './task-management/task-management.compo
 
 /** Custom Resolvers */
 import { ViewUserResolver } from './users/view-user/view-user.resolver';
-import { OfficesResolver } from '@app/organization/offices/common-resolvers/offices.resolver';
-import { UsersResolver } from '@app/users/users.resolver';
+import { OfficesResolver } from '@mifosx-app/organization/offices/common-resolvers/offices.resolver';
+import { UsersResolver } from '@mifosx-app/users/users.resolver';
 
 /** Self Service Admin Portal Routes */
 const routes: Routes = [

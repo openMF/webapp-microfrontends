@@ -10,12 +10,12 @@ import { TooltipPosition } from '@angular/material/tooltip';
 
 /** Custom Services */
 import { ProductsService } from '../../products.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Custom Components */
 import { FloatingRatePeriodDialogComponent } from '../floating-rate-period-dialog/floating-rate-period-dialog.component';
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Create Floating Rate Component.

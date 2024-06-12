@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Dates } from '@app/core/utils/dates';
-import { ReleaseAmountDialogComponent } from '@app/savings/savings-account-view/custom-dialogs/release-amount-dialog/release-amount-dialog.component';
-import { UndoTransactionDialogComponent } from '@app/savings/savings-account-view/custom-dialogs/undo-transaction-dialog/undo-transaction-dialog.component';
-import { SavingsService } from '@app/savings/savings.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { ReleaseAmountDialogComponent } from '@mifosx-app/savings/savings-account-view/custom-dialogs/release-amount-dialog/release-amount-dialog.component';
+import { UndoTransactionDialogComponent } from '@mifosx-app/savings/savings-account-view/custom-dialogs/undo-transaction-dialog/undo-transaction-dialog.component';
+import { SavingsService } from '@mifosx-app/savings/savings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({
   selector: 'mifosx-savings-transaction-general-tab',

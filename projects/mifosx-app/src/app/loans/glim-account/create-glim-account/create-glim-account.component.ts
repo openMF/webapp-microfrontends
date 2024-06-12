@@ -1,9 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Dates } from '@app/core/utils/dates';
-import { LoansService } from '@app/loans/loans.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { LoansService } from '@mifosx-app/loans/loans.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { GlimChargesStepComponent } from './glim-account-stepper/glim-charges-step/glim-charges-step.component';
 import { GlimDetailsStepComponent } from './glim-account-stepper/glim-details-step/glim-details-step.component';
 import { GlimTermsStepComponent } from './glim-account-stepper/glim-terms-step/glim-terms-step.component';

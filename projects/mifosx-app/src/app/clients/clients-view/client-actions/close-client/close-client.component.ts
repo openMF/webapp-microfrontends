@@ -4,9 +4,9 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms
 import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
-import { ClientsService } from '@app/clients/clients.service';
-import { Dates } from '@app/core/utils/dates';
-import { SettingsService } from '@app/settings/settings.service';
+import { ClientsService } from '@mifosx-app/clients/clients.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Close Client Component

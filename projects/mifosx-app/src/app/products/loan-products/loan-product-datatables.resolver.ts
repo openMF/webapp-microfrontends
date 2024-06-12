@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot } from '@angular/router';
-import { SystemService } from '@app/system/system.service';
+import { SystemService } from '@mifosx-app/system/system.service';
 import { Observable } from 'rxjs';
 
 @Injectable({

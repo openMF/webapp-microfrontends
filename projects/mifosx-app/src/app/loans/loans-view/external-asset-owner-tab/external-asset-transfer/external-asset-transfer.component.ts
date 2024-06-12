@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ExternalAssetOwner } from '@app/loans/services/external-asset-owner';
+import { ExternalAssetOwner } from '@mifosx-app/loans/services/external-asset-owner';
 
 @Component({
   selector: 'mifosx-external-asset-transfer',

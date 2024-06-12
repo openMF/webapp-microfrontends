@@ -3,11 +3,11 @@ import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 import { UntypedFormGroup, Validators, UntypedFormBuilder, UntypedFormControl } from '@angular/forms';
 
 /** Custom Services */
-import { ReportsService } from '@app/reports/reports.service';
+import { ReportsService } from '@mifosx-app/reports/reports.service';
 
 /** Custom Models */
-import { ReportParameter } from '@app/reports/common-models/report-parameter.model';
-import { SettingsService } from '@app/settings/settings.service';
+import { ReportParameter } from '@mifosx-app/reports/common-models/report-parameter.model';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Edit SMS Campaign step.

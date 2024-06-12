@@ -5,8 +5,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { UntypedFormControl } from '@angular/forms';
 
 /** Custom Services */
-import { CentersService } from '@app/centers/centers.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { CentersService } from '@mifosx-app/centers/centers.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Custom Dialogs */
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
@@ -14,7 +14,7 @@ import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.compone
 /** Custom Models */
 import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield-base';
 import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Center Attendance component.

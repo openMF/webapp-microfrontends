@@ -6,9 +6,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 /**
  * Custom Services
  */
-import { ClientsService } from '@app/clients/clients.service';
-import { ProductsService } from '@app/products/products.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { ClientsService } from '@mifosx-app/clients/clients.service';
+import { ProductsService } from '@mifosx-app/products/products.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({
   selector: 'mifosx-add-client-collateral',

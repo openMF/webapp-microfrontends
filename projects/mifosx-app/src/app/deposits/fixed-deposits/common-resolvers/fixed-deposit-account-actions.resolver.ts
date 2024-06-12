@@ -6,7 +6,7 @@ import { Resolve, ActivatedRouteSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
 
 /** Custom Services */
-import { SavingsService } from '@app/savings/savings.service';
+import { SavingsService } from '@mifosx-app/savings/savings.service';
 import { FixedDepositsService } from '../fixed-deposits.service';
 
 /**

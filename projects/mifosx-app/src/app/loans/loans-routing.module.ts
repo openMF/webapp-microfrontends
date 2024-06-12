@@ -19,7 +19,7 @@ import { LoanTrancheDetailsComponent } from './loans-view/loan-tranche-details/l
 import { LoanCollateralTabComponent } from './loans-view/loan-collateral-tab/loan-collateral-tab.component';
 import { CreateLoansAccountComponent } from './create-loans-account/create-loans-account.component';
 import { LoanDocumentsTabComponent } from './loans-view/loan-documents-tab/loan-documents-tab.component';
-import { StandingInstructionsTabComponent } from '@app/loans/loans-view/standing-instructions-tab/standing-instructions-tab.component';
+import { StandingInstructionsTabComponent } from '@mifosx-app/loans/loans-view/standing-instructions-tab/standing-instructions-tab.component';
 import { EditLoansAccountComponent } from './edit-loans-account/edit-loans-account.component';
 import { ViewChargeComponent } from './loans-view/view-charge/view-charge.component';
 import { ViewTransactionComponent } from './loans-view/transactions/view-transaction/view-transaction.component';
@@ -42,12 +42,12 @@ import { LoansAccountChargeResolver } from './common-resolvers/loans-account-cha
 import { LoansAccountTransactionResolver } from './common-resolvers/loans-account-transaction.resolver';
 import { LoansTransactionRecieptResolver } from './common-resolvers/loans-transaction-reciept.resolver';
 import { LoansAccountTransactionTemplateResolver } from './common-resolvers/loans-account-transaction-template.resolver';
-import { SavingsAccountViewResolver } from '@app/savings/common-resolvers/savings-account-view.resolver';
-import { GroupAccountsResolver } from '@app/groups/common-resolvers/group-account.resolver';
+import { SavingsAccountViewResolver } from '@mifosx-app/savings/common-resolvers/savings-account-view.resolver';
+import { GroupAccountsResolver } from '@mifosx-app/groups/common-resolvers/group-account.resolver';
 import { GLIMViewResolver } from './glim-account/glim-account-view.resolver';
-import { GSIMAccountsResolver } from '@app/groups/common-resolvers/gsim-account-resolver';
+import { GSIMAccountsResolver } from '@mifosx-app/groups/common-resolvers/gsim-account-resolver';
 import { GLIMLoanTemplateResolver } from './common-resolvers/glim-loan-template.resolver';
-import { GroupViewResolver } from '@app/groups/common-resolvers/group-view.resolver';
+import { GroupViewResolver } from '@mifosx-app/groups/common-resolvers/group-view.resolver';
 import { LoanDelinquencyTagsResolver } from './common-resolvers/loan-delinquency-tags.resolver';
 import { LoanDelinquencyTagsTabComponent } from './loans-view/loan-delinquency-tags-tab/loan-delinquency-tags-tab.component';
 import { LoanReschedulesResolver } from './common-resolvers/loan-reschedules.resolver';

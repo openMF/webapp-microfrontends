@@ -4,7 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
 import { ClientsService } from '../../../clients.service';
-import { AuthenticationService } from '@app/core/authentication/authentication.service';
+import { AuthenticationService } from '@mifosx-app/core/authentication/authentication.service';
 
 /**
  * Take Survey Component

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ViewJournalEntryComponent } from '../view-journal-entry/view-journal-entry.component';
-import { RevertTransactionComponent } from '@app/accounting/revert-transaction/revert-transaction.component';
-import { AccountingService } from '@app/accounting/accounting.service';
+import { RevertTransactionComponent } from '@mifosx-app/accounting/revert-transaction/revert-transaction.component';
+import { AccountingService } from '@mifosx-app/accounting/accounting.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatSort } from '@angular/material/sort';

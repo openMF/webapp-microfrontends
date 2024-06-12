@@ -7,8 +7,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
 
 /** Custom Services */
-import { GroupsService } from '@app/groups/groups.service';
-import { ClientsService } from '@app/clients/clients.service';
+import { GroupsService } from '@mifosx-app/groups/groups.service';
+import { ClientsService } from '@mifosx-app/clients/clients.service';
 import { MatDialog } from '@angular/material/dialog';
 
 /**

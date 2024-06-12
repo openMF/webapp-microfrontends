@@ -5,11 +5,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 
 /** Custom Services */
-import { LoansService } from '@app/loans/loans.service';
+import { LoansService } from '@mifosx-app/loans/loans.service';
 
 /** Dialog Components */
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
-import { LoansAccountViewGuarantorDetailsDialogComponent } from '@app/loans/custom-dialog/loans-account-view-guarantor-details-dialog/loans-account-view-guarantor-details-dialog.component';
+import { LoansAccountViewGuarantorDetailsDialogComponent } from '@mifosx-app/loans/custom-dialog/loans-account-view-guarantor-details-dialog/loans-account-view-guarantor-details-dialog.component';
 
 /**
  * View Guarantors Action

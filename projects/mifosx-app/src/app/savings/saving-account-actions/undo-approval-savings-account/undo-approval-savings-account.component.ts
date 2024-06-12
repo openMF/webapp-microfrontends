@@ -4,7 +4,7 @@ import { UntypedFormGroup, UntypedFormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
-import { SavingsService } from '@app/savings/savings.service';
+import { SavingsService } from '@mifosx-app/savings/savings.service';
 
 /**
  * Undo Approval Savings Account Component

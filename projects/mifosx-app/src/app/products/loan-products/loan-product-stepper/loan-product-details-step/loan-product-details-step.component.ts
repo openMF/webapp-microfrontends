@@ -1,11 +1,11 @@
 /** Angular Imports */
 import { Component, OnInit, Input } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 import { TooltipPosition } from '@angular/material/tooltip';
 
 /** Custom Services */
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({
   selector: 'mifosx-loan-product-details-step',

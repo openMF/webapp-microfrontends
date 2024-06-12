@@ -2,7 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators, UntypedFormControl } from '@angular/forms';
 import { LoanProducts } from '../../loan-products';
 import { rangeValidator } from '@mifosx-lib/validators/percentage.validator';
-import { GlobalConfiguration } from '@app/system/configurations/global-configurations-tab/configuration.model';
+import { GlobalConfiguration } from '@mifosx-app/system/configurations/global-configurations-tab/configuration.model';
 import { CodeName, OptionData } from '@mifosx-lib/models/option-data.model';
 import { ProcessingStrategyService } from '../../services/processing-strategy.service';
 

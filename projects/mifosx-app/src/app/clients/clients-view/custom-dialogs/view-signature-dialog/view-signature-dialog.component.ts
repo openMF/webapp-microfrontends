@@ -4,7 +4,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DomSanitizer } from '@angular/platform-browser';
 
 /** Custom Services */
-import { ClientsService } from '@app/clients/clients.service';
+import { ClientsService } from '@mifosx-app/clients/clients.service';
 
 /**
  * View signature dialog component.

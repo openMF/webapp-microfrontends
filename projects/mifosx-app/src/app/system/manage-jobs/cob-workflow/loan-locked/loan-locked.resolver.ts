@@ -4,7 +4,7 @@ import {
   RouterStateSnapshot,
   ActivatedRouteSnapshot
 } from '@angular/router';
-import { TasksService } from '@app/tasks/tasks.service';
+import { TasksService } from '@mifosx-app/tasks/tasks.service';
 import { Observable, of } from 'rxjs';
 
 @Injectable({

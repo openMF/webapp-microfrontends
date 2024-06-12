@@ -14,7 +14,7 @@ import { FixedDepositsButtonsConfiguration } from './fixed-deposits-buttons.conf
 
 /** Custom Services */
 import { FixedDepositsService } from '../fixed-deposits.service';
-import { SavingsService } from '@app/savings/savings.service';
+import { SavingsService } from '@mifosx-app/savings/savings.service';
 import { Currency } from '@mifosx-lib/models/general.model';
 
 /**

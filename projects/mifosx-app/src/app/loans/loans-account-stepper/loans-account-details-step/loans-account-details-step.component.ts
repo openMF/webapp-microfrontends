@@ -2,12 +2,12 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { TooltipPosition } from '@angular/material/tooltip';
 
 /** Custom Services */
 import { LoansService } from '../../loans.service';
-import { Commons } from '@app/core/utils/commons';
+import { Commons } from '@mifosx-app/core/utils/commons';
 
 /**
  * Loans Account Details Step

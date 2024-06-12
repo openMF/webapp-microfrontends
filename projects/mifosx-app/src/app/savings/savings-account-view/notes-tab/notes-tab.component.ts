@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AuthenticationService } from '@app/core/authentication/authentication.service';
-import { SavingsService } from '@app/savings/savings.service';
+import { AuthenticationService } from '@mifosx-app/core/authentication/authentication.service';
+import { SavingsService } from '@mifosx-app/savings/savings.service';
 
 @Component({
   selector: 'mifosx-notes-tab',

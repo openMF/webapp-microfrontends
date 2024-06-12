@@ -7,7 +7,7 @@ import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.c
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
 import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield-base';
 import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base';
-import { SystemService } from '@app/system/system.service';
+import { SystemService } from '@mifosx-app/system/system.service';
 import { JobStep } from './workflow-diagram/workflow-diagram.component';
 
 @Component({

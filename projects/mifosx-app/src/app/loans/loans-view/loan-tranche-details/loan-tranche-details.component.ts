@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
-import { Dates } from '@app/core/utils/dates';
-import { LoansService } from '@app/loans/loans.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { LoansService } from '@mifosx-app/loans/loans.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
 import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepicker-base';

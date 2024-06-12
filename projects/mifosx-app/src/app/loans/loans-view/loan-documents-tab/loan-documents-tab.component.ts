@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 /** Custom Services */
-import { environment } from '@app/../environments/environment';
-import { LoansService } from '@app/loans/loans.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { environment } from '@mifosx-app/../environments/environment';
+import { LoansService } from '@mifosx-app/loans/loans.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Overdue charges tab component

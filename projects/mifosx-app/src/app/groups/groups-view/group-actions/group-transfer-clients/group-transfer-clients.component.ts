@@ -4,8 +4,8 @@ import { UntypedFormGroup, UntypedFormBuilder, FormControl, Validators } from '@
 import { Router, ActivatedRoute } from '@angular/router';
 
 /** Custom Services */
-import { GroupsService } from '@app/groups/groups.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { GroupsService } from '@mifosx-app/groups/groups.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Group Transfer Clients component.

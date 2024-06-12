@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
-import { Dates } from '@app/core/utils/dates';
-import { SettingsService } from '@app/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({
   selector: 'mifosx-loans-account-datatable-step',

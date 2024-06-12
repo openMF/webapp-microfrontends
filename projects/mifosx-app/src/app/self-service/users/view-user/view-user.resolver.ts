@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 
 /** Custom Model */
 import { User } from '../user.model';
-import { UsersService } from '@app/users/users.service';
+import { UsersService } from '@mifosx-app/users/users.service';
 
 /**
  * View self service user data resolver.

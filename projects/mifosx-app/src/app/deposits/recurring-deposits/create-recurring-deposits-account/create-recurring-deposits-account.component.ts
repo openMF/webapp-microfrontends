@@ -4,14 +4,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
 import { RecurringDepositsService } from '../recurring-deposits.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Step Components */
 import { RecurringDepositsAccountDetailsStepComponent } from '../recurring-deposits-account-stepper/recurring-deposits-account-details-step/recurring-deposits-account-details-step.component';
 import { RecurringDepositsAccountTermsStepComponent } from '../recurring-deposits-account-stepper/recurring-deposits-account-terms-step/recurring-deposits-account-terms-step.component';
 import { RecurringDepositsAccountSettingsStepComponent } from '../recurring-deposits-account-stepper/recurring-deposits-account-settings-step/recurring-deposits-account-settings-step.component';
 import { RecurringDepositsAccountChargesStepComponent } from '../recurring-deposits-account-stepper/recurring-deposits-account-charges-step/recurring-deposits-account-charges-step.component';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Create new recurring deposit account

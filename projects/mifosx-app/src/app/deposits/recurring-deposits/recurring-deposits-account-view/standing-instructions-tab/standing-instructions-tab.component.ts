@@ -5,9 +5,9 @@ import { MatTableDataSource, MatTable } from '@angular/material/table';
 import { ActivatedRoute } from '@angular/router';
 
 /** Custom Services */
-import { RecurringDepositsService } from '@app/deposits/recurring-deposits/recurring-deposits.service';
-import { AccountTransfersService } from '@app/account-transfers/account-transfers.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { RecurringDepositsService } from '@mifosx-app/deposits/recurring-deposits/recurring-deposits.service';
+import { AccountTransfersService } from '@mifosx-app/account-transfers/account-transfers.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Dialog Components */
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';

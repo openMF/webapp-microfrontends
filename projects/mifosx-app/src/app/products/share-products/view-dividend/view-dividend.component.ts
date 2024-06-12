@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { ProductsService } from '@app/products/products.service';
+import { ProductsService } from '@mifosx-app/products/products.service';
 
 @Component({
   selector: 'mifosx-view-dividend',

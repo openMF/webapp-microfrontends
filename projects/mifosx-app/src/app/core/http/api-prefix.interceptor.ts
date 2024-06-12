@@ -6,7 +6,7 @@ import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest } from '@angular/c
 import { Observable } from 'rxjs';
 
 /** Environment Configuration */
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Http request interceptor to prefix a request with `serverUrl`.

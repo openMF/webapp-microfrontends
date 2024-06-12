@@ -4,7 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 
 /** Custom Services. */
-import { OrganizationService } from '@app/organization/organization.service';
+import { OrganizationService } from '@mifosx-app/organization/organization.service';
 
 /** Custom Components. */
 import { ConfirmationDialogComponent } from '@mifosx-lib/confirmation-dialog/confirmation-dialog.component';

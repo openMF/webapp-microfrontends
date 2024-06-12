@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ProductsService } from '@app/products/products.service';
+import { ProductsService } from '@mifosx-app/products/products.service';
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
 import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield-base';

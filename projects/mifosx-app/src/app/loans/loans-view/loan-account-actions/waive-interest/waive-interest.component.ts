@@ -4,9 +4,9 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms
 import { Router, ActivatedRoute } from '@angular/router';
 
 /** Custom Services. */
-import { LoansService } from '@app/loans/loans.service';
-import { Dates } from '@app/core/utils/dates';
-import { SettingsService } from '@app/settings/settings.service';
+import { LoansService } from '@mifosx-app/loans/loans.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Waive Interest component.

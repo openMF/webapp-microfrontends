@@ -5,8 +5,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 /** Client Services. */
-import { ClientsService } from '@app/clients/clients.service';
-import { PasswordsUtility } from '@app/core/utils/passwords-utility';
+import { ClientsService } from '@mifosx-app/clients/clients.service';
+import { PasswordsUtility } from '@mifosx-app/core/utils/passwords-utility';
 
 @Component({
   selector: 'mifosx-create-self-service-user',

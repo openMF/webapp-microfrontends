@@ -11,8 +11,8 @@ import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield
 import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base';
 import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
-import { environment } from '@app/../environments/environment';
-import { ProgressBarService } from '@app/core/progress-bar/progress-bar.service';
+import { environment } from '@mifosx-app/../environments/environment';
+import { ProgressBarService } from '@mifosx-app/core/progress-bar/progress-bar.service';
 
 import * as XLSX from 'xlsx';
 

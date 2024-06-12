@@ -4,12 +4,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 
 /** Custom Services */
-import { RecurringDepositsService } from '@app/deposits/recurring-deposits/recurring-deposits.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { RecurringDepositsService } from '@mifosx-app/deposits/recurring-deposits/recurring-deposits.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Custom Dialogs */
 import { RecurringDepositConfirmationDialogComponent } from '../../custom-dialogs/recurring-deposit-confirmation-dialog/recurring-deposit-confirmation-dialog.component';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 import { TranslateService } from '@ngx-translate/core';
 import { Location } from '@angular/common';
 

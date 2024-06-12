@@ -1,7 +1,7 @@
 /** Angular Imports */
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators, UntypedFormControl } from '@angular/forms';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Custom Services */
 

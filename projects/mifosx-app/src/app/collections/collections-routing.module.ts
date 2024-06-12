@@ -6,7 +6,7 @@ import { Route } from '../core/route/route.service';
 
 /** Custom Components */
 import { IndividualCollectionSheetComponent } from './individual-collection-sheet/individual-collection-sheet.component';
-import { OfficesResolver } from '@app/organization/offices/common-resolvers/offices.resolver';
+import { OfficesResolver } from '@mifosx-app/organization/offices/common-resolvers/offices.resolver';
 
 const routes: Routes = [
   Route.withShell([

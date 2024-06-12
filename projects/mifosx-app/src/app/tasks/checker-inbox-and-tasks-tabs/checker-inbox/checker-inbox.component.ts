@@ -8,11 +8,11 @@ import { MatDialog } from '@angular/material/dialog';
 
 /** Custom Services */
 import { TasksService } from '../../tasks.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Dialog Components */
 import { ConfirmationDialogComponent } from '@mifosx-lib/confirmation-dialog/confirmation-dialog.component';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter, SimpleChanges, OnChanges } from '@angular/core';
 import { trigger, state, transition, animate, style } from '@angular/animations';
-import { Accounting } from '@app/core/utils/accounting';
+import { Accounting } from '@mifosx-app/core/utils/accounting';
 import { OptionData } from '@mifosx-lib/models/option-data.model';
 
 @Component({

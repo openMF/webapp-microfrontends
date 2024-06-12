@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-finearct-client',
+  selector: 'lib-fineract-client',
   template: `
     <p>
-      finearct-client works!
+      fineract-client works!
     </p>
   `,
   styles: [
   ]
 })
-export class FinearctClientComponent implements OnInit {
+export class FineractClientComponent implements OnInit {
 
   constructor() { }
 

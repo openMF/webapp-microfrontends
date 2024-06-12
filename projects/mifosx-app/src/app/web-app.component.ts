@@ -20,7 +20,7 @@ import { Logger } from './core/logger/logger.service';
 import { ThemeStorageService } from '@mifosx-lib/theme-picker/theme-storage.service';
 import { AlertService } from './core/alert/alert.service';
 import { AuthenticationService } from './core/authentication/authentication.service';
-import { SettingsService } from './settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service'; 
 import { IdleTimeoutService } from './home/timeout-dialog/idle-timeout.service';
 import { SessionTimeoutDialogComponent } from './home/timeout-dialog/session-timeout-dialog.component';
 

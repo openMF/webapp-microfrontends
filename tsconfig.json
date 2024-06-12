@@ -11,11 +11,11 @@
       "@mifosx-lib/*": [
         "projects/mifosx-lib/src/lib/*"
       ],
-      "@app/*": [
+      "@mifosx-app/*": [
         "projects/mifosx-app/src/app/*"
       ],
-      "finearct-client": [
-        "dist/finearct-client"
+      "@fineract-lib": [
+        "dist/fineract-client"
       ]
     },
     "noFallthroughCasesInSwitch": true,

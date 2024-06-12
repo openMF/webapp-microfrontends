@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
-import { Datatables } from '@app/core/utils/datatables';
-import { SettingsService } from '@app/settings/settings.service';
+import { Datatables } from '@mifosx-app/core/utils/datatables';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({
   selector: 'mifosx-client-datatable-step',

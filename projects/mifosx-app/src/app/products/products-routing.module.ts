@@ -125,7 +125,7 @@ import { ShareProductGeneralTabComponent } from './share-products/view-share-pro
 import { ShareProductDatatableTabComponent } from './share-products/view-share-product/share-product-datatable-tab/share-product-datatable-tab.component';
 import { ShareProductDatatablesResolver } from './share-products/share-product-datatables.resolver';
 import { ShareProductDatatableResolver } from './share-products/share-product-datatable.resolver';
-import { GlobalConfigurationsResolver } from '@app/system/configurations/global-configurations-tab/global-configurations.resolver';
+import { GlobalConfigurationsResolver } from '@mifosx-app/system/configurations/global-configurations-tab/global-configurations.resolver';
 
 /** Products Routes */
 const routes: Routes = [

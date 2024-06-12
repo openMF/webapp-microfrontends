@@ -1,9 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Dates } from '@app/core/utils/dates';
-import { ExternalAssetOwnerService } from '@app/loans/services/external-asset-owner.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { ExternalAssetOwnerService } from '@mifosx-app/loans/services/external-asset-owner.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({
   selector: 'mifosx-asset-transfer-loan',

@@ -12,8 +12,8 @@ import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepick
 import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
 
 /** Custom Services */
-import { SettingsService } from '@app/settings/settings.service';
-import { Dates } from '@app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 @Component({
   selector: 'mifosx-share-product-market-price-step',

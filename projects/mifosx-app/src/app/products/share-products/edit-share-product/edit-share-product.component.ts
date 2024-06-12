@@ -12,8 +12,8 @@ import { ShareProductChargesStepComponent } from '../share-product-stepper/share
 import { ShareProductAccountingStepComponent } from '../share-product-stepper/share-product-accounting-step/share-product-accounting-step.component';
 
 /** Custom Services */
-import { ProductsService } from '@app/products/products.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { ProductsService } from '@mifosx-app/products/products.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({
   selector: 'mifosx-edit-share-product',

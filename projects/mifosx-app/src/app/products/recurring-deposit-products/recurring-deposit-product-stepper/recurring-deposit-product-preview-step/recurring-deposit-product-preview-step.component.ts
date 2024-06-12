@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { trigger, state, transition, animate, style } from '@angular/animations';
 import { OptionData } from '@mifosx-lib/models/option-data.model';
-import { Accounting } from '@app/core/utils/accounting';
+import { Accounting } from '@mifosx-app/core/utils/accounting';
 
 @Component({
   selector: 'mifosx-recurring-deposit-product-preview-step',

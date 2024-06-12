@@ -5,13 +5,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
 import { AccountingService } from '../accounting.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { PopoverService } from '../../configuration-wizard/popover/popover.service';
 import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
 
 /** Custom Validators */
 import { onlyOneOfTheFieldsIsRequiredValidator } from './only-one-of-the-fields-is-required.validator';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Migrate opening balances component.

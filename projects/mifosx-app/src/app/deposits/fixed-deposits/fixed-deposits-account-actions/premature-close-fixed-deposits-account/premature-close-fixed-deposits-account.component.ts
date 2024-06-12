@@ -5,8 +5,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
 import { FixedDepositsService } from '../../fixed-deposits.service';
-import { SettingsService } from '@app/settings/settings.service';
-import { Dates } from '@app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Premature Close Fixed Deposits Account Component

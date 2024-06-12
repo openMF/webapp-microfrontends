@@ -1,7 +1,7 @@
 /** Angular Imports */
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators, FormControl } from '@angular/forms';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Recurring Deposits Terms Step

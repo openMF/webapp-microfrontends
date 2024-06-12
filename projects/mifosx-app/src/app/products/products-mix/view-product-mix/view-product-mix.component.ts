@@ -8,7 +8,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
 
 /** Custom Services */
-import { ProductsService } from '@app/products/products.service';
+import { ProductsService } from '@mifosx-app/products/products.service';
 
 /**
  * View product mix component.

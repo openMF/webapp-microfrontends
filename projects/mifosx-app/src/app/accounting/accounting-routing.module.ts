@@ -61,7 +61,7 @@ import { ProvisioningCategoriesResolver } from './common-resolvers/provisioning-
 import { ProvisioningJournalEntriesResolver } from './provisioning-entries/view-provisioning-journal-entries/provisioning-journal-entries.resolver';
 import { ViewJournalEntryTransactionComponent } from '@mifosx-lib/accounting/view-journal-entry-transaction/view-journal-entry-transaction.component';
 import { JournalEntryTransactionResolver } from './common-resolvers/journal-entry-transaction.resolver';
-import { ExternalAssetOwnerJournalEntryResolver } from '@app/loans/common-resolvers/external-asset-owner-journal-entry.resolver';
+import { ExternalAssetOwnerJournalEntryResolver } from '@mifosx-app/loans/common-resolvers/external-asset-owner-journal-entry.resolver';
 
 /** Accounting Routes */
 const routes: Routes = [

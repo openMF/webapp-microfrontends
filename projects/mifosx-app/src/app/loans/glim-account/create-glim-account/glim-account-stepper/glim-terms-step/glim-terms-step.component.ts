@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, OnChanges } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators, FormArray } from '@angular/forms';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({
   selector: 'mifosx-glim-terms-step',

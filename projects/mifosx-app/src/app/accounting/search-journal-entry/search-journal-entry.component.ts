@@ -11,10 +11,10 @@ import { tap, startWith, map, distinctUntilChanged, debounceTime} from 'rxjs/ope
 
 /** Custom Services */
 import { AccountingService } from '../accounting.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 /** Custom Data Source */
 import { JournalEntriesDataSource } from './journal-entry.datasource';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Search journal entry component.

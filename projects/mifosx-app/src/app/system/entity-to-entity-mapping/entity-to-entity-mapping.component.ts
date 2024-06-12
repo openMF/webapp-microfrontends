@@ -7,9 +7,9 @@ import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute } from '@angular/router';
 
 /** Custom Services */
-import { SystemService } from '@app/system/system.service';
+import { SystemService } from '@mifosx-app/system/system.service';
 import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Custom Components */
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
@@ -17,7 +17,7 @@ import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield
 import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base';
 import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepicker-base';
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Entity to Entity Mapping Component

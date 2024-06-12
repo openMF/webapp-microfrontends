@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { LoansService } from '@app/loans/loans.service';
-import { OrganizationService } from '@app/organization/organization.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { LoansService } from '@mifosx-app/loans/loans.service';
+import { OrganizationService } from '@mifosx-app/organization/organization.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({
   selector: 'mifosx-adjust-loan-charge',

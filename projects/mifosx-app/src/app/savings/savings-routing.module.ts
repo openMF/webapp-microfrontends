@@ -33,10 +33,10 @@ import { SavingsAccountChargeResolver } from './common-resolvers/savings-account
 import { SavingsAccountActionsResolver } from './common-resolvers/savings-account-actions.resolver';
 import { SavingsTransactionRecieptResolver } from './common-resolvers/savings-transaction-reciept.resolver';
 import { SavingsAccountTransactionTemplateResolver } from './common-resolvers/savings-account-transaction-template.resolver';
-import { GSIMAccountsResolver } from '@app/groups/common-resolvers/gsim-account-resolver';
-import { GroupAccountsResolver } from '@app/groups/common-resolvers/group-account.resolver';
+import { GSIMAccountsResolver } from '@mifosx-app/groups/common-resolvers/gsim-account-resolver';
+import { GroupAccountsResolver } from '@mifosx-app/groups/common-resolvers/group-account.resolver';
 import { GSIMViewResolver } from './gsim-account/gsim-account.resolver';
-import { GroupViewResolver } from '@app/groups/common-resolvers/group-view.resolver';
+import { GroupViewResolver } from '@mifosx-app/groups/common-resolvers/group-view.resolver';
 import { SavingsDocumentsTabComponent } from './savings-account-view/savings-documents-tab/savings-documents-tab.component';
 import { NotesTabComponent } from './savings-account-view/notes-tab/notes-tab.component';
 import { SavingNotesResolver } from './common-resolvers/saving-notes.resolver';

@@ -13,8 +13,8 @@ import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepick
 
 /** Custom Services */
 import { TasksService } from '../../tasks.service';
-import { SettingsService } from '@app/settings/settings.service';
-import { Dates } from '@app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 @Component({
   selector: 'mifosx-client-approval',

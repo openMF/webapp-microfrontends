@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
 /** Environment Configuration */
-import { environment } from '@app/../environments/environment';
+import { environment } from '@mifosx-app/../environments/environment';
 
 /** Custom Services */
 import { Logger } from '../logger/logger.service';

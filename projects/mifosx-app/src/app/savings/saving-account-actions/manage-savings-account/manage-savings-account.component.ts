@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Dates } from '@app/core/utils/dates';
-import { SavingsService } from '@app/savings/savings.service';
-import { SettingsService } from '@app/settings/settings.service';
-import { SystemService } from '@app/system/system.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { SavingsService } from '@mifosx-app/savings/savings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { SystemService } from '@mifosx-app/system/system.service';
 
 @Component({
   selector: 'mifosx-manage-savings-account',

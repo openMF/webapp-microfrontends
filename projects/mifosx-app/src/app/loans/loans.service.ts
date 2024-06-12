@@ -4,8 +4,8 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 
 /** rxjs Imports */
 import { Observable } from 'rxjs';
-import { Dates } from '@app/core/utils/dates';
-import { SettingsService } from '@app/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Loans service.

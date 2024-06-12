@@ -4,7 +4,7 @@ import { UntypedFormBuilder, UntypedFormGroup, Validators, UntypedFormControl } 
 import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services. */
-import { OrganizationService } from '@app/organization/organization.service';
+import { OrganizationService } from '@mifosx-app/organization/organization.service';
 
 /**
  * Create Entity Data Table Checks component.

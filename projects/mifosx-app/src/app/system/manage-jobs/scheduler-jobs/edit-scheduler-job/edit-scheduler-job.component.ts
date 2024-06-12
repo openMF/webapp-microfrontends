@@ -4,7 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { UntypedFormBuilder, Validators } from '@angular/forms';
 
 /** Custom Services */
-import { SystemService } from '@app/system/system.service';
+import { SystemService } from '@mifosx-app/system/system.service';
 
 /**
  * Edit scheduler job component.

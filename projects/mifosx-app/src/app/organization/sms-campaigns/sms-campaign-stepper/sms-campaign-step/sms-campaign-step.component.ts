@@ -3,10 +3,10 @@ import { Component, OnInit, Input, ViewChild, EventEmitter, Output} from '@angul
 import { UntypedFormGroup, UntypedFormBuilder, Validators, UntypedFormControl } from '@angular/forms';
 
 /** Custom Services */
-import { ReportsService } from '@app/reports/reports.service';
+import { ReportsService } from '@mifosx-app/reports/reports.service';
 
 /** Custom Models */
-import { ReportParameter } from '@app/reports/common-models/report-parameter.model';
+import { ReportParameter } from '@mifosx-app/reports/common-models/report-parameter.model';
 
 /** Custom Components */
 import { BusinessRuleParametersComponent } from './business-rule-parameters/business-rule-parameters.component';

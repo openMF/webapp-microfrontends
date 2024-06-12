@@ -4,7 +4,7 @@ import { UntypedFormControl, UntypedFormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services. */
-import { LoansService } from '@app/loans/loans.service';
+import { LoansService } from '@mifosx-app/loans/loans.service';
 /**
  * Undo Loan component.
  */

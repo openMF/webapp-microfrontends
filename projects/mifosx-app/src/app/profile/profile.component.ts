@@ -5,10 +5,10 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 
 /** Custom Services */
-import { AuthenticationService } from '@app/core/authentication/authentication.service';
+import { AuthenticationService } from '@mifosx-app/core/authentication/authentication.service';
 // import { ChangePasswordDialogComponent } from '@mifosx-lib/change-password-dialog/change-password-dialog.component';
-import { UserService } from '@app/self-service/users/user.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { UserService } from '@mifosx-app/self-service/users/user.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 import { ChangePasswordDialogComponent } from '@mifosx-lib/change-password-dialog/change-password-dialog.component';
 

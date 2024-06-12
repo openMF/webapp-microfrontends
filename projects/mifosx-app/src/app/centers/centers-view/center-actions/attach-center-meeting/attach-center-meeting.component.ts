@@ -4,9 +4,9 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators, UntypedFormControl } 
 import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
-import { CentersService } from '@app/centers/centers.service';
-import { Dates } from '@app/core/utils/dates';
-import { SettingsService } from '@app/settings/settings.service';
+import { CentersService } from '@mifosx-app/centers/centers.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Center Meetings Component

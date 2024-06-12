@@ -4,7 +4,7 @@ import {
   RouterStateSnapshot,
   ActivatedRouteSnapshot
 } from '@angular/router';
-import { SystemService } from '@app/system/system.service';
+import { SystemService } from '@mifosx-app/system/system.service';
 import { Observable, of } from 'rxjs';
 
 @Injectable({

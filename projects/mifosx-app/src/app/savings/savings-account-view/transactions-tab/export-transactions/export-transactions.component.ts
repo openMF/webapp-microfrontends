@@ -5,9 +5,9 @@ import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 /** Custom Services */
-import { ReportsService } from '@app/reports/reports.service';
-import { SettingsService } from '@app/settings/settings.service';
-import { Dates } from '@app/core/utils/dates';
+import { ReportsService } from '@mifosx-app/reports/reports.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Export Client Savings Transactions Component

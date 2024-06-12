@@ -2,7 +2,7 @@ import { Component, Input, OnInit, OnChanges } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
 import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepicker-base';
 import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield-base';

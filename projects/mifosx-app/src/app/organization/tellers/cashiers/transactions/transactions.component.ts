@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
 import { UntypedFormControl } from '@angular/forms';
 
 /** Custom Services */
-import { OrganizationService } from '@app/organization/organization.service';
+import { OrganizationService } from '@mifosx-app/organization/organization.service';
 
 /**
  * Cashier Transactions Component.
