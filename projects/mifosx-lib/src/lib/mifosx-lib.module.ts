@@ -1,11 +1,17 @@
 /** Angular Imports */
 import { NgModule, Pipe } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { MifosxLibComponent } from './mifosx-lib.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 /** Custom Components */
 import { AccountNumberComponent } from './account-number/account-number.component';
+import { GlAccountDisplayComponent } from './accounting/gl-account-display/gl-account-display.component';
+import { GlAccountSelectorComponent } from './accounting/gl-account-selector/gl-account-selector.component';
+import { ViewJournalEntryComponent } from './accounting/view-journal-entry/view-journal-entry.component';
+// import { ViewSavingsAccountingDetailsComponent } from './accounting/view-savings-accounting-details/view-savings-accounting-details.component';
 import { CancelDialogComponent } from './cancel-dialog/cancel-dialog.component';
 import { ChangePasswordDialogComponent } from './change-password-dialog/change-password-dialog.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
@@ -26,6 +32,7 @@ import { TenantSelectorComponent } from './tenant-selector/tenant-selector.compo
 import { ThemePickerComponent } from './theme-picker/theme-picker.component';
 import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
 import { TransactionPaymentDetailComponent } from './transaction-payment-detail/transaction-payment-detail.component';
+import { NotificationsTrayComponent } from './notifications-tray/notifications-tray.component';
 // import { FormfieldComponent } from './form-dialog/formfield/formfield.component';
 // import { FormDialogComponent } from './form-dialog/form-dialog.component';
 
@@ -50,6 +57,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
   declarations: [
     MifosxLibComponent,
     AccountNumberComponent,
+    GlAccountDisplayComponent,
+    GlAccountSelectorComponent,
+    ViewJournalEntryComponent,
+    // ViewSavingsAccountingDetailsComponent,
     CancelDialogComponent,
     ChangePasswordDialogComponent,
     ConfirmationDialogComponent,
@@ -70,6 +81,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     ThemePickerComponent,
     ThemeToggleComponent,
     TransactionPaymentDetailComponent,
+    NotificationsTrayComponent,
     // FormfieldComponent,
     // FormDialogComponent
   ],
@@ -84,6 +96,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
       }
     }),
     IconsModule,
+    CommonModule,
+    RouterModule,
     PipesModule,
     MaterialModule,
     ReactiveFormsModule,
@@ -95,13 +109,20 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
   exports: [
     MifosxLibComponent,
     AccountNumberComponent,
+    GlAccountDisplayComponent,
+    GlAccountSelectorComponent,
+    ViewJournalEntryComponent,
+    // ViewSavingsAccountingDetailsComponent,
     IconsModule,
+    CommonModule,
+    RouterModule,
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
     ThemePickerComponent,
     ThemeToggleComponent,
-    TransactionPaymentDetailComponent
+    TransactionPaymentDetailComponent,
+    NotificationsTrayComponent
   ]
 })
 export class MifosxLibModule { }

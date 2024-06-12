@@ -17,6 +17,10 @@ export * from './lib/material.module';
 
 // All the components
 export * from './lib/account-number/account-number.component';
+export * from './lib/accounting/gl-account-display/gl-account-display.component';
+export * from './lib/accounting/gl-account-selector/gl-account-selector.component';
+export * from './lib/accounting/view-journal-entry/view-journal-entry.component';
+// export * from './lib/accounting/view-savings-accounting-details/view-savings-accounting-details.component';
 export * from './lib/cancel-dialog/cancel-dialog.component';
 export * from './lib/change-password-dialog/change-password-dialog.component';
 export * from './lib/confirmation-dialog/confirmation-dialog.component';
@@ -37,6 +41,7 @@ export * from './lib/tenant-selector/tenant-selector.component';
 export * from './lib/theme-picker/theme-picker.component';
 export * from './lib/theme-toggle/theme-toggle.component';
 export * from './lib/transaction-payment-detail/transaction-payment-detail.component';
+export * from './lib/notifications-tray/notifications-tray.component';
 // export * from './lib/form-dialog/formfield/formfield.component';
 // export * from './lib/form-dialog/form-dialog.component';
 
