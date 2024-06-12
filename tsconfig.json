@@ -13,6 +13,9 @@
       ],
       "@app/*": [
         "projects/mifosx-app/src/app/*"
+      ],
+      "finearct-client": [
+        "dist/finearct-client"
       ]
     },
     "noFallthroughCasesInSwitch": true,
