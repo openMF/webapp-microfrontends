@@ -11,7 +11,7 @@ import { AccountTransfersService } from '../account-transfers.service';
 
 /** Dialog Components */
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Lists all the standing intructions of particular ID

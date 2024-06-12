@@ -17,8 +17,8 @@ import { EditTransactionComponent } from './recurring-deposits-account-view/tran
 /** Custom Resolvers */
 import { RecurringDepositsAccountViewResolver } from './common-resolvers/recurring-deposits-account-view.resolver';
 import { RecurringDepositsAccountDataResolver } from './common-resolvers/recurring-deposits-account-data.resolver';
-import { SavingsDatatableResolver } from '@app/savings/common-resolvers/savings-datatable.resolver';
-import { SavingsDatatablesResolver } from '@app/savings/common-resolvers/savings-datatables.resolver';
+import { SavingsDatatableResolver } from '@mifosx-app/savings/common-resolvers/savings-datatable.resolver';
+import { SavingsDatatablesResolver } from '@mifosx-app/savings/common-resolvers/savings-datatables.resolver';
 import { RecurringDepositsAccountTemplateResolver } from './common-resolvers/recurring-deposits-account-template.resolver';
 import { RecurringDepositsAccountActionsResolver } from './common-resolvers/recurring-deposit-account-actions.resolver';
 import { EditRecurringDepositAccountComponent } from './edit-recurring-deposit-account/edit-recurring-deposit-account.component';

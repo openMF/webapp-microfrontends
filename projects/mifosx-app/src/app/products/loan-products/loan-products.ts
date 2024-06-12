@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { SettingsService } from '@app/settings/settings.service';
-import { GlobalConfiguration } from '@app/system/configurations/global-configurations-tab/configuration.model';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { GlobalConfiguration } from '@mifosx-app/system/configurations/global-configurations-tab/configuration.model';
 
 @Injectable({
   providedIn: 'root'

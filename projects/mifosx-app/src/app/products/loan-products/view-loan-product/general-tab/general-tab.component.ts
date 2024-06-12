@@ -6,8 +6,8 @@ import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
 import { TranslateService } from '@ngx-translate/core';
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
-import { ProductsService } from '@app/products/products.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { ProductsService } from '@mifosx-app/products/products.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({
   selector: 'mifosx-general-tab',

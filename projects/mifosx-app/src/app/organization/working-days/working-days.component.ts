@@ -6,7 +6,7 @@ import { MatDialog } from '@angular/material/dialog';
 
 /** Custom Services */
 import { OrganizationService } from '../organization.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { PopoverService } from '../../configuration-wizard/popover/popover.service';
 import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
 

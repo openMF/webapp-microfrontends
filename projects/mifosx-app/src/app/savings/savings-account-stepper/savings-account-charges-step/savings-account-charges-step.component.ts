@@ -10,7 +10,7 @@ import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.compone
 import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield-base';
 import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
 import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepicker-base';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 import { MatTableDataSource } from '@angular/material/table';
 import { TranslateService } from '@ngx-translate/core';
 

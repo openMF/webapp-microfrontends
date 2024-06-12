@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
-import { UploadDocumentDialogComponent } from '@app/clients/clients-view/custom-dialogs/upload-document-dialog/upload-document-dialog.component';
-import { SavingsService } from '@app/savings/savings.service';
-import { SettingsService } from '@app/settings/settings.service';
-import { environment } from '@app/../environments/environment';
+import { UploadDocumentDialogComponent } from '@mifosx-app/clients/clients-view/custom-dialogs/upload-document-dialog/upload-document-dialog.component';
+import { SavingsService } from '@mifosx-app/savings/savings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { environment } from '@mifosx-app/../environments/environment';
 
 @Component({
   selector: 'mifosx-savings-documents-tab',

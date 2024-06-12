@@ -4,7 +4,7 @@ import { UntypedFormGroup, UntypedFormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
-import { ClientsService } from '@app/clients/clients.service';
+import { ClientsService } from '@mifosx-app/clients/clients.service';
 
 /**
  * Clients Update Savings Account Component

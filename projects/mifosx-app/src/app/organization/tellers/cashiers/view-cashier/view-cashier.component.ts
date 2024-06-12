@@ -7,7 +7,7 @@ import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.c
 import { MatDialog } from '@angular/material/dialog';
 
 /** Custom Services */
-import { OrganizationService } from '@app/organization/organization.service';
+import { OrganizationService } from '@mifosx-app/organization/organization.service';
 
 /**
  * View Cashier component.

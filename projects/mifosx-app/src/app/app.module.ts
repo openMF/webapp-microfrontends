@@ -16,7 +16,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { LoginModule } from './login/login.module';
-import { SettingsModule } from './settings/settings.module';
+import { SettingsModule } from '@mifosx-lib/settings/settings.module'; 
 import { NavigationModule } from './navigation/navigation.module';
 import { ClientsModule } from './clients/clients.module';
 import { GroupsModule } from './groups/groups.module';

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { environment } from '@app/../environments/environment';
+import { environment } from '@mifosx-app/../environments/environment';
 import { interval, merge, fromEvent, Observable} from 'rxjs';
 import { takeUntil, repeat, map} from 'rxjs/operators';
 

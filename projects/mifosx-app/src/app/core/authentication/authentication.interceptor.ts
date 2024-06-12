@@ -6,8 +6,8 @@ import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest } from '@angular/c
 import { Observable } from 'rxjs';
 
 /** Custom Imports */
-import { environment } from '@app/../environments/environment';
-import { SettingsService } from '@app/settings/settings.service';
+import { environment } from '@mifosx-app/../environments/environment';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Http request (default) options headers. */
 const httpOptions = {

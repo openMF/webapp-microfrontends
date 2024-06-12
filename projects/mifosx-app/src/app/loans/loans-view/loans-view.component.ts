@@ -16,7 +16,7 @@ import { LoanStatus } from '../models/loan-status.model';
 import { Currency } from '@mifosx-lib/models/general.model';
 import { DelinquencyPausePeriod } from '../models/loan-account.model';
 import { TranslateService } from '@ngx-translate/core';
-import { LoanTransaction } from '@app/products/loan-products/models/loan-account.model';
+import { LoanTransaction } from '@mifosx-app/products/loan-products/models/loan-account.model';
 
 @Component({
   selector: 'mifosx-loans-view',

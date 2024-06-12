@@ -11,8 +11,8 @@ import { MatTable } from '@angular/material/table';
 import { RejectShareDialogComponent } from './reject-share-dialog/reject-share-dialog.component';
 
 /** Custom Serices */
-import { SharesService } from '@app/shares/shares.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SharesService } from '@mifosx-app/shares/shares.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Reject shares component.

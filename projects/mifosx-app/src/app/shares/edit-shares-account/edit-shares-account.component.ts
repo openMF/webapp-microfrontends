@@ -9,8 +9,8 @@ import { SharesAccountChargesStepComponent } from '../shares-account-stepper/sha
 
 /** Custom Services */
 import { SharesService } from '../shares.service';
-import { SettingsService } from '@app/settings/settings.service';
-import { Dates } from '@app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Edit Shares Account Component

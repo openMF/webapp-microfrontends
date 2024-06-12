@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 
 /** Custom Services */
 import { AccountTransfersService } from '../account-transfers.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * View Standing Instructions resolver.

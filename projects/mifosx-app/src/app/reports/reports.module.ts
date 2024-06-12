@@ -4,7 +4,7 @@ import { DecimalPipe } from '@angular/common';
 
 /** Custom Modules */
 import { MifosxLibModule } from '@mifosx-lib/mifosx-lib.module';
-import { ReportsRoutingModule } from '@app/reports/reports-routing.module';
+import { ReportsRoutingModule } from '@mifosx-app/reports/reports-routing.module';
 
 /** Custom Components */
 import { ReportsComponent } from './reports.component';

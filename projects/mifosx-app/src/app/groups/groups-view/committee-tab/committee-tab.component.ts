@@ -8,7 +8,7 @@ import { MatTable } from '@angular/material/table';
 import { UnassignRoleDialogComponent } from '../custom-dialogs/unassign-role-dialog/unassign-role-dialog.component';
 
 /** Custom Services */
-import { GroupsService } from '@app/groups/groups.service';
+import { GroupsService } from '@mifosx-app/groups/groups.service';
 
 /**
  * Groups Committee Tab Component

@@ -5,16 +5,16 @@ import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms
 
 /** Custom Services */
 import { ReportsService } from '../reports.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Custom Models */
 import { ReportParameter } from '../common-models/report-parameter.model';
 import { SelectOption } from '../common-models/select-option.model';
-import { Dates } from '@app/core/utils/dates';
-import { GlobalConfiguration } from '@app/system/configurations/global-configurations-tab/configuration.model';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { GlobalConfiguration } from '@mifosx-app/system/configurations/global-configurations-tab/configuration.model';
 
 import * as XLSX from 'xlsx';
-import { AlertService } from '@app/core/alert/alert.service';
+import { AlertService } from '@mifosx-app/core/alert/alert.service';
 
 /**
  * Run report component.

@@ -6,7 +6,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 
 /** Custom Components */
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
-import { DepositProductIncentiveFormDialogComponent } from '@app/products/deposit-product-incentive-form-dialog/deposit-product-incentive-form-dialog.component';
+import { DepositProductIncentiveFormDialogComponent } from '@mifosx-app/products/deposit-product-incentive-form-dialog/deposit-product-incentive-form-dialog.component';
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
 
 /** Dialog Components */
@@ -15,8 +15,8 @@ import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base'
 import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
 
 
-import { SettingsService } from '@app/settings/settings.service';
-import { Dates } from '@app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

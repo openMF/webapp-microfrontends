@@ -4,14 +4,14 @@ import { UntypedFormControl } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { Dates } from '@app/core/utils/dates';
-import { LoansService } from '@app/loans/loans.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { LoansService } from '@mifosx-app/loans/loans.service';
 import { MatDialog } from '@angular/material/dialog';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { ConfirmationDialogComponent } from '@mifosx-lib/confirmation-dialog/confirmation-dialog.component';
 import { TranslateService } from '@ngx-translate/core';
-import { LoanTransaction } from '@app/products/loan-products/models/loan-account.model';
-import { LoanTransactionType } from '@app/loans/models/loan-transaction-type.model';
+import { LoanTransaction } from '@mifosx-app/products/loan-products/models/loan-account.model';
+import { LoanTransactionType } from '@mifosx-app/loans/models/loan-transaction-type.model';
 
 @Component({
   selector: 'mifosx-transactions-tab',

@@ -2,10 +2,10 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { UndoTransactionDialogComponent } from '@app/savings/savings-account-view/custom-dialogs/undo-transaction-dialog/undo-transaction-dialog.component';
-import { Dates } from '@app/core/utils/dates';
-import { SavingsService } from '@app/savings/savings.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { UndoTransactionDialogComponent } from '@mifosx-app/savings/savings-account-view/custom-dialogs/undo-transaction-dialog/undo-transaction-dialog.component';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { SavingsService } from '@mifosx-app/savings/savings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * View Transaction Component.

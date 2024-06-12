@@ -12,9 +12,9 @@ import { FixedDepositProductChargesStepComponent } from '../fixed-deposit-produc
 import { FixedDepositProductAccountingStepComponent } from '../fixed-deposit-product-stepper/fixed-deposit-product-accounting-step/fixed-deposit-product-accounting-step.component';
 
 /** Custom Services */
-import { ProductsService } from '@app/products/products.service';
-import { SettingsService } from '@app/settings/settings.service';
-import { Accounting } from '@app/core/utils/accounting';
+import { ProductsService } from '@mifosx-app/products/products.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { Accounting } from '@mifosx-app/core/utils/accounting';
 
 @Component({
   selector: 'mifosx-edit-fixed-deposit-product',

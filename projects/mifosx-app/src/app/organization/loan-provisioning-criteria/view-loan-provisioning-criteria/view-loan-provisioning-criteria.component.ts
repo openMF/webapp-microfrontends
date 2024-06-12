@@ -5,7 +5,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { MatTableDataSource } from '@angular/material/table';
 
 /** Custom Services */
-import { OrganizationService } from '@app/organization/organization.service';
+import { OrganizationService } from '@mifosx-app/organization/organization.service';
 
 /** Dialog Component */
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';

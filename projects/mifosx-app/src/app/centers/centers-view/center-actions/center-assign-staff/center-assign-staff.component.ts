@@ -4,7 +4,7 @@ import { UntypedFormGroup, UntypedFormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
-import { CentersService } from '@app/centers/centers.service';
+import { CentersService } from '@mifosx-app/centers/centers.service';
 
 /**
  * Centers Assign Staff Component

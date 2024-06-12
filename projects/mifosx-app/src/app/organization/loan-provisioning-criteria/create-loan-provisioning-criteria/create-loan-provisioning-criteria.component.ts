@@ -15,7 +15,7 @@ import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.compone
 
 /** Custom Services */
 import { OrganizationService } from '../../organization.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Create Loan Provisioning Criteria Component.

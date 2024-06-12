@@ -14,7 +14,7 @@ import { DatatableTabComponent } from './centers-view/datatable-tab/datatable-ta
 import { EditCenterComponent } from './edit-center/edit-center.component';
 
 /** Custom Resolvers */
-import { OfficesResolver } from '@app/accounting/common-resolvers/offices.resolver';
+import { OfficesResolver } from '@mifosx-app/accounting/common-resolvers/offices.resolver';
 import { CenterViewResolver } from './common-resolvers/center-view.resolver';
 import { SavingsAccountResolver } from './common-resolvers/savings-account.resolver';
 import { CenterResourceResolver } from './common-resolvers/center-resource.resolver';

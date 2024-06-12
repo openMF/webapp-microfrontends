@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
-import { SharesService } from '@app/shares/shares.service';
+import { SharesService } from '@mifosx-app/shares/shares.service';
 
 /**
  * Undo Approval Shares Account Component

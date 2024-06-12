@@ -2,10 +2,10 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 
-import { Alert } from '@app/core/alert/alert.model';
-import { AlertService } from '@app/core/alert/alert.service';
-import { Dates } from '@app/core/utils/dates';
-import { SettingsService } from '@app/settings/settings.service';
+import { Alert } from '@mifosx-app/core/alert/alert.model';
+import { AlertService } from '@mifosx-app/core/alert/alert.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { Subscription } from 'rxjs';
 
 /** Custom Services */

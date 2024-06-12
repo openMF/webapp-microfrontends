@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 /** Custom Services. */
-import { ClientsService } from '@app/clients/clients.service';
+import { ClientsService } from '@mifosx-app/clients/clients.service';
 
 /**
  * General Tab component.

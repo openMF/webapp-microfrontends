@@ -16,8 +16,8 @@ import { EditFixedDepositAccountComponent } from './edit-fixed-deposit-account/e
 
 /** Custom Resolvers */
 import { FixedDepositsAccountViewResolver } from './common-resolvers/fixed-deposit-account-view.resolver';
-import { SavingsDatatableResolver } from '@app/savings/common-resolvers/savings-datatable.resolver';
-import { SavingsDatatablesResolver } from '@app/savings/common-resolvers/savings-datatables.resolver';
+import { SavingsDatatableResolver } from '@mifosx-app/savings/common-resolvers/savings-datatable.resolver';
+import { SavingsDatatablesResolver } from '@mifosx-app/savings/common-resolvers/savings-datatables.resolver';
 import { FixedDepositsAccountTransactionResolver } from './common-resolvers/fixed-deposit-account-transaction.resolver';
 import { FixedDepositsAccountActionsResolver } from './common-resolvers/fixed-deposit-account-actions.resolver';
 import { FixedDepositsAccountTemplateResolver } from './common-resolvers/fixed-deposit-account-template.resolver';

@@ -2,8 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ClientsService } from '@app/clients/clients.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { ClientsService } from '@mifosx-app/clients/clients.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Create self service user component.

@@ -10,12 +10,12 @@ import { AuditTrailsDataSource } from './audit-trail.datasource';
 
 /** Custom Services */
 import { SystemService } from '../system.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** rxjs Imports */
 import { merge } from 'rxjs';
 import { tap, debounceTime, distinctUntilChanged, startWith, map } from 'rxjs/operators';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Audit Trails Component.

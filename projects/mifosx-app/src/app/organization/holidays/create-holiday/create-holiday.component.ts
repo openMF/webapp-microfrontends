@@ -3,13 +3,13 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { Component, OnInit, ViewChild, Injectable } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators, UntypedFormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree';
 import { FlatTreeControl } from '@angular/cdk/tree';
 
 /** Custom Services. */
-import { OrganizationService } from '@app/organization/organization.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { OrganizationService } from '@mifosx-app/organization/organization.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { OfficeItemNode } from './office-item.class';
 import { OfficeItemFlatNode } from './office-flat-item.class';
 import { ChecklistDatabase } from './checklist-db.class';

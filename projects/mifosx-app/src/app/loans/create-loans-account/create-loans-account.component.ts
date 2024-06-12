@@ -4,8 +4,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
 import { LoansService } from '../loans.service';
-import { SettingsService } from '@app/settings/settings.service';
-import { ClientsService } from '@app/clients/clients.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { ClientsService } from '@mifosx-app/clients/clients.service';
 
 /** Step Components */
 import { LoansAccountDetailsStepComponent } from '../loans-account-stepper/loans-account-details-step/loans-account-details-step.component';

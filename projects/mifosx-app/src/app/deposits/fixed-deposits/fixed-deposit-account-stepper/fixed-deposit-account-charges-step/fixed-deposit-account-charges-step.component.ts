@@ -5,13 +5,13 @@ import { MatDialog } from '@angular/material/dialog';
 
 /** Dialog Components */
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Custom Services */
 import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepicker-base';
 import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield-base';
 import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 import { Charge, Currency } from '@mifosx-lib/models/general.model';
 
 /**

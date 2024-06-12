@@ -7,7 +7,7 @@ import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.c
 
 import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield-base';
 import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base';
-import { Accounting } from '@app/core/utils/accounting';
+import { Accounting } from '@mifosx-app/core/utils/accounting';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

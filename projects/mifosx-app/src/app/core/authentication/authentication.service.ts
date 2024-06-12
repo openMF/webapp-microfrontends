@@ -13,7 +13,7 @@ import { AlertService } from '../alert/alert.service';
 import { AuthenticationInterceptor } from './authentication.interceptor';
 
 /** Environment Configuration */
-import { environment } from '@app/../environments/environment';
+import { environment } from '@mifosx-app/../environments/environment';
 
 /** Custom Models */
 import { LoginContext } from './login-context.model';

@@ -8,7 +8,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
 /** Custom Services */
-import { SystemService } from '@app/system/system.service';
+import { SystemService } from '@mifosx-app/system/system.service';
 
 /** Custom Components */
 import { ReportParameterDialogComponent } from '../report-parameter-dialog/report-parameter-dialog.component';

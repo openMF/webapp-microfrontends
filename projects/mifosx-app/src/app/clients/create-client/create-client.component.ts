@@ -12,7 +12,7 @@ import { ClientAddressStepComponent } from '../client-stepper/client-address-ste
 import { ClientDatatableStepComponent } from '../client-stepper/client-datatable-step/client-datatable-step.component';
 
 /** Custom Services */
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Create Client Component.

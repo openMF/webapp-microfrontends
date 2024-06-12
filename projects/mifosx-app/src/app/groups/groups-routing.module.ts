@@ -22,7 +22,7 @@ import { GroupViewResolver } from './common-resolvers/group-view.resolver';
 import { GroupAccountsResolver } from './common-resolvers/group-account.resolver';
 import { GroupSummaryResolver } from './common-resolvers/group-summary.resolver';
 import { GroupNotesResolver } from './common-resolvers/group-notes.resolver';
-import { OfficesResolver } from '@app/accounting/common-resolvers/offices.resolver';
+import { OfficesResolver } from '@mifosx-app/accounting/common-resolvers/offices.resolver';
 import { GroupDatatablesResolver } from './common-resolvers/group-datatables.resolver';
 import { GroupDatatableResolver } from './common-resolvers/group-datatable.resolver';
 import { GroupDataAndTemplateResolver } from './common-resolvers/group-data-and-template.resolver';

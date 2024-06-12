@@ -1,10 +1,10 @@
 /** Angular Imports */
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Custom Services */
-import { SharesService } from '@app/shares/shares.service';
+import { SharesService } from '@mifosx-app/shares/shares.service';
 
 /**
  * Shares Account Details Step

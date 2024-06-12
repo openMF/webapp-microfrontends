@@ -5,7 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 
 /** Custom Services */
 import { RecurringDepositsService } from '../recurring-deposits.service';
-import { SavingsService } from '@app/savings/savings.service';
+import { SavingsService } from '@mifosx-app/savings/savings.service';
 
 /** Custom Buttons Configuration */
 import { RecurringDepositsButtonsConfiguration } from './recurring-deposits-buttons.config';

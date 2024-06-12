@@ -6,7 +6,7 @@ import { Resolve, ActivatedRouteSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
 
 /** Custom Services */
-import { FixedDepositsService } from '@app/deposits/fixed-deposits/fixed-deposits.service';
+import { FixedDepositsService } from '@mifosx-app/deposits/fixed-deposits/fixed-deposits.service';
 
 /**
  * Fixed Deposits Account data resolver.

@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { LoansService } from '@app/loans/loans.service';
+import { LoansService } from '@mifosx-app/loans/loans.service';
 import { UntypedFormBuilder, UntypedFormGroup, Validators, UntypedFormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 /** Custom Services */
-import { SettingsService } from '@app/settings/settings.service';
-import { Dates } from '@app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 @Component({
   selector: 'mifosx-loan-reschedule',

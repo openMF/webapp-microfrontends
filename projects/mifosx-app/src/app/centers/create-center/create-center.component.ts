@@ -4,10 +4,10 @@ import { UntypedFormGroup, UntypedFormBuilder, UntypedFormControl, Validators } 
 import { Router, ActivatedRoute } from '@angular/router';
 
 /** Custom Services */
-import { GroupsService } from '@app/groups/groups.service';
+import { GroupsService } from '@mifosx-app/groups/groups.service';
 import { CentersService } from '../centers.service';
-import { SettingsService } from '@app/settings/settings.service';
-import { Dates } from '@app/core/utils/dates';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Create Center component.

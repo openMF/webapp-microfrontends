@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 
 /** Custom Services */
 import { LoansService } from '../../loans.service';
-import { AuthenticationService } from '@app/core/authentication/authentication.service';
+import { AuthenticationService } from '@mifosx-app/core/authentication/authentication.service';
 
 @Component({
   selector: 'mifosx-notes-tab',

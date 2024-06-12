@@ -6,13 +6,13 @@ import { Validators, UntypedFormGroup, UntypedFormControl } from '@angular/forms
 import { distinctUntilChanged } from 'rxjs/operators';
 
 /** Custom Services */
-import { ReportsService } from '@app/reports/reports.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { ReportsService } from '@mifosx-app/reports/reports.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Custom Models */
-import { ReportParameter } from '@app/reports/common-models/report-parameter.model';
-import { SelectOption } from '@app/reports/common-models/select-option.model';
-import { Dates } from '@app/core/utils/dates';
+import { ReportParameter } from '@mifosx-app/reports/common-models/report-parameter.model';
+import { SelectOption } from '@mifosx-app/reports/common-models/select-option.model';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /**
  * Edit Business Rule Parameters.

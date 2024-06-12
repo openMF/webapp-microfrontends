@@ -14,7 +14,7 @@ import { ConfigurationWizardService } from '../../../configuration-wizard/config
 
 /** Custom Imports */
 import { frequentActivities } from './frequent-activities';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Sidenav component.

@@ -11,11 +11,11 @@ import { LoanProductChargesStepComponent } from '../loan-product-stepper/loan-pr
 import { LoanProductAccountingStepComponent } from '../loan-product-stepper/loan-product-accounting-step/loan-product-accounting-step.component';
 
 /** Custom Services */
-import { ProductsService } from '@app/products/products.service';
-import { GlobalConfiguration } from '@app/system/configurations/global-configurations-tab/configuration.model';
+import { ProductsService } from '@mifosx-app/products/products.service';
+import { GlobalConfiguration } from '@mifosx-app/system/configurations/global-configurations-tab/configuration.model';
 import { LoanProducts } from '../loan-products';
 import { AdvancedCreditAllocation, AdvancedPaymentAllocation, AdvancedPaymentStrategy, CreditAllocation, PaymentAllocation, PaymentAllocationOrder, PaymentAllocationTransactionTypes } from '../loan-product-stepper/loan-product-payment-strategy-step/payment-allocation-model';
-import { Accounting } from '@app/core/utils/accounting';
+import { Accounting } from '@mifosx-app/core/utils/accounting';
 
 @Component({
   selector: 'mifosx-edit-loan-product',

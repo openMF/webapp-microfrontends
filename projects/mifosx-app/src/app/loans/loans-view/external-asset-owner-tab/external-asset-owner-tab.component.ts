@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ExternalAssetOwner } from '@app/loans/services/external-asset-owner';
-import { ExternalAssetOwnerService } from '@app/loans/services/external-asset-owner.service';
+import { ExternalAssetOwner } from '@mifosx-app/loans/services/external-asset-owner';
+import { ExternalAssetOwnerService } from '@mifosx-app/loans/services/external-asset-owner.service';
 import { CancelDialogComponent } from '@mifosx-lib/cancel-dialog/cancel-dialog.component';
 
 @Component({

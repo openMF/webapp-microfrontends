@@ -4,7 +4,7 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms
 import { Router, ActivatedRoute } from '@angular/router';
 
 /** Custom Services */
-import { OrganizationService } from '@app/organization/organization.service';
+import { OrganizationService } from '@mifosx-app/organization/organization.service';
 
 /**
  * Edit Payment Type component.

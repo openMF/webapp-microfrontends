@@ -2,10 +2,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { Dates } from '@app/core/utils/dates';
-import { LoansService } from '@app/loans/loans.service';
-import { LoanStatus } from '@app/loans/models/loan-status.model';
-import { SettingsService } from '@app/settings/settings.service';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { LoansService } from '@mifosx-app/loans/loans.service';
+import { LoanStatus } from '@mifosx-app/loans/models/loan-status.model';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { ConfirmationDialogComponent } from '@mifosx-lib/confirmation-dialog/confirmation-dialog.component';
 
 @Component({

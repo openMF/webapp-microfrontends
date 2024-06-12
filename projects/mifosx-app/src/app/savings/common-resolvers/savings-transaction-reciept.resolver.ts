@@ -6,8 +6,8 @@ import { Resolve, ActivatedRouteSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
 
 /** Custom Services */
-import { ReportsService } from '@app/reports/reports.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { ReportsService } from '@mifosx-app/reports/reports.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Savings Transaction Reciept resolver.

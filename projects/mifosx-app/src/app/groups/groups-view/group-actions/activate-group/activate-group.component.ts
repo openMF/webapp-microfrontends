@@ -2,11 +2,11 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /** Custom Services */
-import { GroupsService } from '@app/groups/groups.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { GroupsService } from '@mifosx-app/groups/groups.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Activate Group Component

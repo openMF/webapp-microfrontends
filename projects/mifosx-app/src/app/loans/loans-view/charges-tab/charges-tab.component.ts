@@ -7,8 +7,8 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
 /** Custom Services */
-import { LoansService } from '@app/loans/loans.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { LoansService } from '@mifosx-app/loans/loans.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Custom Dialogs */
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
@@ -19,9 +19,9 @@ import { ConfirmationDialogComponent } from '@mifosx-lib/confirmation-dialog/con
 import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield-base';
 import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
 import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepicker-base';
-import { Dates } from '@app/core/utils/dates';
-import { SystemService } from '@app/system/system.service';
-import { GlobalConfiguration } from '@app/system/configurations/global-configurations-tab/configuration.model';
+import { Dates } from '@mifosx-app/core/utils/dates';
+import { SystemService } from '@mifosx-app/system/system.service';
+import { GlobalConfiguration } from '@mifosx-app/system/configurations/global-configurations-tab/configuration.model';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

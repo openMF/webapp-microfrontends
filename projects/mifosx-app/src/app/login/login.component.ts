@@ -13,7 +13,7 @@ import { AlertService } from '../core/alert/alert.service';
 
 /** Environment Imports */
 import { environment } from '../../environments/environment';
-import { SettingsService } from '@app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Login component.

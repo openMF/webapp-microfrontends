@@ -6,7 +6,7 @@ import { Resolve, ActivatedRouteSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
 
 /** Custom Services */
-import { ReportsService } from '@app/reports/reports.service';
+import { ReportsService } from '@mifosx-app/reports/reports.service';
 
 /**
  * Loans Transaction Reciept resolver.

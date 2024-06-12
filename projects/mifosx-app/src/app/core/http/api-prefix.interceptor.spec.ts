@@ -2,7 +2,7 @@
 // import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 // import { HTTP_INTERCEPTORS, HttpClient } from '@angular/common/http';
 
-// import { environment } from '@app/../environments/environment';
+// import { environment } from '@mifosx-app/../environments/environment';
 // import { ApiPrefixInterceptor } from './api-prefix.interceptor';
 
 // describe('ApiPrefixInterceptor', () => {

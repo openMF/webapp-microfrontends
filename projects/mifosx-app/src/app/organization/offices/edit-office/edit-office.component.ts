@@ -2,11 +2,11 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Dates } from '@app/core/utils/dates';
+import { Dates } from '@mifosx-app/core/utils/dates';
 
 /** Custom Services */
-import { OrganizationService } from '@app/organization/organization.service';
-import { SettingsService } from '@app/settings/settings.service';
+import { OrganizationService } from '@mifosx-app/organization/organization.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Edit Office component.
