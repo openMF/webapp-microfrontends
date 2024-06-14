@@ -12,7 +12,7 @@ import { TemplatesComponent } from './templates.component';
 import { ViewTemplateComponent } from './view-template/view-template.component';
 import { EditTemplateComponent } from './edit-template/edit-template.component';
 import { CreateTemplateComponent } from './create-template/create-template.component';
-
+import { TranslateModule } from '@ngx-translate/core';
 /**
  * Templates Module
  *
@@ -23,7 +23,8 @@ import { CreateTemplateComponent } from './create-template/create-template.compo
     CKEditorModule,
     MifosxLibModule,
     DirectivesModule,
-    TemplatesRoutingModule
+    TemplatesRoutingModule,
+    TranslateModule
   ],
   declarations: [
     TemplatesComponent,

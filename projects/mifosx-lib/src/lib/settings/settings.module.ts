@@ -7,7 +7,7 @@ import { SettingsRoutingModule } from './settings-routing.module';
 
 /** Custom Components */
 import { SettingsComponent } from './settings.component';
-
+import { TranslateModule } from '@ngx-translate/core';
 /**
  * Settings Module
  *
@@ -16,7 +16,8 @@ import { SettingsComponent } from './settings.component';
 @NgModule({
   imports: [
     MifosxLibModule,
-    SettingsRoutingModule
+    SettingsRoutingModule,
+    TranslateModule
   ],
   declarations: [SettingsComponent]
 })

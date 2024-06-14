@@ -10,7 +10,7 @@ import { UsersComponent } from './users.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { ViewUserComponent } from './view-user/view-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
-
+import { TranslateModule } from '@ngx-translate/core';
 /**
  * Users Module
  *
@@ -19,7 +19,8 @@ import { EditUserComponent } from './edit-user/edit-user.component';
 @NgModule({
   imports: [
     MifosxLibModule,
-    UsersRoutingModule
+    UsersRoutingModule,
+    TranslateModule
   ],
   declarations: [
     UsersComponent,
