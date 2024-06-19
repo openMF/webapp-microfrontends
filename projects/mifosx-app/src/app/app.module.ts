@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MifosxLibModule } from 'dist/mifosx-lib';
 
 /** Environment Configuration */
 
@@ -39,8 +40,7 @@ import {PortalModule} from '@angular/cdk/portal';
 
 /** Main Routing Module */
 import { AppRoutingModule } from './app-routing.module';
-import { DatePipe, LocationStrategy } from '@angular/common';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { DatePipe } from '@angular/common';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 /**
@@ -55,15 +55,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   imports: [
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: (http: HttpClient, locationStrategy: LocationStrategy) => {
-          return new TranslateHttpLoader(http, `${ window.location.protocol }//${ window.location.host }${locationStrategy.getBaseHref()}/assets/translations/`, '.json');
-        },
-        deps: [HttpClient, LocationStrategy]
-      }
-    }),
+    MifosxLibModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,

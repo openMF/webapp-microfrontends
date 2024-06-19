@@ -6,6 +6,7 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { MifosxLibModule } from '@mifosx-lib/mifosx-lib.module';
 import { DirectivesModule } from '@mifosx-lib/directives/directives.module';
 import { TemplatesRoutingModule } from './templates-routing.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 /** Custom Components */
 import { TemplatesComponent } from './templates.component';
@@ -23,7 +24,8 @@ import { CreateTemplateComponent } from './create-template/create-template.compo
     CKEditorModule,
     MifosxLibModule,
     DirectivesModule,
-    TemplatesRoutingModule
+    TemplatesRoutingModule,
+    TranslateModule
   ],
   declarations: [
     TemplatesComponent,

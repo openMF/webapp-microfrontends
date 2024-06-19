@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 /** Custom Modules */
 import { MifosxLibModule } from '../mifosx-lib.module';
 import { SettingsRoutingModule } from './settings-routing.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 /** Custom Components */
 import { SettingsComponent } from './settings.component';
@@ -16,7 +17,8 @@ import { SettingsComponent } from './settings.component';
 @NgModule({
   imports: [
     MifosxLibModule,
-    SettingsRoutingModule
+    SettingsRoutingModule,
+    TranslateModule
   ],
   declarations: [SettingsComponent]
 })

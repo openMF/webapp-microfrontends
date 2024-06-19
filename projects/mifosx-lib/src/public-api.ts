@@ -11,6 +11,7 @@ export * from './lib/mifosx-lib.module';
 export * from './lib/icons.module';
 export * from './lib/pipes/pipes.module';
 export * from './lib/material.module';
+export * from './lib/pipes/translation-loader'
 
 
 //**************/ Exporting all the components /****************//
