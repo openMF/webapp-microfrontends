@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MifosxLibComponent } from './mifosx-lib.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslationModule } from './pipes/trasnlation.module';
 
 /** Custom Components */
 import { AccountNumberComponent } from './account-number/account-number.component';
@@ -44,14 +45,6 @@ import { PipesModule } from './pipes/pipes.module';
 import { NgxMatDatetimePickerModule, NgxMatNativeDateModule } from '@angular-material-components/datetime-picker';
 
 
-/** Main Routing Module */
-
-import { LocationStrategy } from '@angular/common';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
-
-
 
 @NgModule({
   declarations: [
@@ -86,17 +79,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     // FormDialogComponent
   ],
   imports: [
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: (http: HttpClient, locationStrategy: LocationStrategy) => {
-          return new TranslateHttpLoader(http, `${ window.location.protocol }//${ window.location.host }${locationStrategy.getBaseHref()}/assets/translations/`, '.json');
-        },
-        deps: [HttpClient, LocationStrategy]
-      }
-    }),
     IconsModule,
     CommonModule,
+    TranslationModule,
     RouterModule,
     PipesModule,
     MaterialModule,
@@ -114,6 +99,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     ViewJournalEntryComponent,
     // ViewSavingsAccountingDetailsComponent,
     IconsModule,
+    TranslationModule,
     CommonModule,
     RouterModule,
     MaterialModule,

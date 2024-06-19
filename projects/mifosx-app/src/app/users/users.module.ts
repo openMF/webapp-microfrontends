@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 /** Custom Modules */
 import { MifosxLibModule } from '@mifosx-lib/mifosx-lib.module';
 import { UsersRoutingModule } from './users-routing.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 /** Custom Components */
 import { UsersComponent } from './users.component';
@@ -19,7 +20,8 @@ import { EditUserComponent } from './edit-user/edit-user.component';
 @NgModule({
   imports: [
     MifosxLibModule,
-    UsersRoutingModule
+    UsersRoutingModule,
+    TranslateModule
   ],
   declarations: [
     UsersComponent,
