@@ -10,11 +10,11 @@ import { MatDialog } from '@angular/material/dialog';
 import { of } from 'rxjs';
 
 /** Custom Services */
-import { PopoverService } from '../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /** Custom Dialog Component */
-import { NextStepDialogComponent } from '../../configuration-wizard/next-step-dialog/next-step-dialog.component';
+import { NextStepDialogComponent } from '@mifosx-lib/configuration-wizard/next-step-dialog/next-step-dialog.component';
 
 /**
  * Recurring Deposit Products component.

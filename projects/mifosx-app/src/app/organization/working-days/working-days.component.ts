@@ -7,11 +7,11 @@ import { MatDialog } from '@angular/material/dialog';
 /** Custom Services */
 import { OrganizationService } from '../organization.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { PopoverService } from '../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /** Custom Dialog Components */
-import { NextStepDialogComponent } from '../../configuration-wizard/next-step-dialog/next-step-dialog.component';
+import { NextStepDialogComponent } from '@mifosx-lib/configuration-wizard/next-step-dialog/next-step-dialog.component';
 
 /** Recurrence default value. */
 const recurrenceDefaultValue = 'FREQ=WEEKLY;INTERVAL=1;BYDAY=';

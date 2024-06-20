@@ -9,8 +9,8 @@ import { KeyboardShortcutsDialogComponent } from '@mifosx-lib/keyboard-shortcuts
 
 /** Custom Services */
 import { AuthenticationService } from '../../authentication/authentication.service';
-import { PopoverService } from '../../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /** Custom Imports */
 import { frequentActivities } from './frequent-activities';

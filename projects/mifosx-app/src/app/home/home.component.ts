@@ -14,11 +14,11 @@ import { WarningDialogComponent } from './warning-dialog/warning-dialog.componen
 
 /** Custom Services */
 import { AuthenticationService } from '../core/authentication/authentication.service';
-import { PopoverService } from '../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /** Custom Components */
-import { NextStepDialogComponent } from '../configuration-wizard/next-step-dialog/next-step-dialog.component';
+import { NextStepDialogComponent } from '@mifosx-lib/configuration-wizard/next-step-dialog/next-step-dialog.component';
 
 /**
  * Home component.

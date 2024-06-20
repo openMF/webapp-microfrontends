@@ -5,9 +5,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 /** Custom Services */
 import { SystemService } from '../../system.service';
-import { PopoverService } from '../../../configuration-wizard/popover/popover.service';
-import { PopoverRef } from '../../../configuration-wizard/popover/popover-ref';
-import { ConfigurationWizardService } from '../../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { PopoverRef } from '@mifosx-lib/configuration-wizard/popover/popover-ref';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 @Component({
   selector: 'mifosx-create-code',

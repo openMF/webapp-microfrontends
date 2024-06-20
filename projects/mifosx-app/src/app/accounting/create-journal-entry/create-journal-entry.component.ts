@@ -8,11 +8,11 @@ import { MatDialog } from '@angular/material/dialog';
 import { AccountingService } from '../accounting.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { Dates } from '@mifosx-app/core/utils/dates';
-import { PopoverService } from '../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /** Custom Dialog Component */
-import { NextStepDialogComponent } from '../../configuration-wizard/next-step-dialog/next-step-dialog.component';
+import { NextStepDialogComponent } from '@mifosx-lib/configuration-wizard/next-step-dialog/next-step-dialog.component';
 /**
  * Create Journal Entry component.
  */

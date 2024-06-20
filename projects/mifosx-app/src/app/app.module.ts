@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { MifosxLibModule } from 'dist/mifosx-lib';
+import { MifosxLibModule } from '@mifosx-lib/mifosx-lib.module'; 
 
 /** Environment Configuration */
 
@@ -35,7 +35,6 @@ import { NotificationsModule } from './notifications/notifications.module';
 import { CollectionsModule } from './collections/collections.module';
 import { ProfileModule } from './profile/profile.module';
 import { TasksModule } from './tasks/tasks.module';
-import { ConfigurationWizardModule } from './configuration-wizard/configuration-wizard.module';
 import {PortalModule} from '@angular/cdk/portal';
 
 /** Main Routing Module */
@@ -81,7 +80,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     SearchModule,
     CollectionsModule,
     TasksModule,
-    ConfigurationWizardModule,
     AppRoutingModule
   ],
   declarations: [WebAppComponent, NotFoundComponent],

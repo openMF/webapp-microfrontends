@@ -10,7 +10,7 @@ import { OptionData } from '@mifosx-lib/models/option-data.model';
 export class ViewSavingsAccountingDetailsComponent implements OnInit {
 
   @Input() accountingRule: OptionData;
-  @Input() accountingMappings: any[] = [];
+  @Input() accountingMappings: any = {};
 
   constructor(private accounting: Accounting) { }
 

@@ -9,8 +9,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { of } from 'rxjs';
 
 /** Custom Services */
-import { PopoverService } from '../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /**
  * Employees component.

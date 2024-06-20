@@ -13,11 +13,11 @@ import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
 
 /** Custom Services */
 import { OrganizationService } from '../organization.service';
-import { PopoverService } from '../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /** Custom Dialog Component */
-import { ContinueSetupDialogComponent } from '../../configuration-wizard/continue-setup-dialog/continue-setup-dialog.component';
+import { ContinueSetupDialogComponent } from '@mifosx-lib/configuration-wizard/continue-setup-dialog/continue-setup-dialog.component';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';

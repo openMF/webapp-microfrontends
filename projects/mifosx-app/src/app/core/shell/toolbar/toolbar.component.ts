@@ -10,12 +10,12 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 /** Custom Services */
-import { AuthenticationService } from '../../authentication/authentication.service';
-import { PopoverService } from '../../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../../configuration-wizard/configuration-wizard.service';
+import { AuthenticationService } from '@mifosx-app/core/authentication/authentication.service'; 
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service'; 
 
 /** Custom Components */
-import { ConfigurationWizardComponent } from '../../../configuration-wizard/configuration-wizard.component';
+import { ConfigurationWizardComponent } from '@mifosx-lib/configuration-wizard/configuration-wizard.component'; 
 
 /**
  * Toolbar component.

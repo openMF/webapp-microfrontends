@@ -9,8 +9,8 @@ import { MatTableDataSource } from '@angular/material/table';
 
 /** Custom Services */
 import { SystemService } from '../../system.service';
-import { PopoverService } from '../../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /** Data Imports */
 import { appTableData, entitySubTypeData, savingsSubTypeData } from '../app-table-data';
@@ -20,7 +20,7 @@ import { ColumnDialogComponent } from '../column-dialog/column-dialog.component'
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
 
 /** Custom Dialog Component */
-import { ContinueSetupDialogComponent } from '../../../configuration-wizard/continue-setup-dialog/continue-setup-dialog.component';
+import { ContinueSetupDialogComponent } from '@mifosx-lib/configuration-wizard/continue-setup-dialog/continue-setup-dialog.component';
 import { DatatableColumn } from '../datatable-column.model';
 
 /**

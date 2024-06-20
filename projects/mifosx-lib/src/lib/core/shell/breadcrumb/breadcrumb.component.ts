@@ -9,8 +9,8 @@ import { filter } from 'rxjs/operators';
 import { Breadcrumb } from './breadcrumb.model';
 
 /** Custom Services */
-import { PopoverService } from '../../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 import { TranslateService } from '@ngx-translate/core';
 
 /**
