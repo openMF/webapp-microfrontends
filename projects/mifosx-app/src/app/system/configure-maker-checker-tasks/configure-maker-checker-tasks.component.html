@@ -62,7 +62,7 @@
   <h2>{{'labels.heading.Edit' | translate}}</h2>
   <p class="mw300">{{'labels.text.To add or remove a task from the Maker-Checker list' | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStep()">{{'labels.buttons.Back' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateMcTable,mcTable,'top', true);">{{'labels.buttons.Next' | translate}}</button>
   </div>
@@ -71,7 +71,7 @@
 <ng-template #templateMcTable let-popover="popover">
   <h4 class="mw300">{{'labels.heading.List of all maker checker tasks' | translate}}: <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/67895359/Configure+Maker-Checker+Tasks" target="_blank">{{'labels.inputs.Configure Maker-Checker Tasks' | translate}}</a></h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateButtonEdit,buttonEdit,'bottom', true);">{{'labels.buttons.Back' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">{{'labels.buttons.Next' | translate}}</button>
   </div>

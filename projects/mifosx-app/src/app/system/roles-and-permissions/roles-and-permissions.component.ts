@@ -137,4 +137,7 @@ export class RolesAndPermissionsComponent implements OnInit, AfterViewInit {
     this.router.navigate(['/system']);
   }
 
+  closeConfigurationWizard(){
+    this.configurationWizardService.closeConfigWizard()
+  }
 }

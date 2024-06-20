@@ -177,4 +177,8 @@ export class AccountingComponent implements OnInit, AfterViewInit {
     this.router.navigate(['/accounting/closing-entries']);
   }
 
+  closeConfigurationWizard(){
+    this.configurationWizardService.closeConfigWizard()
+  }
+
 }

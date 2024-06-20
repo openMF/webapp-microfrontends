@@ -152,4 +152,11 @@ export class HolidaysComponent implements OnInit, AfterViewInit {
     this.configurationWizardService.showCreateHoliday = true;
     this.router.navigate(['/organization']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

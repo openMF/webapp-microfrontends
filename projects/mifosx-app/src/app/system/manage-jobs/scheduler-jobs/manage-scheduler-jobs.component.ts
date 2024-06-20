@@ -264,4 +264,8 @@ export class ManageSchedulerJobsComponent implements OnInit, AfterViewInit {
     }
   }
 
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard();
+  }
+
 }

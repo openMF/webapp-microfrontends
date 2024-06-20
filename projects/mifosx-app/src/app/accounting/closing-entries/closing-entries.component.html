@@ -62,7 +62,7 @@
   <h2>{{"labels.heading.Create Closure" | translate}}</h2>
   <p class="mw300">{{"labels.text.Create new closure" | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{"labels.buttons.Close" | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStep();">{{"labels.buttons.Back" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter,filter, 'bottom', true);">{{"labels.buttons.Next" | translate}}</button>
   </div>
@@ -71,7 +71,7 @@
 <ng-template #templateFilter let-popover="popover">
   <h4>{{"labels.heading.Search bar to filter closures by office."|translate}}</h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{"labels.buttons.Close" | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateButtonCreateClosure, buttonCreateClosure, 'bottom', true);">{{"labels.buttons.Back" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateClosuresTable,closuresTable, 'top', true);">{{"labels.buttons.Next" | translate}}</button>
   </div>
@@ -80,7 +80,7 @@
 <ng-template #templateClosuresTable let-popover="popover">
   <h4>{{"labels.heading.List of closures. To know more click" | translate}}: <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/67895316/Closing+Entries" target="_blank">{{"labels.inputs.Closing Entries" | translate}}</a></h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{"labels.buttons.Close" | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter,filter, 'bottom', true);">{{"labels.buttons.Back" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">{{"labels.buttons.Next" | translate}}</button>
   </div>

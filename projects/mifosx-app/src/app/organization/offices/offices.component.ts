@@ -197,4 +197,11 @@ export class OfficesComponent implements OnInit, AfterViewInit {
     this.isTreeExpanded = this.treeControlService.toggleExpandCollapse(this.nestedTreeControl, this.isTreeExpanded);
   }
 
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
+
 }

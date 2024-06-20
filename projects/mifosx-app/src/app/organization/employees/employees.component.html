@@ -72,7 +72,7 @@
   <h2>{{ 'labels.heading.Import Employees' | translate }}</h2>
   <p class="mw300">{{'labels.text.Import employee details from your local device' | translate }}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStep()">{{'labels.buttons.Back' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateButtonCreateEmployee,buttonCreateEmployee,'bottom', true)">{{'labels.buttons.Next' | translate }}</button>
   </div>
@@ -82,7 +82,7 @@
   <h2>{{ 'labels.heading.Create Employee' | translate }}</h2>
   <p class="mw300">{{'labels.text.Create new employees in your organization' | translate }}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateButtonImportEmployees,buttonImportEmployees,'bottom', true)">{{'labels.buttons.Back' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter,filter,'bottom', true)">{{'labels.buttons.Next' | translate }}</button>
   </div>
@@ -91,7 +91,7 @@
 <ng-template #templateFilter let-popover="popover">
   <h4>{{ 'labels.heading.Search bar to filter employees.' | translate }}</h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateButtonCreateEmployee,buttonCreateEmployee,'bottom', true)">{{'labels.buttons.Back' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateTableEmployees,tableEmployees,'top', true)">{{'labels.buttons.Next' | translate }}</button>
   </div>
@@ -100,7 +100,7 @@
 <ng-template #templateTableEmployees let-popover="popover">
   <h4>{{ 'labels.heading.List of employees in the organization.' | translate }}</h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter,filter,'bottom', true)">{{'labels.buttons.Back' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">{{'labels.buttons.Next' | translate }}</button>
   </div>

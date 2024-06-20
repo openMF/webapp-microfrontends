@@ -4,6 +4,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { createTranslateLoader } from './translation-loader';
 import { LocationStrategy } from '@angular/common';
 
+
 @NgModule({
   imports: [
     HttpClientModule,
@@ -13,8 +14,9 @@ import { LocationStrategy } from '@angular/common';
         useFactory: createTranslateLoader,
         deps: [HttpClient, LocationStrategy]
       }
-    })
+    }),
+    TranslateModule
   ],
   exports: [TranslateModule]
 })
-export class TranslationModule {}
+export class TranslationModule { }

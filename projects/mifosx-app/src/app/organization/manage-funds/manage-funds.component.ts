@@ -211,4 +211,11 @@ export class ManageFundsComponent implements OnInit, AfterViewInit {
       }
     });
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

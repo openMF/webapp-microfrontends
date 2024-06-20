@@ -128,4 +128,11 @@ export class FinancialActivityMappingsComponent implements OnInit, AfterViewInit
     this.router.navigate(['/accounting']);
   }
 
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
+
 }

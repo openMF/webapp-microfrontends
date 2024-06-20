@@ -158,7 +158,7 @@
   <h2>{{'labels.heading.Manage Data Tables' | translate}}</h2>
   <p class="mw300">{{'labels.text.Mifos X data-tables allow the user to add custom fields' | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStepDatatables()">{{'labels.buttons.Back' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStepDatatables()">{{'labels.buttons.Next' | translate}}</button>
   </div>
@@ -168,7 +168,7 @@
   <h2>{{'labels.heading.Manage Codes' | translate}}</h2>
   <p class="mw300">{{'labels.text.Selection you can create new drop-downs and edit' | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStepCodes()">{{'labels.buttons.Back' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStepCodes()">{{'labels.buttons.Next' | translate}}</button>
   </div>
@@ -178,7 +178,7 @@
   <h2>{{'labels.heading.Manage Roles and Permissions' | translate}}</h2>
   <p class="mw300">{{'labels.text.Roles and Permissions allow the administrator to control access' | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStepRolesandPermission()">{{'labels.buttons.Back' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStepRolesandPermission()">{{'labels.buttons.Next' | translate}}</button>
   </div>
@@ -188,7 +188,7 @@
   <h2>{{'labels.heading.Configure Maker-Checker Tasks' | translate}}</h2>
   <p class="mw300">{{'labels.text.“Maker-Checker” principle requires every tasks' | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStepMakerCheckerTable()">{{'labels.buttons.Back' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStepMakerCheckerTable()">{{'labels.buttons.Next' | translate}}</button>
   </div>
@@ -198,7 +198,7 @@
   <h2>{{'labels.heading.Configuration' | translate}}</h2>
   <p class="mw300">{{'labels.text.Configurations page allows you to further customize' | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStepConfigurations()">{{'labels.buttons.Back' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStepConfigurations()">{{'labels.buttons.Next' | translate}}</button>
   </div>
@@ -208,7 +208,7 @@
   <h2>{{'labels.heading.Manage Scheduler Jobs' | translate}}</h2>
   <p class="mw300">{{'labels.text.Scheduler Jobs can set batch jobs' | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStepSchedulerJobs()">{{'labels.buttons.Back' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStepSchedulerJobs()">{{'labels.buttons.Next' | translate}}</button>
   </div>
@@ -218,7 +218,7 @@
   <h2>{{'labels.heading.Manage Reports' | translate}}</h2>
   <p class="mw300">{{'labels.text.Add customized reports and edit core reports' | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStepManageReports()">{{'labels.buttons.Back' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStepManageReports()">{{'labels.buttons.Next' | translate}}</button>
   </div>

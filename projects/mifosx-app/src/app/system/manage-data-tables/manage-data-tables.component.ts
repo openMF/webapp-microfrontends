@@ -129,4 +129,11 @@ export class ManageDataTablesComponent implements OnInit, AfterViewInit {
     this.configurationWizardService.showDatatables = true;
     this.router.navigate(['/system']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

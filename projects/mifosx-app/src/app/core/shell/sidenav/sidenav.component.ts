@@ -219,4 +219,11 @@ export class SidenavComponent implements OnInit, AfterViewInit {
     return this.settingsService.tenantIdentifier;
   }
 
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
+
 }

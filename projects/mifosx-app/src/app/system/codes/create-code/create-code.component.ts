@@ -111,4 +111,11 @@ export class CreateCodeComponent implements OnInit, AfterViewInit {
     this.configurationWizardService.showSystemCodesList = true;
     this.router.navigate(['/system/codes']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

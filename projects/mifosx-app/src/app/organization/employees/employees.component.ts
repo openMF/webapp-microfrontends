@@ -130,4 +130,11 @@ export class EmployeesComponent implements OnInit, AfterViewInit {
     this.router.navigate(['/organization']);
   }
 
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
+
 }

@@ -68,7 +68,7 @@
 <ng-template #templateFilter let-data let-popover="popover">
  <h4>{{'labels.heading.Search bar to filter configurations' | translate}}</h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStep()">{{'labels.buttons.Back' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateConfigurationsTable, configurationsTable, 'top', true)">{{'labels.buttons.Next' | translate}}</button>
   </div>
@@ -77,7 +77,7 @@
 <ng-template #templateConfigurationsTable let-data let-popover="popover">
   <h4 class="mw300">{{'labels.heading.Global Configuration options' | translate}}: <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/67895362/Global+Configuration" target="_blank">{{'labels.inputs.Global Configurations' | translate}}</a></h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter, filter, 'bottom', true)">{{'labels.buttons.Back' | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">{{'labels.buttons.Next' | translate}}</button>
   </div>

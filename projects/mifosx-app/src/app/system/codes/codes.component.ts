@@ -124,4 +124,11 @@ export class CodesComponent implements OnInit, AfterViewInit {
     this.router.navigate(['/system']);
   }
 
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
+
 }

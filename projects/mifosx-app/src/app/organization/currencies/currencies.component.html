@@ -45,7 +45,7 @@
   <h2>{{ 'labels.heading.Add/Edit Currency' | translate }}</h2>
   <p class="mw300">{{ 'labels.text.List of all currencies currently in use' | translate }}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStep()">{{'labels.buttons.Back' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter, filter, 'bottom', true)">{{'labels.buttons.Next' | translate }}</button>
   </div>
@@ -54,7 +54,7 @@
 <ng-template #templateFilter let-popover="popover">
   <h4>{{ 'labels.heading.Search bar to filter currencies.' | translate }}</h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateButtonAddEdit,buttonAddEdit, 'bottom', true)">{{'labels.buttons.Back' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateTableCurrencies, tableCurrencies, 'top', true)">{{'labels.buttons.Next' | translate }}</button>
   </div>
@@ -63,7 +63,7 @@
 <ng-template #templateTableCurrencies let-popover="popover">
   <h4>{{ 'labels.heading.List of currencies available.' | translate }}</h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{'labels.buttons.Close' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter, filter, 'bottom', true)">{{'labels.buttons.Back' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">{{'labels.buttons.Next' | translate }}</button>
   </div>

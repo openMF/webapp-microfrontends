@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MifosxLibComponent } from './mifosx-lib.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { TranslationModule } from './pipes/trasnlation.module';
+
 
 /** Custom Components */
 import { AccountNumberComponent } from './account-number/account-number.component';
@@ -34,8 +34,9 @@ import { ThemePickerComponent } from './theme-picker/theme-picker.component';
 import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
 import { TransactionPaymentDetailComponent } from './transaction-payment-detail/transaction-payment-detail.component';
 import { NotificationsTrayComponent } from './notifications-tray/notifications-tray.component';
-// import { FormfieldComponent } from './form-dialog/formfield/formfield.component';
-// import { FormDialogComponent } from './form-dialog/form-dialog.component';
+import { FormfieldComponent } from './form-dialog/formfield/formfield.component';
+import { FormDialogComponent } from './form-dialog/form-dialog.component';
+
 
 /** Custom Modules */
 
@@ -43,10 +44,26 @@ import { IconsModule } from './icons.module';
 import { MaterialModule } from './material.module';
 import { PipesModule } from './pipes/pipes.module';
 import { NgxMatDatetimePickerModule, NgxMatNativeDateModule } from '@angular-material-components/datetime-picker';
+import { FooterComponent } from './footer/footer.component';
+import { TranslationModule } from '../public-api';
 
 
 
 @NgModule({
+  imports: [
+    IconsModule,
+    CommonModule,
+    TranslationModule,
+    RouterModule,
+    PipesModule,
+    MaterialModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    NgxMatDatetimePickerModule,
+    NgxMatNativeDateModule,
+
+  ],
   declarations: [
     MifosxLibComponent,
     AccountNumberComponent,
@@ -75,22 +92,13 @@ import { NgxMatDatetimePickerModule, NgxMatNativeDateModule } from '@angular-mat
     ThemeToggleComponent,
     TransactionPaymentDetailComponent,
     NotificationsTrayComponent,
-    // FormfieldComponent,
-    // FormDialogComponent
-  ],
-  imports: [
-    IconsModule,
-    CommonModule,
-    TranslationModule,
-    RouterModule,
-    PipesModule,
-    MaterialModule,
-    ReactiveFormsModule,
-    FormsModule,
-    HttpClientModule,
-    NgxMatDatetimePickerModule,
-    NgxMatNativeDateModule,
-  ],
+    FileUploadComponent,
+    FormfieldComponent,
+    FormDialogComponent,
+    ViewJournalEntryComponent,
+    FooterComponent
+  ]
+  ,
   exports: [
     MifosxLibComponent,
     AccountNumberComponent,
@@ -99,7 +107,6 @@ import { NgxMatDatetimePickerModule, NgxMatNativeDateModule } from '@angular-mat
     ViewJournalEntryComponent,
     ViewSavingsAccountingDetailsComponent,
     IconsModule,
-    TranslationModule,
     CommonModule,
     RouterModule,
     MaterialModule,
@@ -108,7 +115,12 @@ import { NgxMatDatetimePickerModule, NgxMatNativeDateModule } from '@angular-mat
     ThemePickerComponent,
     ThemeToggleComponent,
     TransactionPaymentDetailComponent,
-    NotificationsTrayComponent
+    TranslationModule,
+    NotificationsTrayComponent,
+    FileUploadComponent,
+    FormDialogComponent,
+    ViewJournalEntryComponent,
+    FooterComponent
   ]
 })
 export class MifosxLibModule { }

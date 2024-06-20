@@ -77,7 +77,7 @@
   <h2>{{"labels.text.Create Charge" | translate}}</h2>
   <p class="mw300">{{"labels.text.Supports Loan charges, Savings & deposits" | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">Close</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStep()">Back</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter,filter, 'bottom', true)">Next</button>
   </div>
@@ -86,7 +86,7 @@
 <ng-template #templateFilter let-popover="popover">
   <h4>{{"labels.heading.Search bar to filter charges." | translate}}</h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">Close</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateButtonCreateCharge,buttonCreateCharge , 'bottom', true)">Back</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateChargesTable,chargesTable, 'top', true)">Next</button>
   </div>
@@ -95,7 +95,7 @@
 <ng-template #templateChargesTable let-popover="popover">
   <h4 class="mw300">{{"labels.heading.List of charges in the organization. For more details click" | translate}}: <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/72908813/Charges" target="_blank">Charges</a></h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">Close</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">Close</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter,filter, 'bottom', true)">Back</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">Next</button>
   </div>

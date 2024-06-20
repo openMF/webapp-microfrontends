@@ -132,7 +132,7 @@
   <h2>{{"labels.heading.Migrate opening balances (Office-wise)" | translate}}</h2>
   <p class="mw300">{{"labels.text.Migrate Opening Balances" | translate}} <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/90243328/Migrate+opening+balances+Office-wise" target="_blank">{{"labels.inputs.Migrate opening balances (Office-wise)" | translate}}</a></p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{"labels.buttons.Close" | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();popover.close();previousStep();">{{"labels.buttons.Back" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();popover.close();nextStep();">{{"labels.buttons.Next" | translate}}</button>
   </div>

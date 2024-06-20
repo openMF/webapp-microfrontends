@@ -104,4 +104,11 @@ export class SavingProductsComponent implements OnInit, AfterViewInit {
     this.configurationWizardService.showSavingsProducts = true;
     this.router.navigate(['/products']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

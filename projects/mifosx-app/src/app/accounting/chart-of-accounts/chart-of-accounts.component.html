@@ -200,7 +200,7 @@
   <h2>{{"labels.heading.Tree View" | translate}}</h2>
   <p class="mw300">{{"labels.text.Alternative way-Tree view" | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{"labels.buttons.Close" | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStep();">{{"labels.buttons.Back" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover( templateButtonAddAccount, buttonAddAccount, 'bottom', true);">{{"labels.buttons.Next" | translate}}</button>
   </div>
@@ -210,7 +210,7 @@
   <h2>{{"labels.heading.Add Account" | translate}}</h2>
   <p class="mw300">{{"labels.text.Create New GL Account"|translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{"labels.buttons.Close" | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateButtonTreeView, buttonTreeView , 'bottom', true);">{{"labels.buttons.Back" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter, filter, 'bottom', true);">{{"labels.buttons.Next" | translate}}</button>
   </div>
@@ -219,7 +219,7 @@
 <ng-template #templateFilter let-popover="popover">
   <h4>{{"labels.heading.Search bar to filter GL accounts." | translate}}</h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{"labels.buttons.Close" | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover( templateButtonAddAccount, buttonAddAccount, 'bottom', true);">{{"labels.buttons.Back" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateAccountsTable, accountsTable, 'top', true);">{{"labels.buttons.Next" | translate}}</button>
   </div>
@@ -228,7 +228,7 @@
 <ng-template #templateAccountsTable let-popover="popover">
   <h4 class="mw300">{{"labels.heading.List of chart of all the accounts being used by your organization." | translate}}</h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{"labels.buttons.Close" | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter, filter, 'bottom', true);">{{"labels.buttons.Back" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">{{"labels.buttons.Next" | translate}}</button>
   </div>

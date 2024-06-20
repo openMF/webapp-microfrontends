@@ -200,4 +200,11 @@ export class ManageCurrenciesComponent implements OnInit, AfterViewInit, OnDestr
       }
     });
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

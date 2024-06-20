@@ -6,6 +6,7 @@ import { MifosxLibModule } from '../mifosx-lib.module';
 import { SettingsRoutingModule } from './settings-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
 
+
 /** Custom Components */
 import { SettingsComponent } from './settings.component';
 

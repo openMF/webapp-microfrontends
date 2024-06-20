@@ -230,4 +230,11 @@ export class ConfigureMakerCheckerTasksComponent implements OnInit, AfterViewIni
     this.configurationWizardService.showMakerCheckerTable = true;
     this.router.navigate(['/system']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

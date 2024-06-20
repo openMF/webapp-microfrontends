@@ -50,7 +50,7 @@
   <h2>{{ 'labels.buttons.Create Share Product' | translate }}</h2>
   <p class="mw300">This option allows you to create new share product.</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{ 'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{ 'labels.buttons.Close' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStep()">{{ 'labels.buttons.Back' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter,filter, 'bottom', true)">{{ 'labels.buttons.Next' | translate }}</button>
   </div>
@@ -59,7 +59,7 @@
 <ng-template #templateFilter let-popover="popover">
   <h4>Search bar to filter share products.</h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{ 'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{ 'labels.buttons.Close' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateButtonCreateShareProduct,buttonCreateShareProduct , 'bottom', true)">{{ 'labels.buttons.Back' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateShareProductsTable,shareProductsTable, 'top', true)">{{ 'labels.buttons.Next' | translate }}</button>
   </div>
@@ -68,7 +68,7 @@
 <ng-template #templateShareProductsTable let-popover="popover">
   <h4 class="mw300">List of share products in the organization. For more details click: <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/129531946/Share+products" target="_blank">{{ 'labels.buttons.Share Products' | translate }}</a></h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{ 'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{ 'labels.buttons.Close' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateFilter,filter, 'bottom', true)">{{ 'labels.buttons.Back' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">{{ 'labels.buttons.Next' | translate }}</button>
   </div>

@@ -47,7 +47,7 @@
   <h2>{{"labels.heading.Define New Mapping"|translate}}</h2>
   <p class="mw300">{{"labels.text.To define new mapping." | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{"labels.buttons.Close" | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStep()">{{"labels.buttons.Back" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateActivitiesTable, activitiesTable, 'top', true)">{{"labels.buttons.Next" | translate}}</button>
   </div>
@@ -56,7 +56,7 @@
 <ng-template #templateActivitiesTable let-popover="popover">
   <h4 class="mw300">{{"labels.heading.Account Linked Financial" | translate}} <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/106430472/Accounts+linked+to+Financial+Activities" target="_blank">{{"labels.heading.Accounts linked to Financial Activities" | translate}}</a> </h4>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{"labels.buttons.Close" | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateButtonDefineMapping, buttonDefineMapping , 'bottom', true)">{{"labels.buttons.Back" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">{{"labels.buttons.Next" | translate}}</button>
   </div>

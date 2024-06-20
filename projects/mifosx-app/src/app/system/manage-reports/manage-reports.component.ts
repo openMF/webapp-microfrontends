@@ -128,4 +128,11 @@ export class ManageReportsComponent implements OnInit, AfterViewInit {
       this.router.navigate(['/home']);
     });
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard();
+  }
 }

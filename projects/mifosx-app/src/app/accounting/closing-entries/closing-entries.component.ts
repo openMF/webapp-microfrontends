@@ -165,4 +165,11 @@ export class ClosingEntriesComponent implements OnInit, AfterViewInit {
     this.configurationWizardService.showClosingEntries = true;
     this.router.navigate(['/accounting']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

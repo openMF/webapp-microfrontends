@@ -136,4 +136,11 @@ export class ChargesComponent implements OnInit, AfterViewInit {
     this.configurationWizardService.showCharges = true;
     this.router.navigate(['/products']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }
