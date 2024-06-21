@@ -6,8 +6,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 /** Custom Services */
 import { AccountingService } from '../accounting.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { PopoverService } from '../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /** Custom Validators */
 import { onlyOneOfTheFieldsIsRequiredValidator } from './only-one-of-the-fields-is-required.validator';

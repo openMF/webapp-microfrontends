@@ -1,4 +1,5 @@
 /*
+import { PopoverRef } from './lib/configuration-wizard/popover/popover-ref';
  * Public API Surface of mifosx-lib
  */
 
@@ -12,6 +13,8 @@ export * from './lib/icons.module';
 export * from './lib/pipes/pipes.module';
 export * from './lib/material.module';
 export * from './lib/pipes/translation-loader'
+export * from './lib/pipes/trasnlation.module'
+export * from './lib/configuration-wizard/configuration-wizard.module'
 
 
 //**************/ Exporting all the components /****************//
@@ -21,7 +24,7 @@ export * from './lib/account-number/account-number.component';
 export * from './lib/accounting/gl-account-display/gl-account-display.component';
 export * from './lib/accounting/gl-account-selector/gl-account-selector.component';
 export * from './lib/accounting/view-journal-entry/view-journal-entry.component';
-// export * from './lib/accounting/view-savings-accounting-details/view-savings-accounting-details.component';
+export * from './lib/accounting/view-savings-accounting-details/view-savings-accounting-details.component';
 export * from './lib/cancel-dialog/cancel-dialog.component';
 export * from './lib/change-password-dialog/change-password-dialog.component';
 export * from './lib/confirmation-dialog/confirmation-dialog.component';
@@ -45,6 +48,13 @@ export * from './lib/transaction-payment-detail/transaction-payment-detail.compo
 export * from './lib/notifications-tray/notifications-tray.component';
 // export * from './lib/form-dialog/formfield/formfield.component';
 // export * from './lib/form-dialog/form-dialog.component';
+export * from './lib/configuration-wizard/completion-dialog/completion-dialog.component'
+export * from './lib/configuration-wizard/continue-setup-dialog/continue-setup-dialog.component'
+export * from './lib/configuration-wizard/next-step-dialog/next-step-dialog.component'
+export * from './lib/configuration-wizard/popover/popover-close.directive'
+export * from './lib/configuration-wizard/popover/popover-arrow.directive'
+export * from './lib/configuration-wizard/popover/popover-config'
+export * from './lib/configuration-wizard/popover/popover-ref'
 
 // All the pipes
 export * from './lib/pipes/status-lookup.pipe';

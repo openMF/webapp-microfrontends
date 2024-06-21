@@ -7,11 +7,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 
 /* Custom Services */
-import { PopoverService } from '../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /** Custom Dialog Component */
-import { CompletionDialogComponent } from '../../configuration-wizard/completion-dialog/completion-dialog.component';
+import { CompletionDialogComponent } from '@mifosx-lib/configuration-wizard/completion-dialog/completion-dialog.component';
 
 /**
  * Manage Reports Component.

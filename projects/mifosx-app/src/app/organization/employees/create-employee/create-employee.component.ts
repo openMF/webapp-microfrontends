@@ -8,11 +8,11 @@ import { OrganizationService } from '../../organization.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { Dates } from '@mifosx-app/core/utils/dates';
 import { MatDialog } from '@angular/material/dialog';
-import { PopoverService } from '../../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /** Custom Dialog Component */
-import { ContinueSetupDialogComponent } from '../../../configuration-wizard/continue-setup-dialog/continue-setup-dialog.component';
+import { ContinueSetupDialogComponent } from '@mifosx-lib/configuration-wizard/continue-setup-dialog/continue-setup-dialog.component';
 
 /**
  * Create employee component.

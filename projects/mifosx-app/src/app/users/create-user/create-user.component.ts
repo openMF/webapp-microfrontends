@@ -7,13 +7,13 @@ import { MatDialog } from '@angular/material/dialog';
 
 /** Custom Services */
 import { UsersService } from '../users.service';
-import { PopoverService } from '../../configuration-wizard/popover/popover.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
 
 /** Custom Dialog Component */
 import { PasswordsUtility } from '@mifosx-app/core/utils/passwords-utility';
 import { confirmPasswordValidator } from '@mifosx-app/login/reset-password/confirm-password.validator';
-import { ConfigurationWizardService } from '@mifosx-app/configuration-wizard/configuration-wizard.service';
-import { ContinueSetupDialogComponent } from '@mifosx-app/configuration-wizard/continue-setup-dialog/continue-setup-dialog.component';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service'; 
+import { ContinueSetupDialogComponent } from '@mifosx-lib/configuration-wizard/continue-setup-dialog/continue-setup-dialog.component'; 
 
 /**
  * Create user component.

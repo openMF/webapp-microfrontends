@@ -11,8 +11,8 @@ import { of } from 'rxjs';
 
 /** Custom Services */
 import { OrganizationService } from '../organization.service';
-import { PopoverService } from '../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /**
  * Holidays component.

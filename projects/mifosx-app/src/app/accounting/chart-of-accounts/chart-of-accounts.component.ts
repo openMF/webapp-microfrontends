@@ -16,8 +16,8 @@ import { GLAccountNode } from './gl-account-node.model';
 
 /** Custom Services */
 import { GlAccountTreeService } from './gl-account-tree.service';
-import { PopoverService } from '../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 import { TreeControlService } from '@mifosx-lib/common-logic/tree-control.service';
 
 /**

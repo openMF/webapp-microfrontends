@@ -12,7 +12,7 @@ import { AccountNumberComponent } from './account-number/account-number.componen
 import { GlAccountDisplayComponent } from './accounting/gl-account-display/gl-account-display.component';
 import { GlAccountSelectorComponent } from './accounting/gl-account-selector/gl-account-selector.component';
 import { ViewJournalEntryComponent } from './accounting/view-journal-entry/view-journal-entry.component';
-// import { ViewSavingsAccountingDetailsComponent } from './accounting/view-savings-accounting-details/view-savings-accounting-details.component';
+import { ViewSavingsAccountingDetailsComponent } from './accounting/view-savings-accounting-details/view-savings-accounting-details.component';
 import { CancelDialogComponent } from './cancel-dialog/cancel-dialog.component';
 import { ChangePasswordDialogComponent } from './change-password-dialog/change-password-dialog.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
@@ -53,7 +53,7 @@ import { NgxMatDatetimePickerModule, NgxMatNativeDateModule } from '@angular-mat
     GlAccountDisplayComponent,
     GlAccountSelectorComponent,
     ViewJournalEntryComponent,
-    // ViewSavingsAccountingDetailsComponent,
+    ViewSavingsAccountingDetailsComponent,
     CancelDialogComponent,
     ChangePasswordDialogComponent,
     ConfirmationDialogComponent,
@@ -89,7 +89,7 @@ import { NgxMatDatetimePickerModule, NgxMatNativeDateModule } from '@angular-mat
     FormsModule,
     HttpClientModule,
     NgxMatDatetimePickerModule,
-    NgxMatNativeDateModule
+    NgxMatNativeDateModule,
   ],
   exports: [
     MifosxLibComponent,
@@ -97,7 +97,7 @@ import { NgxMatDatetimePickerModule, NgxMatNativeDateModule } from '@angular-mat
     GlAccountDisplayComponent,
     GlAccountSelectorComponent,
     ViewJournalEntryComponent,
-    // ViewSavingsAccountingDetailsComponent,
+    ViewSavingsAccountingDetailsComponent,
     IconsModule,
     TranslationModule,
     CommonModule,

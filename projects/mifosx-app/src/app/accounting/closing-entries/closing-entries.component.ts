@@ -10,8 +10,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { startWith, map } from 'rxjs/operators';
 
 /** Custom Services */
-import { PopoverService } from '../../configuration-wizard/popover/popover.service';
-import { ConfigurationWizardService } from '../../configuration-wizard/configuration-wizard.service';
+import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
+import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 
 /**
  * Closing entries component.
