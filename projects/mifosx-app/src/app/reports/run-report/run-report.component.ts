@@ -10,11 +10,11 @@ import { SettingsService } from '@mifosx-lib/settings/settings.service';
 /** Custom Models */
 import { ReportParameter } from '../common-models/report-parameter.model';
 import { SelectOption } from '../common-models/select-option.model';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { GlobalConfiguration } from '@mifosx-app/system/configurations/global-configurations-tab/configuration.model';
 
 import * as XLSX from 'xlsx';
-import { AlertService } from '@mifosx-app/core/alert/alert.service';
+import { AlertService } from '@mifosx-lib/core/alert/alert.service';
 
 /**
  * Run report component.

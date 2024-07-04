@@ -13,7 +13,7 @@ import { activities } from './activities';
 import { WarningDialogComponent } from './warning-dialog/warning-dialog.component';
 
 /** Custom Services */
-import { AuthenticationService } from '../core/authentication/authentication.service';
+import { AuthenticationService } from '@mifosx-lib/core/authentication/authentication.service';
 import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
 import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 

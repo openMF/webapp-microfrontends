@@ -5,7 +5,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 
 /** Custom Services */
-import { AuthenticationService } from '@mifosx-app/core/authentication/authentication.service';
+import { AuthenticationService } from '@mifosx-lib/core/authentication/authentication.service';
 // import { ChangePasswordDialogComponent } from '@mifosx-lib/change-password-dialog/change-password-dialog.component';
 import { UserService } from '@mifosx-app/self-service/users/user.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';

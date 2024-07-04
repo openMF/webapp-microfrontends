@@ -2,7 +2,7 @@
 import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
 /** Custom Services */
-import { AuthenticationService } from '../../core/authentication/authentication.service';
+import { AuthenticationService } from '@mifosx-lib/core/authentication/authentication.service';
 
 /**
  * Has Permission Directive

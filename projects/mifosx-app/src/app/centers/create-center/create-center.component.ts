@@ -7,7 +7,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { GroupsService } from '@mifosx-app/groups/groups.service';
 import { CentersService } from '../centers.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Create Center component.

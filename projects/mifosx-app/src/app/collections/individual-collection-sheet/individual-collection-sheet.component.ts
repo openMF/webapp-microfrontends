@@ -20,7 +20,7 @@ import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base'
 
 /** Custom Services */
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Individual Collection Sheet

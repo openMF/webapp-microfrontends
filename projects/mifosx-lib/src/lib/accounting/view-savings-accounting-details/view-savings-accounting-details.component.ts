@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Accounting } from '../../core/utils/accounting';
+import { Accounting } from '@mifosx-lib/core/utils/accounting';
 import { OptionData } from '@mifosx-lib/models/option-data.model';
 
 @Component({

@@ -6,7 +6,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 /** Custom Services */
 import { ClientsService } from '../../../clients.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Add Family Member Component

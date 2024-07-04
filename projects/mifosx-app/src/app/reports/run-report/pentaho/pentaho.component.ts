@@ -5,7 +5,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 /** Custom Services */
 import { ReportsService } from '../../reports.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { ProgressBarService } from '@mifosx-app/core/progress-bar/progress-bar.service';
+import { ProgressBarService } from '@mifosx-lib/core/progress-bar/progress-bar.service';
 
 /**
  * Pentaho Component

@@ -15,7 +15,7 @@ import { SettingsService } from '@mifosx-lib/settings/settings.service';
 /** Custom Components */
 import { FloatingRatePeriodDialogComponent } from '../floating-rate-period-dialog/floating-rate-period-dialog.component';
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Create Floating Rate Component.

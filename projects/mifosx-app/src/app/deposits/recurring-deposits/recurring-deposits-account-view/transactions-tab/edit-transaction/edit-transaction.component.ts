@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators, UntypedFormControl } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /** Custom Services */
 import { RecurringDepositsService } from '@mifosx-app/deposits/recurring-deposits/recurring-deposits.service';

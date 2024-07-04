@@ -7,7 +7,7 @@ import { MatDialog } from '@angular/material/dialog';
 /** Custom Services */
 import { AccountingService } from '../accounting.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
 import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/configuration-wizard.service';
 

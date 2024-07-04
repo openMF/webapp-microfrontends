@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { LoansService } from '@mifosx-app/loans/loans.service';
 import { ClientsService } from '@mifosx-app/clients/clients.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Create Guarantor Action

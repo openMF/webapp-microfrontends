@@ -7,7 +7,7 @@ import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms
 import { AccountTransfersService } from '../account-transfers.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { ClientsService } from '@mifosx-app/clients/clients.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 
 /**

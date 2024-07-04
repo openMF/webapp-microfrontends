@@ -9,7 +9,7 @@ import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.compone
 
 /** Custom Services */
 import { CentersService } from '../../centers.service';
-import { AuthenticationService } from '@mifosx-app/core/authentication/authentication.service';
+import { AuthenticationService } from '@mifosx-lib/core/authentication/authentication.service';
 
 @Component({
   selector: 'mifosx-notes-tab',

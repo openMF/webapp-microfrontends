@@ -5,7 +5,7 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms
 
 /** Custom Services */
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 @Component({
   selector: 'mifosx-assign-loan-officer',

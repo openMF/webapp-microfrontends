@@ -16,7 +16,7 @@ import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepick
 /** Custom Services */
 import { OrganizationService } from '../../organization.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * View SMS Campaign Component

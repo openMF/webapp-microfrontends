@@ -10,7 +10,7 @@ import { SavingsAccountChargesStepComponent } from '../../savings-account-steppe
 /** Custom Services */
 import { SavingsService } from '../../savings.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Create GSIM Account Component

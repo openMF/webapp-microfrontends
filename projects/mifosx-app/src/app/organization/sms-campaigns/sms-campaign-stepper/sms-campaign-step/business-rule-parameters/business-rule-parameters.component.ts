@@ -9,7 +9,7 @@ import { SettingsService } from '@mifosx-lib/settings/settings.service';
 /** Custom Models */
 import { ReportParameter } from '@mifosx-app/reports/common-models/report-parameter.model';
 import { SelectOption } from '@mifosx-app/reports/common-models/select-option.model';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Business Rule Parameters Component.

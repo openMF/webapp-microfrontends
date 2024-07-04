@@ -1,7 +1,7 @@
 /** Angular Imports */
 import { Component, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /** Custom Services */
 import { OrganizationService } from '@mifosx-app/organization/organization.service';

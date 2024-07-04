@@ -16,20 +16,20 @@ import { TranslateService } from '@ngx-translate/core';
 import { environment } from '../environments/environment';
 
 /** Custom Services */
-import { Logger } from './core/logger/logger.service';
+import { Logger } from '@mifosx-lib/core/logger/logger.service';
 import { ThemeStorageService } from '@mifosx-lib/theme-picker/theme-storage.service';
-import { AlertService } from './core/alert/alert.service';
-import { AuthenticationService } from './core/authentication/authentication.service';
+import { AlertService } from '@mifosx-lib/core/alert/alert.service';
+import { AuthenticationService } from '@mifosx-lib/core/authentication/authentication.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service'; 
 import { IdleTimeoutService } from './home/timeout-dialog/idle-timeout.service';
 import { SessionTimeoutDialogComponent } from './home/timeout-dialog/session-timeout-dialog.component';
 
 /** Custom Items */
-import { Alert } from './core/alert/alert.model';
+import { Alert } from '@mifosx-lib/core/alert/alert.model';
 import { KeyboardShortcutsConfiguration } from './keyboards-shortcut-config';
-import { Dates } from './core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { animate, style, transition, trigger } from '@angular/animations';
-import { I18nService } from './core/i18n/i18n.service';
+import { I18nService } from '@mifosx-lib/core/i18n/i18n.service';
 import { ThemingService } from '@mifosx-lib/theme-toggle/theming.service';
 
 /** Initialize Logger */

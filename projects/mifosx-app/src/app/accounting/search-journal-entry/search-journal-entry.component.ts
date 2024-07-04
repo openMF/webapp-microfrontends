@@ -14,7 +14,7 @@ import { AccountingService } from '../accounting.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 /** Custom Data Source */
 import { JournalEntriesDataSource } from './journal-entry.datasource';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Search journal entry component.

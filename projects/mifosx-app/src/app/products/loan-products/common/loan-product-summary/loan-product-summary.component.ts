@@ -4,7 +4,7 @@ import { AccountingMapping, Charge, ChargeToIncomeAccountMapping, GLAccount, Pay
 import { AdvancePaymentAllocationData, CreditAllocation, PaymentAllocation } from '../../loan-product-stepper/loan-product-payment-strategy-step/payment-allocation-model';
 import { LoanProducts } from '../../loan-products';
 import { CodeName, OptionData } from '@mifosx-lib/models/option-data.model';
-import { Accounting } from '@mifosx-app/core/utils/accounting';
+import { Accounting } from '@mifosx-lib/core/utils/accounting';
 
 @Component({
   selector: 'mifosx-loan-product-summary',

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 
 /** Routing Imports */
 import { Routes, RouterModule } from '@angular/router';
-import { Route } from '../core/route/route.service';
+import { Route } from '@mifosx-lib/core/route/route.service';
 
 /** Component Imports */
 import { SystemComponent } from './system.component';

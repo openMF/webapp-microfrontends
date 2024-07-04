@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { LoanDelinquencyActionDialogComponent } from '@mifosx-app/loans/custom-dialog/loan-delinquency-action-dialog/loan-delinquency-action-dialog.component';
 import { LoansService } from '@mifosx-app/loans/loans.service';
 import { DelinquentData, InstallmentLevelDelinquency, LoanDelinquencyAction, LoanDelinquencyTags } from '@mifosx-app/loans/models/loan-account.model';

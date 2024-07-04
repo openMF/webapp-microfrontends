@@ -1,8 +1,8 @@
 /** Angular Imports */
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { DialogData } from '../core/dialogs/dialog-data.model';
-import { Dialogs } from '../core/dialogs/dialogs';
+import { DialogData } from '@mifosx-lib/core/dialogs/dialog-data.model';
+import { Dialogs } from '@mifosx-lib/core/dialogs/dialogs';
 
 /**
  * Delete dialog component.

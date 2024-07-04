@@ -14,7 +14,7 @@ import { FixedDepositProductAccountingStepComponent } from '../fixed-deposit-pro
 /** Custom Services */
 import { ProductsService } from '@mifosx-app/products/products.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Accounting } from '@mifosx-app/core/utils/accounting';
+import { Accounting } from '@mifosx-lib/core/utils/accounting';
 
 @Component({
   selector: 'mifosx-edit-fixed-deposit-product',

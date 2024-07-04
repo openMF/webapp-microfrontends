@@ -6,7 +6,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 /** Custom Services */
 import { OrganizationService } from '../../organization.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Create teller component.

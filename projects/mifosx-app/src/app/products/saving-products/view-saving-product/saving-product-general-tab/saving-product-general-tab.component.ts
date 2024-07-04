@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Accounting } from '@mifosx-app/core/utils/accounting';
+import { Accounting } from '@mifosx-lib/core/utils/accounting';
 
 @Component({
   selector: 'mifosx-saving-product-general-tab',

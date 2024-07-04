@@ -14,7 +14,7 @@ import { WebAppComponent } from './web-app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 /** Custom Modules */
-import { CoreModule } from './core/core.module';
+import { CoreModule } from '@mifosx-lib/core/core.module';
 import { HomeModule } from './home/home.module';
 import { LoginModule } from './login/login.module';
 import { SettingsModule } from '@mifosx-lib/settings/settings.module'; 
