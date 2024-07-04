@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { LoansService } from '@mifosx-app/loans/loans.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';

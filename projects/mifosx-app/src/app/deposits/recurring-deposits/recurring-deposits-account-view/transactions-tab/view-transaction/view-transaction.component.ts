@@ -9,7 +9,7 @@ import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /** Custom Dialogs */
 import { RecurringDepositConfirmationDialogComponent } from '../../custom-dialogs/recurring-deposit-confirmation-dialog/recurring-deposit-confirmation-dialog.component';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { TranslateService } from '@ngx-translate/core';
 import { Location } from '@angular/common';
 

@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
 /** Custom Services */
 import { ReportsService } from '@mifosx-app/reports/reports.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Export Client Savings Transactions Component

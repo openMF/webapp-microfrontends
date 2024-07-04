@@ -6,7 +6,7 @@ import { LoansService } from '@mifosx-app/loans/loans.service';
 
 /** Custom Services */
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 @Component({
   selector: 'mifosx-loans-account-close',

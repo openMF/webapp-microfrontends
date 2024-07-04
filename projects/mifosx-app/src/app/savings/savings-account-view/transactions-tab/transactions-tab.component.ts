@@ -5,7 +5,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { SavingsAccountTransaction, SavingsAccountTransactionType } from '@mifosx-app/savings/models/savings-account-transaction.model';
 import { SavingsService } from '@mifosx-app/savings/savings.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';

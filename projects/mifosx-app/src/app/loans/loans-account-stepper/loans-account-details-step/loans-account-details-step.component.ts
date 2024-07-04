@@ -7,7 +7,7 @@ import { TooltipPosition } from '@angular/material/tooltip';
 
 /** Custom Services */
 import { LoansService } from '../../loans.service';
-import { Commons } from '@mifosx-app/core/utils/commons';
+import { Commons } from '@mifosx-lib/core/utils/commons';
 
 /**
  * Loans Account Details Step

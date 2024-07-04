@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 /** Routing Imports */
-import { Route } from '../core/route/route.service';
+import { Route } from '@mifosx-lib/core/route/route.service';
 
 /** Custom Imports */
 import { GroupsComponent } from './groups.component';

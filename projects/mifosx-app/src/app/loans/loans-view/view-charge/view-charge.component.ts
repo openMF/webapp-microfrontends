@@ -16,7 +16,7 @@ import { ConfirmationDialogComponent } from '@mifosx-lib/confirmation-dialog/con
 import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield-base';
 import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
 import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepicker-base';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { TranslateService } from '@ngx-translate/core';
 
 /**

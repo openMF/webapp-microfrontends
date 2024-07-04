@@ -7,7 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 /** Custom Services */
 import { ReportsService } from '../reports.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * XBRL Report Component

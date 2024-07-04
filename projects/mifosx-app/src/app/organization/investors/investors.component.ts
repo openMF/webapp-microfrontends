@@ -6,7 +6,7 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { ExternalAssetOwner } from '@mifosx-app/loans/services/external-asset-owner';
 import { ExternalAssetOwnerService } from '@mifosx-app/loans/services/external-asset-owner.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';

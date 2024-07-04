@@ -6,10 +6,10 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 /** Custom Models */
-import { Alert } from '../core/alert/alert.model';
+import { Alert } from '@mifosx-lib/core/alert/alert.model';
 
 /** Custom Services */
-import { AlertService } from '../core/alert/alert.service';
+import { AlertService } from '@mifosx-lib/core/alert/alert.service';
 
 /** Environment Imports */
 import { environment } from '../../environments/environment';

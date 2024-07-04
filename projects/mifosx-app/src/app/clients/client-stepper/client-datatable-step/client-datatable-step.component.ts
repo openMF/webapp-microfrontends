@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
-import { Datatables } from '@mifosx-app/core/utils/datatables';
+import { Datatables } from '@mifosx-lib/core/utils/datatables';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 @Component({

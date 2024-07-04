@@ -1,6 +1,6 @@
 /** Angular Imports */
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpParams } from '@angular/common/http';
 
 /** rxjs Imports */
 import { Observable, of } from 'rxjs';
@@ -19,6 +19,9 @@ import { environment } from '../../../environments/environment';
 import { LoginContext } from './login-context.model';
 import { Credentials } from './credentials.model';
 import { OAuth2Token } from './o-auth2-token.model';
+
+/** Custom Http Service */
+import { HttpService } from '../http/http.service'; 
 
 /**
  * Authentication workflow.
@@ -52,11 +55,11 @@ export class AuthenticationService {
   /**
    * Initializes the type of storage and authorization headers depending on whether
    * credentials are presently in storage or not.
-   * @param {HttpClient} http Http Client to send requests.
+   * @param {HttpService} http Http Service to send requests.
    * @param {AlertService} alertService Alert Service.
    * @param {AuthenticationInterceptor} authenticationInterceptor Authentication Interceptor.
    */
-  constructor(private http: HttpClient,
+  constructor(private http: HttpService,
               private alertService: AlertService,
               private authenticationInterceptor: AuthenticationInterceptor) {
     this.userLoggedIn = false;

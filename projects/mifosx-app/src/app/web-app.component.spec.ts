@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { CoreModule } from './core/core.module';
+import { CoreModule } from '@mifosx-lib/core/core.module';
 import { WebAppComponent } from './web-app.component';
 
 describe('AppComponent', () => {

@@ -14,7 +14,7 @@ import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.compone
 /** Custom Models */
 import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield-base';
 import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Center Attendance component.

@@ -14,7 +14,7 @@ import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base'
 import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepicker-base';
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { TranslateService } from '@ngx-translate/core';
 
 /**

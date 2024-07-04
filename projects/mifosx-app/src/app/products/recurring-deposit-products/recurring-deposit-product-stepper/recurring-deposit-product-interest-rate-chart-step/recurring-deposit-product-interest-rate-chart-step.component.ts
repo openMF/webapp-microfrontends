@@ -16,7 +16,7 @@ import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
 
 
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

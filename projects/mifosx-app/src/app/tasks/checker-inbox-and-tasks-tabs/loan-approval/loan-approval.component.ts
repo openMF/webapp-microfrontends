@@ -12,7 +12,7 @@ import { ConfirmationDialogComponent } from '@mifosx-lib/confirmation-dialog/con
 /** Custom Services */
 import { TasksService } from '../../tasks.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

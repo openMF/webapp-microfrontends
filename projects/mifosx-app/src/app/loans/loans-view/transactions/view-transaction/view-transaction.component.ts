@@ -7,7 +7,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { LoansService } from '@mifosx-app/loans/loans.service';
 import { ConfirmationDialogComponent } from '@mifosx-lib/confirmation-dialog/confirmation-dialog.component';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { OrganizationService } from '@mifosx-app/organization/organization.service';
 import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield-base';
 import { InputBase } from '@mifosx-lib/form-dialog/formfield/model/input-base';
@@ -15,7 +15,7 @@ import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base'
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
 import { MatTableDataSource } from '@angular/material/table';
 import { LoanTransactionType } from '@mifosx-app/loans/models/loan-transaction-type.model';
-import { AlertService } from '@mifosx-app/core/alert/alert.service';
+import { AlertService } from '@mifosx-lib/core/alert/alert.service';
 import { TranslateService } from '@ngx-translate/core';
 
 /** Custom Dialogs */
