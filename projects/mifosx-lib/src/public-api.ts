@@ -1,5 +1,4 @@
 /*
-import { PopoverRef } from './lib/configuration-wizard/popover/popover-ref';
  * Public API Surface of mifosx-lib
  */
 
@@ -13,7 +12,7 @@ export * from './lib/icons.module';
 export * from './lib/pipes/pipes.module';
 export * from './lib/material.module';
 export * from './lib/pipes/translation-loader'
-export * from './lib/pipes/trasnlation.module'
+export * from './lib/pipes/translation.module'
 export * from './lib/configuration-wizard/configuration-wizard.module'
 
 
@@ -46,8 +45,9 @@ export * from './lib/theme-picker/theme-picker.component';
 export * from './lib/theme-toggle/theme-toggle.component';
 export * from './lib/transaction-payment-detail/transaction-payment-detail.component';
 export * from './lib/notifications-tray/notifications-tray.component';
-// export * from './lib/form-dialog/formfield/formfield.component';
-// export * from './lib/form-dialog/form-dialog.component';
+export * from './lib/form-dialog/formfield/formfield.component';
+export * from './lib/form-dialog/form-dialog.component';
+export * from './lib/footer/footer.component'
 export * from './lib/configuration-wizard/completion-dialog/completion-dialog.component'
 export * from './lib/configuration-wizard/continue-setup-dialog/continue-setup-dialog.component'
 export * from './lib/configuration-wizard/next-step-dialog/next-step-dialog.component'

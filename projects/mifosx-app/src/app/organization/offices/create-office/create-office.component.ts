@@ -174,4 +174,11 @@ export class CreateOfficeComponent implements OnInit, AfterViewInit {
     this.configurationWizardService.showOfficeTable = true;
     this.router.navigate(['/organization/offices']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

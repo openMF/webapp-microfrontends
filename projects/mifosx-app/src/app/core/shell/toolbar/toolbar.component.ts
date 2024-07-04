@@ -197,4 +197,11 @@ export class ToolbarComponent implements OnInit, AfterViewInit, AfterContentChec
     this.router.navigate([routePath]);
   }
 
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
+
 }

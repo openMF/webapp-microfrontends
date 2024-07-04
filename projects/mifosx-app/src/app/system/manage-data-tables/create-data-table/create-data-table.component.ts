@@ -306,4 +306,8 @@ export class CreateDataTableComponent implements OnInit, AfterViewInit {
         }
     });
   }
+
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard();
+  }
 }

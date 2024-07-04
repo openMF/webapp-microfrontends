@@ -173,7 +173,7 @@
   <h2>{{"labels.heading.Add Journal Entry Form" | translate}}</h2>
   <p class="mw300">{{"labels.text.Red asterisk field" | translate}} <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/67895310/Add+Journal+Entries" target="_blank">{{"labels.inputs.Add Journal Entries" | translate}}</a></p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{"labels.buttons.Close" | translate}}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStep()">{{"labels.buttons.Back" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">{{"labels.buttons.Next" | translate}}</button>
   </div>

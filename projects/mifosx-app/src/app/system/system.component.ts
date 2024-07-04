@@ -229,4 +229,11 @@ export class SystemComponent implements OnInit, AfterViewInit {
     this.configurationWizardService.showManageFunds = true;
     this.router.navigate(['/organization/manage-funds']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

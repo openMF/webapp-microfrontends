@@ -5,7 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 /** Custom Components */
-import { KeyboardShortcutsDialogComponent } from 'app/shared/keyboard-shortcuts-dialog/keyboard-shortcuts-dialog.component';
+import { KeyboardShortcutsConfiguration } from 'projects/mifosx-lib/src/keyboards-shortcut-config';
 
 /** Custom Services */
 import { AuthenticationService } from '../../authentication/authentication.service';
@@ -14,7 +14,8 @@ import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/con
 
 /** Custom Imports */
 import { frequentActivities } from './frequent-activities';
-import { SettingsService } from 'app/settings/settings.service';
+// import { SettingsService } from 'app/settings/settings.service';
+import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**
  * Sidenav component.
@@ -217,6 +218,10 @@ export class SidenavComponent implements OnInit, AfterViewInit {
       return 'default';
     }
     return this.settingsService.tenantIdentifier;
+  }
+
+  closeConfigurationWizard(){
+    this.configurationWizardService.closeConfigWizard()
   }
 
 }

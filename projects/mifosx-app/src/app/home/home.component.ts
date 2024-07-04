@@ -172,4 +172,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.router.onSameUrlNavigation = 'reload';
     this.router.navigate(['/home']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

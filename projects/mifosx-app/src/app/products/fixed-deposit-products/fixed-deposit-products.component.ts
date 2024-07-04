@@ -131,4 +131,11 @@ export class FixedDepositProductsComponent implements OnInit, AfterViewInit {
     this.router.navigate(['/products']);
   }
 
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
+
 }

@@ -51,7 +51,7 @@
   <h2>{{ 'labels.heading.Working Days' | translate }}</h2>
   <p class="mw400">{{ 'labels.text.Click (Define Working Days)' | translate }}: <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/90243212/Working+Days" target="_blank">{{ 'labels.inputs.Working Days' | translate }}</a></p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
-    <button mat-raised-button color="warn" (click)="popover.close();configurationWizardService.closeConfigWizard()">{{ 'labels.buttons.Close' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{ 'labels.buttons.Close' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close()">{{ 'labels.buttons.Define Working Days' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();previousStep()">{{ 'labels.buttons.Back' | translate }}</button>
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">{{ 'labels.buttons.Next Step' | translate }}</button>

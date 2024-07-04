@@ -105,4 +105,11 @@ export class ShareProductsComponent implements OnInit, AfterViewInit {
     this.router.navigate(['/products']);
   }
 
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
+
 }

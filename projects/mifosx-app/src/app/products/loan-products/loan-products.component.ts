@@ -104,4 +104,11 @@ export class LoanProductsComponent implements OnInit, AfterViewInit {
     this.configurationWizardService.showLoanProducts = true;
     this.router.navigate(['/products']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }

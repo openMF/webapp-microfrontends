@@ -237,4 +237,11 @@ export class BreadcrumbComponent implements OnInit, AfterViewInit {
     return result;
   }
 
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard();
+  }
+
 }

@@ -18,6 +18,7 @@ import { CompletionDialogComponent } from './completion-dialog/completion-dialog
 
 /** Custom Modules */
 import { MifosxLibModule } from '@mifosx-lib/mifosx-lib.module';
+// import { TranslateService } from '@ngx-translate/core';
 
 /**
  * Configuration Wizard Module

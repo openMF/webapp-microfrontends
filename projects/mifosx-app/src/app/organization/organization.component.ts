@@ -206,4 +206,11 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
     this.configurationWizardService.showRecurringDepositProductsList = true;
     this.router.navigate(['/products/recurring-deposit-products']);
   }
+
+  /**
+   * Close Configuration Wizard.
+   */
+  closeConfigurationWizard() {
+    this.configurationWizardService.closeConfigWizard(); 
+  }
 }
