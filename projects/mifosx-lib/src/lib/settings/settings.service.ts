@@ -1,7 +1,7 @@
 /** Angular Imports */
 import { Injectable } from '@angular/core';
-import { AlertService } from '../core/alert/alert.service';
-import { Dates } from '../core/utils/dates';
+import { AlertService } from '@mifosx-lib/core/alert/alert.service';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /** Environment Imports */
 import { environment } from '../../environments/environment';

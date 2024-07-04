@@ -7,7 +7,7 @@ import { LoansAccountChargesStepComponent } from '../loans-account-stepper/loans
 
 /** Custom Services */
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Edit Loans

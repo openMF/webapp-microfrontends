@@ -9,7 +9,7 @@ import { CampaignMessageStepComponent } from '../sms-campaign-stepper/campaign-m
 /** Custom Services */
 import { OrganizationService } from '@mifosx-app/organization/organization.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Create SMS Campaign Component

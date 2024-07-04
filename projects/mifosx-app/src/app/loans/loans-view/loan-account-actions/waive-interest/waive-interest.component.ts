@@ -5,7 +5,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 /** Custom Services. */
 import { LoansService } from '@mifosx-app/loans/loans.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
 /**

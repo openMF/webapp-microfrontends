@@ -6,7 +6,7 @@ import { UntypedFormBuilder, UntypedFormGroup, Validators, FormControl } from '@
 /** Custom Services */
 import { AccountTransfersService } from '../account-transfers.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Create Standing Instructions

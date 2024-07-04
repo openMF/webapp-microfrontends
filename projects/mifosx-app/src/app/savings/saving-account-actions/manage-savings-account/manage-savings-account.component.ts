@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { SavingsService } from '@mifosx-app/savings/savings.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { SystemService } from '@mifosx-app/system/system.service';

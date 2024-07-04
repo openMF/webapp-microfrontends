@@ -6,11 +6,11 @@ import { Subscription } from 'rxjs';
 
 /** Client Services. */
 import { ClientsService } from '@mifosx-app/clients/clients.service';
-import { PasswordsUtility } from '@mifosx-app/core/utils/passwords-utility';
+import { PasswordsUtility } from '@mifosx-lib/core/utils/passwords-utility';
 
 @Component({
   selector: 'mifosx-create-self-service-user',
-  templateUrl: './create-self-service-user.component.html',
+  templateUrl: './create-self-service-user.component.html',                                                                                               
   styleUrls: ['./create-self-service-user.component.scss']
 })
 export class CreateSelfServiceUserComponent implements OnInit {

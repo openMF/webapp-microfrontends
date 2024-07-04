@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Dates } from '@mifosx-app/core/utils/dates';
-import { DropdownOptions } from '@mifosx-app/core/utils/dropdownOptions';
+import { Dates } from '@mifosx-lib/core/utils/dates';
+import { DropdownOptions } from '@mifosx-lib/core/utils/dropdownOptions';
 import { LoansService } from '@mifosx-app/loans/loans.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { OptionData } from '@mifosx-lib/models/option-data.model';

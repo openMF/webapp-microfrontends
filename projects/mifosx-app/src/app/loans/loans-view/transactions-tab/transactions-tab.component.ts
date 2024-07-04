@@ -4,7 +4,7 @@ import { UntypedFormControl } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { LoansService } from '@mifosx-app/loans/loans.service';
 import { MatDialog } from '@angular/material/dialog';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';

@@ -1,7 +1,7 @@
 /** Angular Imports */
 import { Component, OnInit, Input } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { TooltipPosition } from '@angular/material/tooltip';
 
 /** Custom Services */

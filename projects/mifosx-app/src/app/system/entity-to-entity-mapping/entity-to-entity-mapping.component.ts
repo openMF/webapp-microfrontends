@@ -17,7 +17,7 @@ import { FormfieldBase } from '@mifosx-lib/form-dialog/formfield/model/formfield
 import { SelectBase } from '@mifosx-lib/form-dialog/formfield/model/select-base';
 import { DatepickerBase } from '@mifosx-lib/form-dialog/formfield/model/datepicker-base';
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Entity to Entity Mapping Component

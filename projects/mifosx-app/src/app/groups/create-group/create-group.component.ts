@@ -7,7 +7,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { GroupsService } from '../groups.service';
 import { ClientsService } from '../../clients/clients.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Create Group component.

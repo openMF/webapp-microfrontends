@@ -6,11 +6,11 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms
 import { finalize } from 'rxjs/operators';
 
 /** Custom Services */
-import { AuthenticationService } from '@mifosx-app/core/authentication/authentication.service';
+import { AuthenticationService } from '@mifosx-lib/core/authentication/authentication.service';
 
 /** Custom Validators */
 import { confirmPasswordValidator } from './confirm-password.validator';
-import { PasswordsUtility } from '@mifosx-app/core/utils/passwords-utility';
+import { PasswordsUtility } from '@mifosx-lib/core/utils/passwords-utility';
 
 /**
  * Reset password component.

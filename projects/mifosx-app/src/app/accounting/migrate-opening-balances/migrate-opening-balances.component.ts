@@ -11,7 +11,7 @@ import { ConfigurationWizardService } from '@mifosx-lib/configuration-wizard/con
 
 /** Custom Validators */
 import { onlyOneOfTheFieldsIsRequiredValidator } from './only-one-of-the-fields-is-required.validator';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 
 /**
  * Migrate opening balances component.

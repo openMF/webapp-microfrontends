@@ -3,7 +3,7 @@ import { Component, OnInit, TemplateRef, ElementRef, ViewChild, AfterViewInit } 
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { AlertService } from '@mifosx-app/core/alert/alert.service';
+import { AlertService } from '@mifosx-lib/core/alert/alert.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -156,4 +156,8 @@ export class GlobalConfigurationsTabComponent implements OnInit, AfterViewInit {
     return 'labels.text.No Description';
   }
 
+  closeConfigurationWizard(){
+    this.configurationWizardService.closeConfigWizard()
+  }
+  
 }

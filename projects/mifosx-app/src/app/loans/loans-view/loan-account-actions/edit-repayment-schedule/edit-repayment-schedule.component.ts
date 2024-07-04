@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { LoansService } from '@mifosx-app/loans/loans.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { ConfirmationDialogComponent } from '@mifosx-lib/confirmation-dialog/confirmation-dialog.component';

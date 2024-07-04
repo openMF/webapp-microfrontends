@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Alert } from '@mifosx-app/core/alert/alert.model';
-import { AlertService } from '@mifosx-app/core/alert/alert.service';
+import { Alert } from '@mifosx-lib/core/alert/alert.model';
+import { AlertService } from '@mifosx-lib/core/alert/alert.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { Subscription } from 'rxjs';
 import { SystemService } from '../system.service';

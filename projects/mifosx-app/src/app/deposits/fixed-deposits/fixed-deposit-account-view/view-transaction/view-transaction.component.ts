@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { UndoTransactionDialogComponent } from '@mifosx-app/savings/savings-account-view/custom-dialogs/undo-transaction-dialog/undo-transaction-dialog.component';
-import { Dates } from '@mifosx-app/core/utils/dates';
+import { Dates } from '@mifosx-lib/core/utils/dates';
 import { SavingsService } from '@mifosx-app/savings/savings.service';
 import { SettingsService } from '@mifosx-lib/settings/settings.service';
 
