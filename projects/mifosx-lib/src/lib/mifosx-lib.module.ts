@@ -1,5 +1,5 @@
 /** Angular Imports */
-import { NgModule, Pipe } from '@angular/core';
+import { NgModule, Pipe, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MifosxLibComponent } from './mifosx-lib.component';
@@ -43,9 +43,13 @@ import { FormDialogComponent } from './form-dialog/form-dialog.component';
 import { IconsModule } from './icons.module';
 import { MaterialModule } from './material.module';
 import { PipesModule } from './pipes/pipes.module';
-import { NgxMatDatetimePickerModule, NgxMatNativeDateModule } from '@angular-material-components/datetime-picker';
+import { NgxMatDatetimePickerModule, NgxMatNativeDateModule, NgxMatTimepickerModule } from '@angular-material-components/datetime-picker';
 import { FooterComponent } from './footer/footer.component';
 import { TranslationModule } from '../public-api';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 
 
@@ -62,7 +66,11 @@ import { TranslationModule } from '../public-api';
     HttpClientModule,
     NgxMatDatetimePickerModule,
     NgxMatNativeDateModule,
-
+    NgxMatTimepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
   ],
   declarations: [
     MifosxLibComponent,
@@ -121,6 +129,7 @@ import { TranslationModule } from '../public-api';
     FormDialogComponent,
     ViewJournalEntryComponent,
     FooterComponent
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class MifosxLibModule { }
