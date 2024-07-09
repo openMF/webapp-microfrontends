@@ -5,8 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 /** Custom Components */
-import { KeyboardShortcutsConfiguration } from 'projects/mifosx-lib/src/keyboards-shortcut-config';
-
+import { KeyboardShortcutsConfiguration } from "@mifosx-lib/../keyboards-shortcut-config"
 /** Custom Services */
 import { AuthenticationService } from '../../authentication/authentication.service';
 import { PopoverService } from '@mifosx-lib/configuration-wizard/popover/popover.service';
@@ -95,7 +94,7 @@ export class SidenavComponent implements OnInit, AfterViewInit {
    * Opens Keyboard shortcuts dialog.
    */
   showKeyboardShortcuts() {
-    const dialogRef = this.dialog.open(KeyboardShortcutsDialogComponent);
+    const dialogRef = this.dialog.open(KeyboardShortcutsConfiguration);
     dialogRef.afterClosed().subscribe((response: any) => {});
   }
 

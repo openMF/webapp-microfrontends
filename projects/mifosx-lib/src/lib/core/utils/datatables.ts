@@ -71,6 +71,7 @@ export class Datatables {
             required: (column.isColumnNullable) ? false : true
           });
         }
+        default: return null; // Add a default case to handle any other column display types
       }
     });
   }
