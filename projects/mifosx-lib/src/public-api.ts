@@ -55,6 +55,12 @@ export * from './lib/configuration-wizard/popover/popover-close.directive'
 export * from './lib/configuration-wizard/popover/popover-arrow.directive'
 export * from './lib/configuration-wizard/popover/popover-config'
 export * from './lib/configuration-wizard/popover/popover-ref'
+export * from './lib/tabs/entity-datatable-tab/datatable-multi-row/datatable-multi-row.component';
+export * from './lib/tabs/entity-datatable-tab/datatable-single-row/datatable-single-row.component';
+export * from './lib/tabs/entity-datatable-tab/entity-datatable-tab.component';
+export * from './lib/tabs/entity-notes-tab/entity-notes-tab.component';
+export * from './lib/tabs/entity-documents-tab/entity-documents-tab.component';
+export * from './lib/tabs/upload-document-dialog/upload-document-dialog.component';
 
 // All the pipes
 export * from './lib/pipes/status-lookup.pipe';
