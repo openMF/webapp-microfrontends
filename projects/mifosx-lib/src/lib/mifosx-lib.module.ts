@@ -36,6 +36,12 @@ import { TransactionPaymentDetailComponent } from './transaction-payment-detail/
 import { NotificationsTrayComponent } from './notifications-tray/notifications-tray.component';
 import { FormfieldComponent } from './form-dialog/formfield/formfield.component';
 import { FormDialogComponent } from './form-dialog/form-dialog.component';
+import { DatatableMultiRowComponent } from './tabs/entity-datatable-tab/datatable-multi-row/datatable-multi-row.component';
+import { DatatableSingleRowComponent } from './tabs/entity-datatable-tab/datatable-single-row/datatable-single-row.component';
+import { EntityDatatableTabComponent } from './tabs/entity-datatable-tab/entity-datatable-tab.component';
+import { EntityNotesTabComponent } from './tabs/entity-notes-tab/entity-notes-tab.component';
+import { UploadDocumentDialogComponent } from './tabs/upload-document-dialog/upload-document-dialog.component';
+import { EntityDocumentsTabComponent } from './tabs/entity-documents-tab/entity-documents-tab.component';
 
 
 /** Custom Modules */
@@ -104,7 +110,13 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     FormfieldComponent,
     FormDialogComponent,
     ViewJournalEntryComponent,
-    FooterComponent
+    FooterComponent,
+    DatatableMultiRowComponent,
+    DatatableSingleRowComponent,
+    EntityDatatableTabComponent,
+    EntityNotesTabComponent,
+    EntityDocumentsTabComponent,
+    UploadDocumentDialogComponent
   ]
   ,
   exports: [
@@ -128,7 +140,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     FileUploadComponent,
     FormDialogComponent,
     ViewJournalEntryComponent,
-    FooterComponent
+    FooterComponent,
+    EntityDatatableTabComponent,
+    EntityNotesTabComponent,
+    UploadDocumentDialogComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
