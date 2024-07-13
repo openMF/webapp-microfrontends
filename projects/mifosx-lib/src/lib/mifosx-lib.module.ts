@@ -1,5 +1,5 @@
 /** Angular Imports */
-import { NgModule, Pipe, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, Pipe } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MifosxLibComponent } from './mifosx-lib.component';
@@ -123,10 +123,12 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MifosxLibComponent,
     AccountNumberComponent,
     GlAccountDisplayComponent,
+    ExternalIdentifierComponent,
     GlAccountSelectorComponent,
     ViewJournalEntryComponent,
     ViewSavingsAccountingDetailsComponent,
     IconsModule,
+    SearchToolComponent,
     CommonModule,
     RouterModule,
     MaterialModule,
@@ -145,6 +147,6 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     EntityNotesTabComponent,
     UploadDocumentDialogComponent
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: []
 })
 export class MifosxLibModule { }
