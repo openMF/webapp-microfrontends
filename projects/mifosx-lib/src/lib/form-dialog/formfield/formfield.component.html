@@ -36,11 +36,13 @@
   </ng-container>
 
   <ng-container *ngIf="isDateTimepickerBase(formfield)">
-    <mat-form-field fxFlexFill (click)="datetimePicker.open()">
+    <mat-form-field fxFlexFill>
       <mat-label>{{ formfield.label }}</mat-label>
       <input matInput [ngxMatDatetimePicker]="datetimePicker" [min]="formfield.minDate" [max]="formfield.maxDate"
         [formControlName]="formfield.controlName" [required]="formfield.required">
-      <ngx-mat-datetime-picker-toggle matSuffix [for]="datetimePicker"></ngx-mat-datetime-picker-toggle>
+      <button mat-icon-button matSuffix (click)="datetimePicker.open()">
+        <mat-icon>calendar_today</mat-icon>
+      </button>
       <ngx-mat-datetime-picker #datetimePicker [enableMeridian]="true"></ngx-mat-datetime-picker>
       <mat-error *ngIf="form.controls[formfield.controlName].hasError('required')">
         {{ formfield.label }} {{'labels.commons.is' | translate }} <strong>{{'labels.commons.required' | translate
@@ -48,6 +50,7 @@
       </mat-error>
     </mat-form-field>
   </ng-container>
+
 
   <ng-container *ngIf="formfield.controlType === 'checkbox'">
     <mat-checkbox labelPosition="before" [checked]="formfield.value" [formControlName]="formfield.controlName"
