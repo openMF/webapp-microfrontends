@@ -15,7 +15,7 @@
 
     <mat-form-field fxFlex>
       <mat-label>{{'labels.inputs.Filter' | translate}}</mat-label>
-      <input matInput (keyup)="applyFilter($event.target.value)">
+      <input matInput #filterInput (keyup)="applyFilter(filterInput.value)">
     </mat-form-field>
     <mat-form-field>
       <mat-label> {{ 'labels.inputs.Select Office' | translate }} </mat-label>

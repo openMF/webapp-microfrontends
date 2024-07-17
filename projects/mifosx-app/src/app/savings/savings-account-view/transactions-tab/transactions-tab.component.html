@@ -72,7 +72,7 @@
               <mat-icon><fa-icon icon="eye" size="sm"></fa-icon></mat-icon>
               <span>{{ 'labels.text.View Transaction' | translate}}</span>
             </button>
-            <button mat-menu-item *mifosxHasPermission="'ADJUST_LOAN'" (click)="undoTransaction(transaction, $event)">
+            <button mat-menu-item *mifosxHasPermission="'ADJUST_LOAN'" (click)="undoTransaction(transaction)">
               <mat-icon><fa-icon icon="undo" size="sm"></fa-icon></mat-icon>
               <span>{{ 'tooltips.Undo Transaction' | translate}}</span>
             </button>  

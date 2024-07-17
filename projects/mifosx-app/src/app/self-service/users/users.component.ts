@@ -6,9 +6,6 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
-/** Custom Services */
-import { UserService } from './user.service';
-
 /** Custom Model */
 import { User } from './user.model';
 

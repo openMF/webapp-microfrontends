@@ -4,10 +4,10 @@
   <div class="jobs-container">
     <div *ngFor="let job of selectedJobs">
       <mifosx-custom-parameters-table
-      [displayName]="job.displayName"
-      [jobId]="job.jobId"
-      [jobParameters]="job.jobParameters"
-      (retrieveData)="runSelectedJobs($event)"
+        [displayName]="job.displayName"
+        [jobId]="job.jobId.toString()"
+        [jobParameters]="job.jobParameters"
+        (retrieveData)="runSelectedJobs()"
       >
       </mifosx-custom-parameters-table>
     </div>

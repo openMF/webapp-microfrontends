@@ -4,7 +4,7 @@
     <div class="search-box" fxFlex="40%">
       <mat-form-field fxFlex="90%">
         <input matInput placeholder="{{'labels.text.Filter by name' | translate}}"
-          (keyup)="applyFilter($event.target.value)">
+          #filterInput (keyup)="applyFilter(filterInput.value)">
       </mat-form-field>
     </div>
     <div fxFlex="60%">

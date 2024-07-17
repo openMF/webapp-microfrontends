@@ -4,7 +4,7 @@
 
     <mat-form-field fxFlex>
       <mat-label>Filter By Version</mat-label>
-      <input matInput (keyup)="applyFilter($event.target.value)">
+      <input matInput #filterInput (keyup)="applyFilter(filterInput.value)">
     </mat-form-field>
   </div>
 
