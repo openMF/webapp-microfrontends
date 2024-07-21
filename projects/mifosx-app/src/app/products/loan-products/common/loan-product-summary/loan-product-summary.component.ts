@@ -17,8 +17,8 @@ export class LoanProductSummaryComponent implements OnInit, OnChanges {
   @Input() loanProduct: LoanProduct;
   @Input() loanProductsTemplate: any | null;
   @Input() useDueForRepaymentsConfigurations: boolean;
-  @Input() paymentAllocations: PaymentAllocation | null;
-  @Input() creditAllocations: CreditAllocation | null;
+  @Input() paymentAllocations: PaymentAllocation[] | [];
+  @Input() creditAllocations: CreditAllocation[] | [];
 
   variationsDisplayedColumns: string[] = ['valueConditionType', 'borrowerCycleNumber', 'minValue', 'defaultValue', 'maxValue'];
   chargesDisplayedColumns: string[] = ['name', 'chargeCalculationType', 'amount', 'chargeTimeType'];
@@ -143,7 +143,17 @@ export class LoanProductSummaryComponent implements OnInit, OnChanges {
           allowCompoundingOnEod: this.loanProduct.allowCompoundingOnEod,
           isArrearsBasedOnOriginalSchedule: this.loanProduct.isArrearsBasedOnOriginalSchedule,
           isCompoundingToBePostedAsTransaction: this.loanProduct.isCompoundingToBePostedAsTransaction,
-          recalculationRestFrequencyInterval: this.loanProduct.recalculationRestFrequencyInterval
+          recalculationRestFrequencyInterval: this.loanProduct.recalculationRestFrequencyInterval,
+          recalculationCompoundingFrequencyNthDay: this.loanProduct.recalculationCompoundingFrequencyNthDay,
+          recalculationCompoundingFrequencyOnDay: this.loanProduct.recalculationCompoundingFrequencyOnDay,
+          recalculationCompoundingFrequencyWeekday: this.optionDataLookUp(this.loanProduct.recalculationCompoundingFrequencyWeekday,
+            this.loanProductsTemplate.interestRecalculationFrequencyTypeOptions), // assuming a similar lookup
+          recalculationCompoundingFrequencyInterval: this.loanProduct.recalculationCompoundingFrequencyInterval,
+          recalculationRestFrequencyNthDay: this.loanProduct.recalculationRestFrequencyNthDay,
+          recalculationRestFrequencyOnDay: this.loanProduct.recalculationRestFrequencyOnDay,
+          recalculationRestFrequencyWeekday: this.optionDataLookUp(this.loanProduct.recalculationRestFrequencyWeekday,
+            this.loanProductsTemplate.interestRecalculationFrequencyTypeOptions), // assuming a similar lookup
+          recalculationRestFrequencyDate: this.loanProduct.recalculationRestFrequencyDate
         };
       }
 

@@ -18,6 +18,8 @@ export class FixedDepositGeneralTabComponent implements OnInit {
   /** Fixed Deposit Product data. */
   fixedDepositProductData: any;
   fixedDepositProductsTemplate: any;
+  /** Expand Chart Slab Index used in the view */
+  expandChartSlabIndex: number;
 
   chartSlabsIncentivesDisplayedColumns: string[] = ['incentives'];
   chartSlabsDisplayedColumns: string[] = ['period', 'amountRange', 'annualInterestRate', 'description', 'actions'];

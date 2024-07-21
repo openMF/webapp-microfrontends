@@ -18,6 +18,7 @@ export class RecurringDepositGeneralTabComponent implements OnInit {
 
   recurringDepositProduct: any;
   recurringDepositProductTemplate: any;
+  expandChartSlabIndex: number;
 
   chartSlabsIncentivesDisplayedColumns: string[] = ['incentives'];
   chartSlabsDisplayedColumns: string[] = ['period', 'amountRange', 'annualInterestRate', 'description', 'actions'];

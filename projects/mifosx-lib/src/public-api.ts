@@ -13,6 +13,7 @@ export * from './lib/pipes/pipes.module';
 export * from './lib/material.module';
 export * from './lib/pipes/translation-loader'
 export * from './lib/pipes/translation.module'
+export * from './lib/pipes/pipes.module'
 export * from './lib/configuration-wizard/configuration-wizard.module'
 
 
@@ -61,6 +62,8 @@ export * from './lib/tabs/entity-datatable-tab/entity-datatable-tab.component';
 export * from './lib/tabs/entity-notes-tab/entity-notes-tab.component';
 export * from './lib/tabs/entity-documents-tab/entity-documents-tab.component';
 export * from './lib/tabs/upload-document-dialog/upload-document-dialog.component';
+export * from './lib/accounting/revert-transaction/revert-transaction.component'
+export * from './lib/accounting/view-journal-entry-transaction/view-journal-entry-transaction.component'
 
 // All the pipes
 export * from './lib/pipes/status-lookup.pipe';
@@ -75,3 +78,4 @@ export * from './lib/pipes/external-identifier.pipe';
 export * from './lib/pipes/format-number.pipe';
 export * from './lib/pipes/yesno.pipe';
 export * from './lib/pipes/pretty-print.pipe';
+export * from './lib/pipes/translate-catalog';

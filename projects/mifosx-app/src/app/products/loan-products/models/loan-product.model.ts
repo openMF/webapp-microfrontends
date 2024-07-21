@@ -1,7 +1,7 @@
 import { AccountingMapping, ChargeToIncomeAccountMapping, Currency, PaymentChannelToFundSourceMapping } from '@mifosx-lib/models/general.model';
 import { OptionData } from '@mifosx-lib/models/option-data.model';
 import { CreditAllocation, PaymentAllocation } from '../loan-product-stepper/loan-product-payment-strategy-step/payment-allocation-model';
-
+import { EnumOptionData } from '@fineract-lib'; 
 export interface LoanProduct {
   id:                                                        number;
   name:                                                      string;
@@ -34,7 +34,25 @@ export interface LoanProduct {
   allowVariableInstallments:                                 boolean;
   minimumGap:                                                number;
   maximumGap:                                                number;
+  disbursedAmountPercentageForDownPayment?:                  number;
   amortizationType:                                          OptionData;
+  minDifferentialLendingRate?:                               number;
+  overAppliedCalculationType?:                               string;
+  fixedLength?:                                              number;
+  floatingRateName?:                                         string;
+  defaultDifferentialLendingRate?:                           number;
+  maxDifferentialLendingRate?:                               number;
+  interestRateDifferential?:                                 number;
+  maxInterestRatePerPeriod?:                                 number;
+  minInterestRatePerPeriod?:                                 number;
+  recalculationCompoundingFrequencyNthDay?:                  EnumOptionData;
+  recalculationCompoundingFrequencyWeekday?:                 EnumOptionData;
+  recalculationCompoundingFrequencyOnDayType?:               number;
+  recalculationCompoundingFrequencyOnDay?:                   number;
+  recalculationRestFrequencyNthDay?:                         EnumOptionData;
+  recalculationRestFrequencyWeekday?:                        EnumOptionData;
+  recalculationCompoundingFrequencyInterval?:                number;
+  recalculationRestFrequencyOnDay?:                          number;
   interestType:                                              OptionData;
   interestCalculationPeriodType:                             OptionData;
   allowPartialPeriodInterestCalculation:                     boolean;
@@ -55,6 +73,7 @@ export interface LoanProduct {
   isArrearsBasedOnOriginalSchedule?:                         boolean;
   isCompoundingToBePostedAsTransaction?:                     boolean;
   recalculationRestFrequencyInterval?:                       number;
+  recalculationRestFrequencyDate?:                           string;
 
   canDefineInstallmentAmount:                                boolean;
   graceOnArrearsAgeing?:                                     number;
@@ -165,4 +184,12 @@ export interface InterestRecalculationData {
   isCompoundingToBePostedAsTransaction:   boolean;
   preClosureInterestCalculationStrategy:  OptionData;
   allowCompoundingOnEod:                  boolean;
+  recalculationCompoundingFrequencyNthDay: EnumOptionData;
+  recalculationCompoundingFrequencyOnDay: number;
+  recalculationCompoundingFrequencyWeekday: EnumOptionData;
+  recalculationCompoundingFrequencyInterval: number;
+  recalculationRestFrequencyNthDay:        EnumOptionData;
+  recalculationRestFrequencyOnDay:         number;
+  recalculationRestFrequencyWeekday:       EnumOptionData;
+  recalculationRestFrequencyDate:          string;
 }

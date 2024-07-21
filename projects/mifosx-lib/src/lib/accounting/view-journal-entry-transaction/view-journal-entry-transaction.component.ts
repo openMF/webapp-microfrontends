@@ -1,13 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ViewJournalEntryComponent } from '../view-journal-entry/view-journal-entry.component';
-import { RevertTransactionComponent } from '@mifosx-app/accounting/revert-transaction/revert-transaction.component';
-import { AccountingService } from '@mifosx-app/accounting/accounting.service';
+import { JournalEntriesService } from '@fineract-lib';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Location } from '@angular/common';
+import { RevertTransactionComponent } from '../revert-transaction/revert-transaction.component';
 
 @Component({
   selector: 'mifosx-view-journal-entry-transaction',
@@ -40,7 +40,7 @@ export class ViewJournalEntryTransactionComponent implements OnInit {
    * @param {Router} router Router for navigation.
    * @param {MatDialog} dialog Dialog reference.
    */
-  constructor(private accountingService: AccountingService,
+  constructor(private journalEntriesService: JournalEntriesService,
               private route: ActivatedRoute,
               private router: Router,
               public dialog: MatDialog,
@@ -116,7 +116,7 @@ export class ViewJournalEntryTransactionComponent implements OnInit {
     });
     revertTransactionDialogRef.afterClosed().subscribe((response: any) => {
       if (response.revert) {
-        this.accountingService.revertTransaction(this.transactionId, response.comments).subscribe((reversedTransaction: any) => {
+        this.journalEntriesService.createReversalJournalEntry(this.transactionId,'reverse', response.comments).subscribe((reversedTransaction: any) => {
           this.dataSource.data[0].reversed = true;
           this.revertTransaction(reversedTransaction.transactionId);
         });

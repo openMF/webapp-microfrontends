@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
-import { UntypedFormControl } from '@angular/forms';
+import { AbstractControl, UntypedFormControl } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { GLAccount } from '@mifosx-lib/models/general.model';
 import { ReplaySubject, Subject } from 'rxjs';
@@ -12,7 +12,7 @@ import { takeUntil } from 'rxjs/operators';
 })
 export class GlAccountSelectorComponent implements OnInit, OnChanges, OnDestroy {
 
-  @Input() inputFormControl: UntypedFormControl;
+  @Input() inputFormControl: AbstractControl<any,any>;
   @Input() glAccountList: GLAccount[] = [];
   @Input() required = false;
   @Input() inputLabel = '';

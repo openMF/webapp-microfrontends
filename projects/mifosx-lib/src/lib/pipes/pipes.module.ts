@@ -12,13 +12,54 @@ import { ExternalIdentifierPipe } from './external-identifier.pipe';
 import { FormatNumberPipe } from './format-number.pipe';
 import { YesnoPipe } from './yesno.pipe';
 import { PrettyPrintPipe } from './pretty-print.pipe';
-
+import { TranslateCatalog } from './translate-catalog';
+import { TranslationModule } from './translation.module';
 @NgModule({
-  imports: [
-    CommonModule
+  imports: [CommonModule, TranslationModule],
+  declarations: [
+    StatusLookupPipe,
+    AccountsFilterPipe,
+    ChargesFilterPipe,
+    ChargesPenaltyFilterPipe,
+    FindPipe,
+    UrlToStringPipe,
+    DateFormatPipe,
+    DatetimeFormatPipe,
+    ExternalIdentifierPipe,
+    FormatNumberPipe,
+    YesnoPipe,
+    PrettyPrintPipe,
+    TranslateCatalog,
   ],
-  declarations: [StatusLookupPipe, AccountsFilterPipe, ChargesFilterPipe, ChargesPenaltyFilterPipe, FindPipe, UrlToStringPipe, DateFormatPipe, DatetimeFormatPipe, ExternalIdentifierPipe, FormatNumberPipe, YesnoPipe, PrettyPrintPipe ],
-  providers: [StatusLookupPipe, AccountsFilterPipe, ChargesFilterPipe, ChargesPenaltyFilterPipe, FindPipe, UrlToStringPipe, DateFormatPipe, DatetimeFormatPipe, ExternalIdentifierPipe, FormatNumberPipe, YesnoPipe, PrettyPrintPipe ],
-  exports: [StatusLookupPipe, AccountsFilterPipe, ChargesFilterPipe, ChargesPenaltyFilterPipe, FindPipe, UrlToStringPipe, DateFormatPipe, DatetimeFormatPipe, ExternalIdentifierPipe, FormatNumberPipe, YesnoPipe, PrettyPrintPipe ]
+  providers: [
+    StatusLookupPipe,
+    AccountsFilterPipe,
+    ChargesFilterPipe,
+    ChargesPenaltyFilterPipe,
+    FindPipe,
+    UrlToStringPipe,
+    DateFormatPipe,
+    DatetimeFormatPipe,
+    ExternalIdentifierPipe,
+    FormatNumberPipe,
+    YesnoPipe,
+    PrettyPrintPipe,
+  ],
+  exports: [
+    TranslationModule,
+    StatusLookupPipe,
+    AccountsFilterPipe,
+    ChargesFilterPipe,
+    ChargesPenaltyFilterPipe,
+    TranslateCatalog,
+    FindPipe,
+    UrlToStringPipe,
+    DateFormatPipe,
+    DatetimeFormatPipe,
+    ExternalIdentifierPipe,
+    FormatNumberPipe,
+    YesnoPipe,
+    PrettyPrintPipe,
+  ],
 })
-export class PipesModule { }
+export class PipesModule {}

@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 
 /** Custom Modules */
 import { SavingsRoutingModule } from './savings-routing.module';
-import { MifosxLibModule } from '@mifosx-lib/mifosx-lib.module';
-import { PipesModule } from '@mifosx-lib/pipes/pipes.module';
+// import { MifosxLibModule } from '@mifosx-lib/mifosx-lib.module';
+import { DateFormatPipe, PipesModule } from 'dist/mifosx-lib';
 import { DirectivesModule } from '@mifosx-lib/directives/directives.module';
+import { MifosxLibModule } from 'dist/mifosx-lib';
 
 /** Custom Components */
 import { SavingAccountActionsComponent } from './saving-account-actions/saving-account-actions.component';
@@ -53,7 +54,7 @@ import { DatatableTransactionTabComponent } from './savings-account-view/transac
 import { SavingsTransactionGeneralTabComponent } from './savings-account-view/transactions/view-transaction/savings-transaction-general-tab/savings-transaction-general-tab.component';
 import { SavingsTransactionDatatableTabComponent } from './savings-account-view/transactions/view-transaction/savings-transaction-datatable-tab/savings-transaction-datatable-tab.component';
 import { GeneralTabComponent } from './savings-account-view/general-tab/general-tab.component';
-
+import { EntityDocumentsTabComponent } from 'dist/mifosx-lib';
 
 /**
  * Savings Module
@@ -114,6 +115,6 @@ import { GeneralTabComponent } from './savings-account-view/general-tab/general-
     SavingsTransactionDatatableTabComponent,
     GeneralTabComponent
   ],
-  providers: [ ]
+  providers: []
 })
-export class SavingsModule {}
+export class SavingsModule { }
