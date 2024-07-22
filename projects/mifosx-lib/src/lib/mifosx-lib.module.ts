@@ -56,6 +56,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { TranslateCatalog } from './pipes/translate-catalog'; 
 
 
 
@@ -116,7 +117,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     EntityDatatableTabComponent,
     EntityNotesTabComponent,
     EntityDocumentsTabComponent,
-    UploadDocumentDialogComponent
+    UploadDocumentDialogComponent,
+    TranslateCatalog
   ]
   ,
   exports: [
@@ -145,7 +147,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     FooterComponent,
     EntityDatatableTabComponent,
     EntityNotesTabComponent,
-    UploadDocumentDialogComponent
+    UploadDocumentDialogComponent,
+    EntityDocumentsTabComponent,
+    TranslateCatalog
   ],
   schemas: []
 })

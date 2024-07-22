@@ -4,11 +4,11 @@
 
     <div class="m-b-10" *ngIf="dataObject.report.type === 'Table'" fxLayoutGap="25px" fxLayoutAlign="end">
       <button mat-raised-button color="primary" (click)="exportFile()" [disabled]="notExistsReportData"
-        matToolTip="{{'labels.text.Export the data to CSV file' | translate}}">
+        matTooltip="{{'labels.text.Export the data to CSV file' | translate}}">
         {{'labels.buttons.Export CSV' | translate}}
       </button>
       <button mat-raised-button color="primary" (click)="exportToXLS()" [disabled]="notExistsReportData"
-        matToolTip="{{'labels.text.Export the data to XLS file' | translate}}">
+        matTooltip="{{'labels.text.Export the data to XLS file' | translate}}">
         {{'labels.buttons.Export XLS' | translate}}
       </button>
     </div>

@@ -6,6 +6,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SelectionModel } from '@angular/cdk/collections';
 import { MatDialog } from '@angular/material/dialog';
+import { SystemComponent } from '@mifosx-app/system/system.component';
 
 /** rxjs Imports */
 import { SystemService } from '../../system.service';
@@ -69,6 +70,7 @@ export class ManageSchedulerJobsComponent implements OnInit, AfterViewInit {
    */
   constructor(private route: ActivatedRoute,
     private systemService: SystemService,
+    private systemComponent: SystemComponent,
     private router: Router,
     private dialog: MatDialog,
     private configurationWizardService: ConfigurationWizardService,
@@ -268,4 +270,7 @@ export class ManageSchedulerJobsComponent implements OnInit, AfterViewInit {
     this.configurationWizardService.closeConfigWizard();
   }
 
+  nextStepSchedulerJobs(){
+    this.systemComponent.nextStepSchedulerJobs();
+  }
 }
