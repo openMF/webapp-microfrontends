@@ -6,7 +6,6 @@ import { MifosxLibComponent } from './mifosx-lib.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-
 /** Custom Components */
 import { AccountNumberComponent } from './account-number/account-number.component';
 import { GlAccountDisplayComponent } from './accounting/gl-account-display/gl-account-display.component';
@@ -43,28 +42,29 @@ import { EntityNotesTabComponent } from './tabs/entity-notes-tab/entity-notes-ta
 import { UploadDocumentDialogComponent } from './tabs/upload-document-dialog/upload-document-dialog.component';
 import { EntityDocumentsTabComponent } from './tabs/entity-documents-tab/entity-documents-tab.component';
 
-
 /** Custom Modules */
 
 import { IconsModule } from './icons.module';
 import { MaterialModule } from './material.module';
 import { PipesModule } from './pipes/pipes.module';
-import { NgxMatDatetimePickerModule, NgxMatNativeDateModule, NgxMatTimepickerModule } from '@angular-material-components/datetime-picker';
+import {
+  NgxMatDatetimePickerModule,
+  NgxMatNativeDateModule,
+  NgxMatTimepickerModule,
+} from '@angular-material-components/datetime-picker';
 import { FooterComponent } from './footer/footer.component';
-import { TranslationModule } from '../public-api';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { TranslateCatalog } from './pipes/translate-catalog'; 
-
+import { RevertTransactionComponent } from './accounting/revert-transaction/revert-transaction.component';
+import { ViewJournalEntryTransactionComponent } from './accounting/view-journal-entry-transaction/view-journal-entry-transaction.component';
 
 
 @NgModule({
   imports: [
     IconsModule,
     CommonModule,
-    TranslationModule,
     RouterModule,
     PipesModule,
     MaterialModule,
@@ -83,6 +83,8 @@ import { TranslateCatalog } from './pipes/translate-catalog';
     MifosxLibComponent,
     AccountNumberComponent,
     GlAccountDisplayComponent,
+    RevertTransactionComponent,
+    ViewJournalEntryTransactionComponent,
     GlAccountSelectorComponent,
     ViewJournalEntryComponent,
     ViewSavingsAccountingDetailsComponent,
@@ -118,9 +120,7 @@ import { TranslateCatalog } from './pipes/translate-catalog';
     EntityNotesTabComponent,
     EntityDocumentsTabComponent,
     UploadDocumentDialogComponent,
-    TranslateCatalog
-  ]
-  ,
+  ],
   exports: [
     MifosxLibComponent,
     AccountNumberComponent,
@@ -131,6 +131,9 @@ import { TranslateCatalog } from './pipes/translate-catalog';
     ViewSavingsAccountingDetailsComponent,
     IconsModule,
     SearchToolComponent,
+    RevertTransactionComponent,
+    ViewJournalEntryTransactionComponent,
+    PipesModule,
     CommonModule,
     RouterModule,
     MaterialModule,
@@ -139,7 +142,6 @@ import { TranslateCatalog } from './pipes/translate-catalog';
     ThemePickerComponent,
     ThemeToggleComponent,
     TransactionPaymentDetailComponent,
-    TranslationModule,
     NotificationsTrayComponent,
     FileUploadComponent,
     FormDialogComponent,
@@ -149,8 +151,12 @@ import { TranslateCatalog } from './pipes/translate-catalog';
     EntityNotesTabComponent,
     UploadDocumentDialogComponent,
     EntityDocumentsTabComponent,
-    TranslateCatalog
+    StepperButtonsComponent,
+    DatatableMultiRowComponent,
+    LanguageSelectorComponent,
+    TenantSelectorComponent,
+    ServerSelectorComponent
   ],
-  schemas: []
+  schemas: [],
 })
-export class MifosxLibModule { }
+export class MifosxLibModule {}
