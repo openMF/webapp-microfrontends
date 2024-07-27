@@ -41,6 +41,7 @@ import { EntityDatatableTabComponent } from './tabs/entity-datatable-tab/entity-
 import { EntityNotesTabComponent } from './tabs/entity-notes-tab/entity-notes-tab.component';
 import { UploadDocumentDialogComponent } from './tabs/upload-document-dialog/upload-document-dialog.component';
 import { EntityDocumentsTabComponent } from './tabs/entity-documents-tab/entity-documents-tab.component';
+import { MifosxLongTextComponent } from './feature-component/mifosx-long-text.component';
 
 /** Custom Modules */
 
@@ -120,6 +121,7 @@ import { ViewJournalEntryTransactionComponent } from './accounting/view-journal-
     EntityNotesTabComponent,
     EntityDocumentsTabComponent,
     UploadDocumentDialogComponent,
+    MifosxLongTextComponent
   ],
   exports: [
     MifosxLibComponent,
@@ -155,7 +157,9 @@ import { ViewJournalEntryTransactionComponent } from './accounting/view-journal-
     DatatableMultiRowComponent,
     LanguageSelectorComponent,
     TenantSelectorComponent,
-    ServerSelectorComponent
+    ServerSelectorComponent,
+    MifosxLongTextComponent,
+    EntityNameComponent
   ],
   schemas: [],
 })

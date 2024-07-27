@@ -79,7 +79,7 @@
           <mat-icon>more_vert</mat-icon>
         </button>
         <mat-menu #transactionMenu="matMenu">
-          <span *ngIf="!isReAgoeOrReAmortize(transaction.type)">
+          <span *ngIf="!isReAgoeOrReAmortizeAccessible(transaction.type)">
             <button mat-menu-item (click)="showTransactions(transaction)">
               <mat-icon><fa-icon icon="eye" size="sm"></fa-icon></mat-icon>
               <span>{{ 'labels.text.View Transaction' | translate}}</span>
@@ -95,13 +95,13 @@
               <span>{{ 'tooltips.View Receipts' | translate}}</span>
             </button>
           </span>
-          <span *ngIf="isReAge(transaction.type) && !transaction.manuallyReversed">
+          <span *ngIf="isReAgeAccessible(transaction.type) && !transaction.manuallyReversed">
             <button mat-menu-item *mifosxHasPermission="'UNDO_REAGE_LOAN'" (click)="undoReAgeOrReAmortize(transaction, $event)">
               <mat-icon><fa-icon icon="undo" size="sm"></fa-icon></mat-icon>
               <span>{{ 'labels.menus.Undo Re-Age' | translate}}</span>
             </button>   
           </span>
-          <span *ngIf="isReAmortize(transaction.type) && !transaction.manuallyReversed">
+          <span *ngIf="isReAmortizeAccessible(transaction.type) && !transaction.manuallyReversed">
             <button mat-menu-item *mifosxHasPermission="'UNDO_REAMORTIZE_LOAN'" (click)="undoReAgeOrReAmortize(transaction, $event)">
               <mat-icon><fa-icon icon="undo" size="sm"></fa-icon></mat-icon>
               <span>{{ 'labels.menus.Undo Re-Amortize' | translate}}</span>

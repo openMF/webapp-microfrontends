@@ -81,7 +81,7 @@
         </div>
 
         <div fxFlex="50%" *ngIf="transactionData.externalId">
-          <mifosx-external-identifier externalId="{{transactionData.externalId}}" completed="true"></mifosx-external-identifier>
+          <mifosx-external-identifier externalId="{{transactionData.externalId}}" [completed]="true"></mifosx-external-identifier>
         </div>
 
         <mat-divider *ngIf="existTransactionRelations" [inset]="true"></mat-divider>

@@ -190,7 +190,7 @@
       <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.Actions" | translate}} </th>
         <td mat-cell class="center" *matCellDef="let ele">
-          <button *ngIf="ele.period" type="button" color="primary" mat-icon-button matTooltip="{{ 'tooltips.Edit' | translate}}" matTooltipPosition="above" (click)="editPeriod(ele)">
+          <button *ngIf="ele.period" type="button" color="primary" mat-icon-button matTooltip="{{ 'tooltips.Edit' | translate}}" matTooltipPosition="above" (click)="editPeriod">
             <fa-icon icon="edit" size="lg"></fa-icon>
           </button>
         </td>

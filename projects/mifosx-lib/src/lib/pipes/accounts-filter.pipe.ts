@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class AccountsFilterPipe implements PipeTransform {
 
-  transform(accounts: any, type: any, status: any, checkSavings: any): any {
+  transform(accounts?: any, type?: any, status?: any, checkSavings?: any): any {
     if (accounts) {
       if (type === 'loan') {
         if (status === 'closed') {

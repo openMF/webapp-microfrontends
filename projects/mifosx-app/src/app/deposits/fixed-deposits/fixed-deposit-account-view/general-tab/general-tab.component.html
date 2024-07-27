@@ -11,7 +11,7 @@
             <td>{{"labels.inputs.External Id" | translate }}</td>
             <td>
               <span *ngIf="fixedDepositsAccountData.externalId">
-                <mifosx-external-identifier externalId="{{fixedDepositsAccountData.externalId}}" completed="true"></mifosx-external-identifier>
+                <mifosx-external-identifier externalId="{{fixedDepositsAccountData.externalId}}" [completed]="true"></mifosx-external-identifier>
               </span>
               <span *ngIf="!fixedDepositsAccountData.externalId"> {{"labels.inputs.Not Available" | translate}} </span>
             </td>

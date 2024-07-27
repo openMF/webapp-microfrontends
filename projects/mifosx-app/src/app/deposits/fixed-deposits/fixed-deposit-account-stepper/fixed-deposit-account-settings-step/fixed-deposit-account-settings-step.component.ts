@@ -34,7 +34,7 @@ export class FixedDepositAccountSettingsStepComponent implements OnInit, OnChang
   /** Savings Accounts Data */
   savingsAccountsData: any;
 
-  maturityInstructionOptions: OptionData;
+  maturityInstructionOptions: OptionData[];
 
   /**
    * @param {FormBuilder} formBuilder Form Builder

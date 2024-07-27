@@ -224,7 +224,7 @@ export class TransactionsTabComponent implements OnInit {
     });
   }
 
-  undoReAgeOrReAmortize(transaction: LoanTransaction): void {
+  undoReAgeOrReAmortize(transaction: LoanTransaction,event: any): void {
     const actionName = transaction.type.reAmortize ? 'Re-Amortize' : 'Re-Age';
     const undoTransactionAccountDialogRef = this.dialog.open(ConfirmationDialogComponent, {
       data: {
@@ -282,6 +282,18 @@ export class TransactionsTabComponent implements OnInit {
       return false;
     }
     return true;
+  }
+
+  isReAgoeOrReAmortizeAccessible(transaction: LoanTransaction): boolean {
+    return this.isReAgoeOrReAmortize(transaction.type) && !transaction.manuallyReversed;
+  }
+
+  isReAgeAccessible(transaction: LoanTransaction): boolean {
+    return this.isReAge(transaction.type) && !transaction.manuallyReversed;
+  }
+
+  isReAmortizeAccessible(transaction: LoanTransaction): boolean {
+    return this.isReAmortize(transaction.type) && !transaction.manuallyReversed;
   }
 
 }

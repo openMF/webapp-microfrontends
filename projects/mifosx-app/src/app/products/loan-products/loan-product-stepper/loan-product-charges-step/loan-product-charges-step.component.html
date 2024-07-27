@@ -19,7 +19,7 @@
   </div>
 
   <table fxFlex="98%" class="mat-elevation-z1" mat-table [dataSource]="chargesDataSource | chargesPenaltyFilter:false"
-    #chargesTable [hidden]="chargesTable.dataSource.length === 0">
+    #chargesTable [hidden]="chargesTable.dataSource.toString().length === 0">
 
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> {{'labels.inputs.Name' | translate}} </th>
@@ -88,7 +88,7 @@
   </div>
 
   <table fxFlex="98%" class="mat-elevation-z1" mat-table [dataSource]="chargesDataSource | chargesPenaltyFilter:true"
-    #overdueChargesTable [hidden]="overdueChargesTable.dataSource.length === 0">
+    #overdueChargesTable [hidden]="overdueChargesTable.dataSource.toString().length === 0">
 
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> {{'labels.inputs.Name' | translate}} </th>

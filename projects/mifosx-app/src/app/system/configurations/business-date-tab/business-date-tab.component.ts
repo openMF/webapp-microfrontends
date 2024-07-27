@@ -37,6 +37,7 @@ export class BusinessDateTabComponent implements OnInit {
   userDateFormat: '';
   isBusinessDateEnabled = false;
   isEditInProgress = false;
+  configurationName = SettingsService.businessDateConfigName;
 
   /**
    * Retrieves the configurations data from `resolve`.

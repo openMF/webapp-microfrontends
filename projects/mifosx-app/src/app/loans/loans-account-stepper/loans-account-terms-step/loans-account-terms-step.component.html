@@ -15,7 +15,7 @@
 
     <mat-form-field fxFlex="23%">
       <mat-label>{{"labels.inputs.Loan Term" | translate}}</mat-label>
-      <input type="number" matInput required disabled formControlName="loanTermFrequency">
+      <input type="number" matInput required [disabled] formControlName="loanTermFrequency">
       <mat-error *ngIf="loansAccountTermsForm.controls['loanTermFrequency'].hasError('required')">
         {{"labels.inputs.Loan Term" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
       </mat-error>
@@ -79,7 +79,7 @@
 
     <mat-form-field fxFlex="23%">
       <mat-label>{{"labels.inputs.Frequency" | translate}}</mat-label>
-      <mat-select formControlName="repaymentFrequencyType" disabled required>
+      <mat-select formControlName="repaymentFrequencyType" [disabled] required>
         <mat-option *ngFor="let repaymentFrequencyType of termFrequencyTypeData" [value]="repaymentFrequencyType.id">
           {{ repaymentFrequencyType.value | translateCatalog }}
         </mat-option>
@@ -358,7 +358,7 @@
           <input matInput required formControlName="maxOutstandingLoanBalance">
         </mat-form-field>
         <span fxFlex>
-          <button type="button" mat-icon-button color="primary" required (click)="addDisbursementDataEntry(disbursementData)"
+          <button type="button" mat-icon-button color="primary" required (click)="addDisbursementDataEntry()"
             [disabled]="isMultiDisbursedCompleted">
             <fa-icon icon="plus-circle" size="lg"></fa-icon>
           </button>

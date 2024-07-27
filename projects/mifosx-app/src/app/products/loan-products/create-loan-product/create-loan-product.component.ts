@@ -96,7 +96,7 @@ export class CreateLoanProductComponent implements OnInit {
     this.paymentAllocation = paymentAllocation;
   }
 
-  setCreditAllocation(paymentAllocation: PaymentAllocation[]): void {
+  setCreditAllocation(paymentAllocation?: PaymentAllocation[]): void {
     this.creditAllocation = paymentAllocation;
   }
 

@@ -219,7 +219,6 @@
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
     <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateGlobalSearch, globalSearch)">{{"labels.buttons.Back" | translate}}</button>
-    <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateThemePicker, themePicker)">{{"labels.buttons.Next" | translate}}</button>
   </div>
 </ng-template>
 
@@ -238,7 +237,7 @@
   <p class="mw300">{{"labels.text.This shows all the notifications." | translate}}</p>
   <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2%" fxLayout.lt-md="column">
     <button mat-raised-button color="warn" (click)="popover.close();closeConfigurationWizard()">{{"labels.buttons.Close" | translate}}</button>
-    <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateThemePicker, themePicker)">{{"labels.buttons.Back" | translate}}</button>
+    <!-- <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateThemePicker, themePicker)">{{"labels.buttons.Back" | translate}}</button> -->
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateAppMenu, appMenu)">{{"labels.buttons.Next" | translate}}</button>
   </div>
 </ng-template>

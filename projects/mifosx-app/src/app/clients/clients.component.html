@@ -2,7 +2,7 @@
   <div fxLayout="row" fxLayoutAlign="start center">
     <div class="search-box m-r-30">
       <mat-form-field class="search-box">
-        <input matInput placeholder="Search by client name, external Id, mobile" class="search-box" (keydown.enter)="search($event.target.value)">
+        <input matInput placeholder="Search by client name, external Id, mobile" class="search-box" (keydown.enter)="search($event.target.toString())">
       </mat-form-field>
     </div>
     <div class="filter-box" *ngIf="existsClientsToFilter">

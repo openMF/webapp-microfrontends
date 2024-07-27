@@ -68,7 +68,7 @@
       <div class="m-b-10">
         <h3>{{"labels.heading.Loan Accounts" | translate }}</h3>
       </div>
-      <div *ngIf="(loanAccounts|accountsFilter:'loan':'closed').length" class="action-button m-b-10">
+      <div *ngIf="(loanAccounts | accountsFilter:'loan':'closed').length" class="action-button m-b-10">
         <button mat-raised-button class="f-right" color="primary"
       (click)="toggleLoanAccountsOverview()">{{showClosedLoanAccounts?'View Active Accounts':'View Closed Accounts'}}</button>
       </div>
