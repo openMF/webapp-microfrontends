@@ -3,7 +3,7 @@
   <div fxLayout="row" fxLayoutAlign="start center">
     <div class="search-box" fxFlex="40%">
       <mat-form-field fxFlex="90%">
-        <input matInput placeholder="{{'labels.text.Search by user' | translate}}" (keyup)="applyFilter($event.target.value)">
+        <input matInput placeholder="{{'labels.text.Search by user' | translate}}" #filterInput (keyup)="applyFilter(filterInput.value)">
       </mat-form-field>
     </div>
     <div fxFlex="60%" fxLayoutGap="0.5rem">

@@ -1,7 +1,7 @@
 <mat-form-field fxFlex="100%" *ngIf="required">
   <mat-label>{{'labels.inputs.' + inputLabel | translate}}</mat-label>
 
-  <mat-select required [formControl]="inputFormControl">
+  <mat-select required [formControl]="inputFormControl2">
     <mat-option>
       <ngx-mat-select-search [formControl]="filterFormCtrl"></ngx-mat-select-search>
     </mat-option>
@@ -17,7 +17,7 @@
 <mat-form-field fxFlex="100%" *ngIf="!required">
   <mat-label>{{'labels.inputs.' + inputLabel | translate}}</mat-label>
 
-  <mat-select [formControl]="inputFormControl">
+  <mat-select [formControl]="inputFormControl2">
     <mat-option>
       <ngx-mat-select-search [formControl]="filterFormCtrl"
         placeholderLabel="{{placeHolderLabel}}"

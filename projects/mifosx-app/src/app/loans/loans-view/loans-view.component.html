@@ -97,7 +97,7 @@
         <ng-container *ngFor="let item of buttonConfig.singleButtons">
           <button mat-menu-item *mifosxHasPermission="item.taskPermissionName" (click)="loanAction(item.name)">
             <mat-icon matListIcon>
-              <fa-icon icon="{{item.icon}}" size="sm"></fa-icon>
+              <!-- <fa-icon icon="{{item.icon}}" size="sm"></fa-icon> -->
             </mat-icon>
             <span>{{'labels.menus.' + item.name | translate}}</span>
           </button>

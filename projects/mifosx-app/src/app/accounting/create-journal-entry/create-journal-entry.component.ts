@@ -231,4 +231,8 @@ export class CreateJournalEntryComponent implements OnInit, AfterViewInit {
   closeConfigurationWizard() {
     this.configurationWizardService.closeConfigWizard(); 
   }
+
+  getGlAccountControl(index: any, debits: boolean) {
+    return debits ? this.journalEntryForm.controls.debits.get(index).get('glAccountId') : this.journalEntryForm.controls.credits.get(index).get('glAccountId');
+  }
 }

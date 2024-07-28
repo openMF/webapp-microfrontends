@@ -111,7 +111,7 @@
           <li>
             <div class="mat-tree-node">
               <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
-                <fa-icon class="mat-icon-rtl-mirror" icon="{{ nestedTreeControl.isExpanded(node) ? 'chevron-down' : 'chevron-right' }}"></fa-icon>
+                <!-- <fa-icon class="mat-icon-rtl-mirror" icon="{{ nestedTreeControl.isExpanded(node) ? 'chevron-down' : 'chevron-right' }}"></fa-icon> -->
               </button>
               <span (click)="viewGLAccountNode(node)">
                 <span *ngIf="node.glCode" class="m-r-10">{{ '(' + node.glCode + ')' }}</span>

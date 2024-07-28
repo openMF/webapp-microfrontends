@@ -13,7 +13,7 @@
   <div #filter fxLayout="row" fxLayoutGap="20px">
     <mat-form-field fxFlex>
       <mat-label>{{'labels.inputs.Filter' | translate}}</mat-label>
-      <input matInput (keyup)="applyFilter($event.target.value)"  matTooltip="Add Filters" matTooltipPosition="left">
+      <input matInput #filterInput (keyup)="applyFilter(filterInput.value)"  matTooltip="Add Filters" matTooltipPosition="left">
     </mat-form-field>
   </div>
 

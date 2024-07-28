@@ -17,7 +17,7 @@
 
   <mat-card>
 
-    <mat-card-title> <i class="fa fa-stop" [ngClass]="(!(chargeData.isWaived || chargeData.isPaid))|statusLookup"></i>
+    <mat-card-title> <i class="fa fa-stop" [ngClass]="((!(chargeData.isWaived || chargeData.isPaid)).toString())|statusLookup"></i>
       {{ chargeData.name }}
     </mat-card-title>
 

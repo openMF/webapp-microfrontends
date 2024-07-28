@@ -407,4 +407,8 @@ export class RecurringDepositProductInterestRateChartStepComponent implements On
     return recurringDepositProductInterestRateChart;
   }
 
+  chartControl(chart: any){
+    return chart.controls.chartSlabs;
+  }
+  
 }

@@ -220,7 +220,7 @@ export * from './savingsAccount.service';
 import { SavingsService } from './savings.service';
 export * from './savings.service';
 import { SystemService } from './system.service';
-export * from './savingsAccount.service';
+export * from './system.service';
 import { SavingsAccountService } from './savingsAccount.service';
 export * from './savingsAccountTransactions.service';
 import { SavingsAccountTransactionsService } from './savingsAccountTransactions.service';

@@ -70,7 +70,7 @@
               <button mat-button *ngIf="codeValueRowStatus[i] === 'edit'" (click)="disableRow(i)">
                 {{'labels.buttons.Cancel' | translate}}
               </button>
-              <button mat-icon-button color="primary" [disabled]="!codeValuesForm.get('codeValues').at(i).valid" *ngIf="codeValueRowStatus[i] === 'new'" matTooltip="{{ 'tooltips.Add' | translate}}" matTooltipPosition="above" (click)="addCodeValue(i)">
+              <button mat-icon-button color="primary" [disabled]="!isCodeValuesFormValid(i)" *ngIf="codeValueRowStatus[i] === 'new'" matTooltip="{{ 'tooltips.Add' | translate}}" matTooltipPosition="above" (click)="addCodeValue(i)">
                 <fa-icon icon="plus" size="lg"></fa-icon>
               </button>
               <button type="button" color="primary" *ngIf="codeValueRowStatus[i] === 'disabled'" mat-icon-button matTooltip="{{ 'tooltips.Edit' | translate}}" matTooltipPosition="above" (click)="enableRow(i)">

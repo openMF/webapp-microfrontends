@@ -38,7 +38,7 @@
             <div fxFlexFill fxLayout="row wrap" fxLayoutGap="2%" fxLayout.lt-md="column" [formGroupName]="i">
 
               <mifosx-gl-account-selector fxFlex="48%"
-                [inputFormControl]="debits.at(i).controls.glAccountId"
+                [inputFormControl]="getGlAccountControl(i,true)"
                 [glAccountList]="glAccountData"
                 [required]="true"
                 [inputLabel]="'Affected GL Entry (Debit)'"
@@ -72,7 +72,7 @@
             <div fxFlexFill fxLayout="row wrap" fxLayoutGap="2%" fxLayout.lt-md="column" [formGroupName]="i">
 
               <mifosx-gl-account-selector fxFlex="48%"
-                [inputFormControl]="credits.at(i).controls.glAccountId"
+                [inputFormControl]="getGlAccountControl(i,false)"
                 [glAccountList]="glAccountData"
                 [required]="true"
                 [inputLabel]="'Affected GL Entry (Credit)'"

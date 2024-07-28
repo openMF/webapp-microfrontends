@@ -405,4 +405,8 @@ export class FixedDepositProductInterestRateChartStepComponent implements OnInit
     return fixedDepositProductInterestRateChart;
   }
 
+  chartControl(chart: any){
+   return chart.controls.chartSlabs;
+  }
+
 }
