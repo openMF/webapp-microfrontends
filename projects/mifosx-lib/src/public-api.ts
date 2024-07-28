@@ -64,6 +64,7 @@ export * from './lib/tabs/entity-documents-tab/entity-documents-tab.component';
 export * from './lib/tabs/upload-document-dialog/upload-document-dialog.component';
 export * from './lib/accounting/revert-transaction/revert-transaction.component'
 export * from './lib/accounting/view-journal-entry-transaction/view-journal-entry-transaction.component'
+export * from './lib/feature-component/mifosx-long-text.component'
 
 // All the pipes
 export * from './lib/pipes/status-lookup.pipe';

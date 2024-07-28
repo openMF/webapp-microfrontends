@@ -203,4 +203,12 @@ export class ViewCodeComponent implements OnInit {
     this.codeValueRowStatus[index] = 'edit';
   }
 
+  /**
+   * Checks if the code values form is valid.
+   * @returns {boolean} Validity of the form.
+   */
+  isCodeValuesFormValid(index: number): boolean {  
+    return this.codeValues.at(index).valid;
+  }
+
 }

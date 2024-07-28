@@ -2,7 +2,7 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { Component, Inject, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { CustomParametersTableComponent } from './custom-parameters-table/custom-parameters-table.component';
-import { SystemService } from '@mifosx-app/system/system.service';
+import { SystemService } from '@fineract-lib';
 
 interface SelectedJobsDataType {
   selectedJobs: SelectionModel<JobDataType>;

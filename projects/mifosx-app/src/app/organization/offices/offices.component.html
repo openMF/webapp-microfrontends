@@ -103,8 +103,8 @@
               <li>
                 <div class="mat-tree-node">
                   <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
-                    <fa-icon class="mat-icon-rtl-mirror"
-                      icon="{{ nestedTreeControl.isExpanded(node) ? 'chevron-down' : 'chevron-right' }}"></fa-icon>
+                    <!-- <fa-icon class="mat-icon-rtl-mirror"
+                      icon="{{ nestedTreeControl.isExpanded(node) ? 'chevron-down' : 'chevron-right' }}"></fa-icon> -->
                   </button>
                   <span (click)="viewOfficeNode(node)" class="m-r-10">
                     {{ node.name }}
@@ -252,3 +252,10 @@
     <button mat-raised-button color="primary" (click)="popover.close();nextStep()">{{'labels.buttons.Next' | translate }}</button>
   </div>
 </ng-template>
+
+<div #filter>
+  <mat-form-field>
+    <mat-label>{{ 'Filter'| translate}}</mat-label>
+    <input matInput #filterInput (keyup)="applyFilter(filterInput.value)">
+  </mat-form-field>
+</div>

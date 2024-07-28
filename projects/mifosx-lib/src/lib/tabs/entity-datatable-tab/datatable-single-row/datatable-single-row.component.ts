@@ -7,7 +7,7 @@ import { SettingsService } from '@mifosx-lib/settings/settings.service';
 import { DeleteDialogComponent } from '@mifosx-lib//delete-dialog/delete-dialog.component';
 import { FormDialogComponent } from '@mifosx-lib//form-dialog/form-dialog.component';
 import { FormfieldBase } from '@mifosx-lib//form-dialog/formfield/model/formfield-base';
-import { SystemService } from 'dist/fineract-client/lib/api/system.service'; 
+import { SystemService } from 'projects/fineract-client/src/lib/api/system.service';
 
 @Component({
   selector: 'mifosx-datatable-single-row',

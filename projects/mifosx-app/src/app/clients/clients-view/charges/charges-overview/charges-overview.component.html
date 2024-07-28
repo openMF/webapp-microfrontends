@@ -9,7 +9,7 @@
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.name" | translate}} </th>
         <td mat-cell *matCellDef="let chargeOverviewData"><i class="fa fa-stop"
-            [ngClass]="(!(chargeOverviewData.isWaived || chargeOverviewData.isPaid))|statusLookup"></i>
+            [ngClass]="((!(chargeOverviewData.isWaived || chargeOverviewData.isPaid)).toString())|statusLookup"></i>
           {{chargeOverviewData.name}} </td>
       </ng-container>
 

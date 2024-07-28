@@ -13,6 +13,7 @@ import { takeUntil } from 'rxjs/operators';
 export class GlAccountSelectorComponent implements OnInit, OnChanges, OnDestroy {
 
   @Input() inputFormControl: AbstractControl<any, any>;
+  @Input() inputFormControl2: UntypedFormControl;
   @Input() glAccountList: GLAccount[] = [];
   @Input() required = false;
   @Input() inputLabel = '';

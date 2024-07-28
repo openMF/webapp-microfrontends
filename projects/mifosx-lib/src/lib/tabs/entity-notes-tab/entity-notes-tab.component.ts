@@ -4,7 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ClientsService } from '@fineract-lib'; 
 import { GroupsService } from '@fineract-lib';
 import { LoansService } from '@fineract-lib';
-import { SavingsService } from 'dist/fineract-client/lib/api/savings.service';
+import { SavingsService } from '@fineract-lib';
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
 
