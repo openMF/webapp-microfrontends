@@ -39,7 +39,7 @@ export class GlimChargesStepComponent implements OnInit, OnChanges {
   /** Check for select all the Clients List */
   selectAllItems = false;
   /** Loan Purpose Options */
-  loanPurposeOptions: string[] = [];
+  loanPurposeOptions: [{id: 1, name: 'Business'}, {id: 2, name: 'Other'}];
   /** Table Displayed Columns */
   displayedColumn: string[] = ['check', 'id', 'name', 'purpose', 'amount'];
 

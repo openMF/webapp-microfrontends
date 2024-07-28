@@ -10,7 +10,7 @@
           <td>{{"labels.inputs.External Id" | translate }}</td>
           <td>
             <span *ngIf="recurringDepositsAccountData.externalId">
-              <mifosx-external-identifier externalId="{{recurringDepositsAccountData.externalId}}" completed="true"></mifosx-external-identifier>
+              <mifosx-external-identifier externalId="{{recurringDepositsAccountData.externalId}}" [completed]="true"></mifosx-external-identifier>
             </span>
             <span *ngIf="!recurringDepositsAccountData.externalId"> {{"labels.inputs.Not Available" | translate}} </span>
           </td>
@@ -112,7 +112,7 @@
           <td>{{"labels.inputs.External Id" | translate }}</td>
           <td>
             <span *ngIf="recurringDepositsAccountData.externalId">
-              <mifosx-external-identifier externalId="{{recurringDepositsAccountData.externalId}}" completed="true"></mifosx-external-identifier>
+              <mifosx-external-identifier externalId="{{recurringDepositsAccountData.externalId}}" [completed]="true"></mifosx-external-identifier>
             </span>
             <span *ngIf="!recurringDepositsAccountData.externalId"> {{"labels.inputs.Not Available" | translate}} </span>
           </td>

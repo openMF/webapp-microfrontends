@@ -110,7 +110,7 @@
 
           <ng-container *ngIf="ele.key === 'External Id'">
             <span *ngIf="loanDetails.externalId">
-              <mifosx-external-identifier externalId="{{loanDetails.externalId}}" completed="true"></mifosx-external-identifier>
+              <mifosx-external-identifier externalId="{{loanDetails.externalId}}" [completed]="true"></mifosx-external-identifier>
             </span>
             <span *ngIf="!loanDetails.externalId"> {{"labels.inputs.Not Available" | translate}} </span>
           </ng-container>
@@ -157,7 +157,7 @@
 
           <ng-container *ngIf="ele.key === 'External Id'">
             <span *ngIf="loanDetails.externalId">
-              <mifosx-external-identifier externalId="{{loanDetails.externalId}}" completed="true"></mifosx-external-identifier>
+              <mifosx-external-identifier externalId="{{loanDetails.externalId}}" [completed]="true"></mifosx-external-identifier>
             </span>
             <span *ngIf="!loanDetails.externalId"> {{"labels.inputs.Not Available" | translate}} </span>
           </ng-container>

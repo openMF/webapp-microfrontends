@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { UntypedFormGroup, UntypedFormBuilder, UntypedFormArray, Validators, UntypedFormControl } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, UntypedFormArray, Validators, UntypedFormControl, AbstractControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 
 import { FormDialogComponent } from '@mifosx-lib/form-dialog/form-dialog.component';
@@ -18,7 +18,7 @@ export class SavingProductAccountingStepComponent implements OnInit {
 
   @Input() savingProductsTemplate: any;
   @Input() accountingRuleData: any;
-  @Input() isDormancyTrackingActive: UntypedFormControl;
+  @Input() isDormancyTrackingActive: AbstractControl<any,any>;
   @Input() savingProductFormValid: boolean;
 
   savingProductAccountingForm: UntypedFormGroup;

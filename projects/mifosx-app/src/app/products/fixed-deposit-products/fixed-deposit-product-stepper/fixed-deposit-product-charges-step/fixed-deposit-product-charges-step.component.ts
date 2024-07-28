@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { UntypedFormControl } from '@angular/forms';
+import { UntypedFormControl,AbstractControl } from '@angular/forms';
 
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
 
@@ -12,7 +12,7 @@ import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.c
 export class FixedDepositProductChargesStepComponent implements OnInit {
 
   @Input() fixedDepositProductsTemplate: any;
-  @Input() currencyCode: UntypedFormControl;
+  @Input() currencyCode: AbstractControl<any, any>;
 
   chargeData: any;
 

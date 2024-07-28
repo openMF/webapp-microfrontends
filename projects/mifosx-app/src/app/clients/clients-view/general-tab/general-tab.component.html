@@ -43,8 +43,9 @@
     <ng-container matColumnDef="Name">
       <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.name" | translate}} </th>
       <td mat-cell *matCellDef="let element"> <i class="fa fa-stop"
-          [ngClass]="(!(element.isWaived || element.isPaid)) | statusLookup"></i>
-        {{element.name}} </td>
+          [ngClass]="(!(element.isWaived || element.isPaid)).toString() | statusLookup"></i>
+        {{element.name}} 
+      </td>
     </ng-container>
 
     <ng-container matColumnDef="Due as of">
@@ -109,7 +110,7 @@
     </div>
   </div>
 
-  <table *ngIf="!showClosedLoanAccounts" mat-table [dataSource]="loanAccounts|accountsFilter:'loan'">
+  <table *ngIf="!showClosedLoanAccounts" mat-table [dataSource]="loanAccounts | accountsFilter:'loan'">
 
     <ng-container matColumnDef="Account No">
       <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.Account No" | translate}} </th>
@@ -122,7 +123,7 @@
     <ng-container matColumnDef="Loan Account">
       <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.Loan Product" | translate}} </th>
       <td mat-cell *matCellDef="let element"> 
-        <mifosx-long-text textValue="{{element.productName}}" chars="35"></mifosx-long-text>
+        <mifosx-long-text textValue="{{element.productName}}" [chars]="35"></mifosx-long-text>
       </td>
     </ng-container>
 
@@ -198,7 +199,7 @@
     <ng-container matColumnDef="Loan Account">
       <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.Loan Product" | translate}} </th>
       <td mat-cell *matCellDef="let element"> 
-        <mifosx-long-text textValue="{{element.productName}}" chars="35"></mifosx-long-text>
+        <mifosx-long-text textValue="{{element.productName}}" [chars]="35"></mifosx-long-text>
       </td>
     </ng-container>
 
@@ -265,7 +266,7 @@
     <ng-container matColumnDef="Saving Account">
       <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.Savings Product" | translate}} </th>
       <td mat-cell *matCellDef="let element"> 
-        <mifosx-long-text textValue="{{element.productName}}" chars="35"></mifosx-long-text>
+        <mifosx-long-text textValue="{{element.productName}}" [chars]="35"></mifosx-long-text>
       </td>
     </ng-container>
 
@@ -327,7 +328,7 @@
     <ng-container matColumnDef="Saving Account">
       <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.Saving Product" | translate}} </th>
       <td mat-cell *matCellDef="let element"> 
-        <mifosx-long-text textValue="{{element.productName}}" chars="35"></mifosx-long-text>
+        <mifosx-long-text textValue="{{element.productName}}" [chars]="35"></mifosx-long-text>
       </td>
     </ng-container>
 
@@ -424,7 +425,7 @@
     <ng-container matColumnDef="Saving Account">
       <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.Fixed Deposit Product" | translate}} </th>
       <td mat-cell *matCellDef="let element"> 
-        <mifosx-long-text textValue="{{element.productName}}" chars="35"></mifosx-long-text>
+        <mifosx-long-text textValue="{{element.productName}}" [chars]="35"></mifosx-long-text>
       </td>
     </ng-container>
 
@@ -469,7 +470,7 @@
     <ng-container matColumnDef="Saving Account">
       <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.Recurring Deposit Product" | translate}} </th>
       <td mat-cell *matCellDef="let element"> 
-        <mifosx-long-text textValue="{{element.productName}}" chars="35"></mifosx-long-text>
+        <mifosx-long-text textValue="{{element.productName}}" [chars]="35"></mifosx-long-text>
       </td>
     </ng-container>
 
@@ -528,7 +529,7 @@
     <ng-container matColumnDef="Saving Account">
       <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.Recurring Deposit Product" | translate}} </th>
       <td mat-cell *matCellDef="let element"> 
-        <mifosx-long-text textValue="{{element.productName}}" chars="35"></mifosx-long-text>
+        <mifosx-long-text textValue="{{element.productName}}" [chars]="35"></mifosx-long-text>
       </td>
     </ng-container>
 
@@ -571,7 +572,7 @@
     <ng-container matColumnDef="Share Account">
       <th mat-header-cell *matHeaderCellDef> {{"labels.inputs.Share Product" | translate}} </th>
       <td mat-cell *matCellDef="let element"> 
-        <mifosx-long-text textValue="{{element.productName}}" chars="35"></mifosx-long-text>
+        <mifosx-long-text textValue="{{element.productName}}" [chars]="35"></mifosx-long-text>
       </td>
     </ng-container>
 

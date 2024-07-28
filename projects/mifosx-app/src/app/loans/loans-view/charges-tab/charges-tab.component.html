@@ -26,7 +26,7 @@
     </ng-container>
 
     <ng-container matColumnDef="dueDate">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header [hide]="useDueDate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
         <span *ngIf="useDueDate"> Due as of </span>
         <span *ngIf="!useDueDate"> Submitted On </span>
       </th>

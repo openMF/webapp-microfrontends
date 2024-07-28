@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { UntypedFormControl } from '@angular/forms';
+import { UntypedFormControl,AbstractControl } from '@angular/forms';
 import { TooltipPosition } from '@angular/material/tooltip';
 
 import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.component';
@@ -13,13 +13,13 @@ import { DeleteDialogComponent } from '@mifosx-lib/delete-dialog/delete-dialog.c
 export class LoanProductChargesStepComponent implements OnInit {
 
   @Input() loanProductsTemplate: any;
-  @Input() currencyCode: UntypedFormControl;
-  @Input() multiDisburseLoan: UntypedFormControl;
+  @Input() currencyCode: AbstractControl<any, any>;
+  @Input() multiDisburseLoan: AbstractControl<any, any>;
 
   chargeData: any;
   overdueChargeData: any;
 
-  chargesDataSource: {}[];
+  chargesDataSource: any;
   displayedColumns: string[] = ['name', 'chargeCalculationType', 'amount', 'chargeTimeType', 'action'];
 
   pristine = true;
