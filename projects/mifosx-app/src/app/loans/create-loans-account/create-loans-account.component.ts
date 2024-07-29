@@ -12,6 +12,7 @@ import { LoansAccountDetailsStepComponent } from '../loans-account-stepper/loans
 import { LoansAccountTermsStepComponent } from '../loans-account-stepper/loans-account-terms-step/loans-account-terms-step.component';
 import { LoansAccountChargesStepComponent } from '../loans-account-stepper/loans-account-charges-step/loans-account-charges-step.component';
 import { LoansAccountDatatableStepComponent } from '../loans-account-stepper/loans-account-datatable-step/loans-account-datatable-step.component';
+import { FormGroup, UntypedFormGroup } from '@angular/forms';
 
 /**
  * Create loans account
@@ -96,7 +97,7 @@ export class CreateLoansAccountComponent implements OnInit {
   }
 
   /** Get Loans Account Details Form Data */
-  get loansAccountDetailsForm() {
+  get loansAccountDetailsForm():UntypedFormGroup {
     return this.loansAccountDetailsStep.loansAccountDetailsForm;
   }
 
