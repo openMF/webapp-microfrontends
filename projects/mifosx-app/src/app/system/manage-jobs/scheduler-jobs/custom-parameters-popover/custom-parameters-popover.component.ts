@@ -2,7 +2,8 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { Component, Inject, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { CustomParametersTableComponent } from './custom-parameters-table/custom-parameters-table.component';
-import { SystemService } from '@fineract-lib';
+// import { SystemService } from '@fineract-lib';
+import { SCHEDULERJOBService } from '@fineract-lib';
 
 interface SelectedJobsDataType {
   selectedJobs: SelectionModel<JobDataType>;
@@ -58,7 +59,7 @@ export class CustomParametersPopoverComponent implements OnInit {
   /* API call response message */
   messages: { message: string; status: number }[] = [];
 
-  constructor(private systemService: SystemService, @Inject(MAT_DIALOG_DATA) public data: SelectedJobsDataType) { }
+  constructor(private sCHEDULERJOBService: SCHEDULERJOBService, @Inject(MAT_DIALOG_DATA) public data: SelectedJobsDataType) { }
 
   ngOnInit(): void {
     this.selectedJobs = this.data.selectedJobs.selected.map((jobJSON) => ({
@@ -78,10 +79,10 @@ export class CustomParametersPopoverComponent implements OnInit {
     });
 
     tableData.forEach((job) => {
-      this.systemService.runSelectedJobWithParameters(job.jobId,
-        { jobParameters: job.jobParameters }
+      this.sCHEDULERJOBService.executeJob(+job.jobId,
+        "executeJob",{ jobParameters: job.jobParameters }
       )
-      .then((response) => {
+      .subscribe((response) => {
         this.messages.push({
           message: `${job.displayName}: ${response.statusText} (${response.status})`,
           status: response.ok
